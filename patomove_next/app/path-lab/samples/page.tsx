@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import ComponentFeedback from '@/components/ComponentFeedback';
 import AddIsolateForm from '@/components/AddIsolateForm';
 import CsvSampleList from '@/components/CsvSampleList';
@@ -9,6 +10,7 @@ import CsvSampleList from '@/components/CsvSampleList';
 export default function SampleManagement() {
   const [hasCsvData, setHasCsvData] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
 
   // Listen for CSV upload status from CsvSampleList
   useEffect(() => {
@@ -20,23 +22,48 @@ export default function SampleManagement() {
     return () => window.removeEventListener('csvStatusChange', handleCsvStatus as EventListener);
   }, []);
 
-  // Navigation warning when CSV is uploaded
+
+  // Intercept internal navigation using popstate
   useEffect(() => {
-    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+    const handlePopState = (e: PopStateEvent) => {
       if (hasCsvData) {
-        e.preventDefault();
-        e.returnValue = 'You have uploaded CSV data. Are you sure you want to leave?';
+        const confirmed = window.confirm('You have uploaded CSV data. Are you sure you want to leave?');
+        if (!confirmed) {
+          e.preventDefault();
+          // Push current state back to prevent navigation
+          window.history.pushState(null, '', pathname);
+        }
       }
     };
 
-    if (hasCsvData) {
-      window.addEventListener('beforeunload', handleBeforeUnload);
-    }
+    // Override all navigation attempts by intercepting clicks
+    const handleClick = (e: MouseEvent) => {
+      if (hasCsvData) {
+        const target = e.target as HTMLElement;
+        const link = target.closest('a');
+        
+        if (link && link.href) {
+          const url = new URL(link.href);
+          // Check if it's internal navigation away from samples page
+          if (url.origin === window.location.origin && !url.pathname.includes('/samples')) {
+            e.preventDefault();
+            const confirmed = window.confirm('You have uploaded CSV data. Are you sure you want to leave?');
+            if (confirmed) {
+              window.location.href = link.href;
+            }
+          }
+        }
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    document.addEventListener('click', handleClick, true); // Use capture phase
 
     return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
+      window.removeEventListener('popstate', handlePopState);
+      document.removeEventListener('click', handleClick, true);
     };
-  }, [hasCsvData]);
+  }, [hasCsvData, pathname]);
 
   return (
     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

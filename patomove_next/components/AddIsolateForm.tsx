@@ -8,12 +8,12 @@ import EnvironmentSelect from './EnvironmentSelect';
 
 interface IsolateFormData {
   label: string;
-  sampleType: 'Clinical' | 'Environmental';
+  sampleType: 'clinical' | 'environmental';
   collectionSource: string;
   collectionSite: string;
   collectionDate: string;
-  priority: 'Normal' | 'Priority';
-  processingStatus: string;
+  priority: 'normal' | 'priority';
+  processingStatus: 'to be sequenced' | 'genome sequenced' | 'genomics processing' | 'genomics completed';
   notes: string;
   orgId: string;
   patientId: string;
@@ -23,12 +23,12 @@ interface IsolateFormData {
 export default function AddIsolateForm() {
   const [formData, setFormData] = useState<IsolateFormData>({
     label: '',
-    sampleType: 'Clinical',
+    sampleType: 'clinical',
     collectionSource: '',
     collectionSite: '',
     collectionDate: '',
-    priority: 'Normal',
-    processingStatus: 'pending',
+    priority: 'normal',
+    processingStatus: 'to be sequenced',
     notes: '',
     orgId: '',
     patientId: '',
@@ -47,11 +47,11 @@ export default function AddIsolateForm() {
       setFormData(prev => ({
         ...prev,
         label: sampleData.label || '',
-        sampleType: sampleData.sampleType || 'Clinical',
+        sampleType: sampleData.sampleType || 'clinical',
         collectionSource: sampleData.collectionSource || '',
         collectionSite: sampleData.collectionSite || '',
         collectionDate: sampleData.collectionDate || '',
-        priority: sampleData.priority || 'Normal',
+        priority: sampleData.priority || 'normal',
         notes: sampleData.notes || ''
       }));
       // Clear any validation errors when prefilling
@@ -79,10 +79,10 @@ export default function AddIsolateForm() {
     if (!formData.collectionDate) newErrors.collectionDate = 'Collection date is required';
 
     // Schema constraint: sampleType determines required ID field
-    if (formData.sampleType === 'Clinical' && !formData.patientId) {
+    if (formData.sampleType === 'clinical' && !formData.patientId) {
       newErrors.patientId = 'Patient is required for clinical samples';
     }
-    if (formData.sampleType === 'Environmental' && !formData.environmentId) {
+    if (formData.sampleType === 'environmental' && !formData.environmentId) {
       newErrors.environmentId = 'Environment site is required for environmental samples';
     }
 
@@ -112,8 +112,8 @@ export default function AddIsolateForm() {
         notes: formData.notes,
         orgId: formData.orgId,
         // Include only the relevant ID based on sampleType
-        ...(formData.sampleType === 'Clinical' && { patientId: formData.patientId }),
-        ...(formData.sampleType === 'Environmental' && { environmentId: formData.environmentId }),
+        ...(formData.sampleType === 'clinical' && { patientId: formData.patientId }),
+        ...(formData.sampleType === 'environmental' && { environmentId: formData.environmentId }),
         // TODO: Add createdBy when user auth is implemented
         createdBy: 'current-user-id'
       };
@@ -145,12 +145,12 @@ export default function AddIsolateForm() {
   const resetForm = () => {
     setFormData({
       label: '',
-      sampleType: 'Clinical',
+      sampleType: 'clinical',
       collectionSource: '',
       collectionSite: '',
       collectionDate: '',
-      priority: 'Normal',
-      processingStatus: 'pending',
+      priority: 'normal',
+      processingStatus: 'to be sequenced',
       notes: '',
       orgId: '',
       patientId: '',
@@ -205,24 +205,24 @@ export default function AddIsolateForm() {
             name="sampleType"
             value={formData.sampleType}
             onChange={(e) => {
-              const newSampleType = e.target.value as 'Clinical' | 'Environmental';
+              const newSampleType = e.target.value as 'clinical' | 'environmental';
               setFormData(prev => ({ 
                 ...prev, 
                 sampleType: newSampleType,
                 // Clear opposite field when switching sample type
-                patientId: newSampleType === 'Clinical' ? prev.patientId : '',
-                environmentId: newSampleType === 'Environmental' ? prev.environmentId : ''
+                patientId: newSampleType === 'clinical' ? prev.patientId : '',
+                environmentId: newSampleType === 'environmental' ? prev.environmentId : ''
               }));
             }}
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           >
-            <option value="Clinical">Clinical</option>
-            <option value="Environmental">Environmental</option>
+            <option value="clinical">Clinical</option>
+            <option value="environmental">Environmental</option>
           </select>
         </div>
 
         {/* Patient/Environment Selection based on Sample Type */}
-        {formData.sampleType === 'Clinical' && (
+        {formData.sampleType === 'clinical' && (
           <PatientSelect
             value={formData.patientId}
             onChange={(value) => {
@@ -235,7 +235,7 @@ export default function AddIsolateForm() {
           />
         )}
 
-        {formData.sampleType === 'Environmental' && (
+        {formData.sampleType === 'environmental' && (
           <EnvironmentSelect
             value={formData.environmentId}
             onChange={(value) => {
@@ -260,7 +260,7 @@ export default function AddIsolateForm() {
             value={formData.collectionSource}
             onChange={handleInputChange}
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            placeholder={formData.sampleType === 'Clinical' ? 'e.g., Blood, Urine, Wound' : 'e.g., Water, Surface, Air'}
+            placeholder={formData.sampleType === 'clinical' ? 'e.g., Blood, Urine, Wound' : 'e.g., Water, Surface, Air'}
           />
         </div>
 
@@ -278,7 +278,7 @@ export default function AddIsolateForm() {
             className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
               errors.collectionSite ? 'border-red-300' : 'border-gray-300'
             }`}
-            placeholder={formData.sampleType === 'Clinical' ? 'e.g., Ward 3A, Room 205' : 'e.g., ICU Sink, Kitchen Counter'}
+            placeholder={formData.sampleType === 'clinical' ? 'e.g., Ward 3A, Room 205' : 'e.g., ICU Sink, Kitchen Counter'}
           />
           {errors.collectionSite && <p className="mt-1 text-sm text-red-600">{errors.collectionSite}</p>}
         </div>
@@ -313,8 +313,27 @@ export default function AddIsolateForm() {
             onChange={handleInputChange}
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           >
-            <option value="Normal">Normal</option>
-            <option value="Priority">Priority</option>
+            <option value="normal">Normal</option>
+            <option value="priority">Priority</option>
+          </select>
+        </div>
+
+        {/* Processing Status */}
+        <div>
+          <label htmlFor="processingStatus" className="block text-sm font-medium text-gray-700 mb-1">
+            Processing Status
+          </label>
+          <select
+            id="processingStatus"
+            name="processingStatus"
+            value={formData.processingStatus}
+            onChange={handleInputChange}
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          >
+            <option value="to be sequenced">To Be Sequenced</option>
+            <option value="genome sequenced">Genome Sequenced</option>
+            <option value="genomics processing">Genomics Processing</option>
+            <option value="genomics completed">Genomics Completed</option>
           </select>
         </div>
 

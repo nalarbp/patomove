@@ -10,11 +10,11 @@ interface CsvRow {
 interface ParsedSample {
   id: string;
   label: string;
-  sampleType: 'Clinical' | 'Environmental';
+  sampleType: 'clinical' | 'environmental';
   collectionSource: string;
   collectionSite: string;
   collectionDate: string;
-  priority: 'Normal' | 'Priority';
+  priority: 'normal' | 'priority';
   notes: string;
   status: 'pending' | 'selected' | 'completed';
 }
@@ -61,11 +61,11 @@ export default function CsvSampleList() {
       const parsedSamples: ParsedSample[] = data.map((row, index) => ({
         id: `csv-${index}`,
         label: row['Sample ID'] || row['label'] || `Sample-${index + 1}`,
-        sampleType: (row['Sample Type'] || row['sampleType'] || 'Clinical') as 'Clinical' | 'Environmental',
+        sampleType: (row['Sample Type'] || row['sampleType'] || 'clinical').toLowerCase() as 'clinical' | 'environmental',
         collectionSource: row['Collection Source'] || row['collectionSource'] || '',
         collectionSite: row['Collection Site'] || row['collectionSite'] || '',
         collectionDate: row['Collection Date'] || row['collectionDate'] || '',
-        priority: (row['Priority'] || row['priority'] || 'Normal') as 'Normal' | 'Priority',
+        priority: (row['Priority'] || row['priority'] || 'normal').toLowerCase() as 'normal' | 'priority',
         notes: row['Notes'] || row['notes'] || '',
         status: 'pending'
       }));
@@ -118,7 +118,7 @@ export default function CsvSampleList() {
 
   const downloadTemplate = () => {
     const csvContent = 'Sample ID,Sample Type,Collection Source,Collection Site,Collection Date,Priority,Notes\n' +
-      'LAB-2024-001,Clinical,blood,"Ward 3A Room 205",2024-01-15,Normal,Sample collection notes';
+      'LAB-2024-001,clinical,blood,"Ward 3A Room 205",2024-01-15,normal,Sample collection notes';
     
     const blob = new Blob([csvContent], { type: 'text/csv' });
     const url = URL.createObjectURL(blob);

@@ -39,6 +39,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
     const {
       label,
+      sampleType,
       collectionSource,
       collectionSite,
       collectionDate,
@@ -48,12 +49,15 @@ export async function POST(request: NextRequest) {
       phenotypeId,
       priority,
       processingStatus,
-      notes
+      notes,
+      createdBy,
+      updatedBy
     } = body
 
     const isolate = await prisma.isolate.create({
       data: {
         label,
+        sampleType,
         collectionSource,
         collectionSite,
         collectionDate: new Date(collectionDate),
@@ -63,7 +67,9 @@ export async function POST(request: NextRequest) {
         phenotypeId,
         priority,
         processingStatus,
-        notes
+        notes,
+        createdBy,
+        updatedBy
       },
       include: {
         organization: true,

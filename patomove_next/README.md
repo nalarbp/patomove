@@ -67,14 +67,16 @@ Instead of starting with genomics, we prioritize clinical phenotypes (MIC values
 
 ## Progress Made
 
-### ✅ Completed
+### ✅ December 2024 Completed
 1. Project initialization with secure dependency versions
-2. **Enhanced database schema with schema constraints**
-   - **sampleType field**: Enforces Clinical/Environmental classification at schema level
+2. **Enhanced database schema with standardized lowercase values**
+   - **sampleType field**: `'clinical' | 'environmental'` (lowercase standardization)
+   - **priority field**: `'normal' | 'priority'` (lowercase standardization)  
+   - **processingStatus field**: Genomics-focused stages - `'to be sequenced' | 'genome sequenced' | 'genomics processing' | 'genomics completed'`
    - **Audit trail fields**: createdBy/updatedBy for user tracking
    - **Foreign key constraints**: orgId required, conditional patientId/environmentId based on sampleType
    - **Schema validation**: Business logic enforces exactly one of patientId OR environmentId
-   - **Fresh database reset mechanism**: Enhanced reset_db.sh with auto-seeding (50 samples)
+   - **Complete database reset script**: Single command `./reset_db.sh` handles everything
 3. **Database and API layer complete**
    - Prisma 6.1.0 (stable version) with SQLite for development
    - All models updated with new schema constraints
@@ -109,17 +111,24 @@ Instead of starting with genomics, we prioritize clinical phenotypes (MIC values
    - Card-based layout with proper navigation links to individual isolate pages
    - Pagination system (10 per page)
    - Integration with updated schema fields
-8. **Complete Sample Management System**
+8. **Complete Sample Management System with Standardized Schema**
    - **Two-Panel Interface**: CSV upload (left) + Individual form (right) in unified workflow
    - **CSV Import with Manual Curation**: Upload CSV → Click samples to prefill form → Review and submit individually
    - **Searchable Dropdowns**: Organization/Patient/Environment selectors with "Create New" functionality
    - **Foreign Key Dependency Management**: Create missing dependencies via modal forms to solve chicken-egg problems
    - **Schema-Compliant Validation**: Real-time error checking with sampleType-based conditional requirements
-   - **Navigation Warnings**: Alerts when leaving page with uploaded CSV data to prevent accidental loss
+   - **Navigation Warnings**: Alerts when leaving page with uploaded CSV data (browser refresh/close + internal navigation)
    - **Status Tracking**: Visual indicators for pending/selected/completed samples with form communication
-   - **Template Download**: CSV template generation for proper data formatting
-9. Auth-agnostic architecture with audit trail ready
-10. Professional UI with no emojis, flexbox layouts, scientific standards
+   - **Template Download**: CSV template generation with lowercase standardized values
+   - **Lowercase Schema Standardization**: All enum values converted to lowercase for consistency
+   - **Genomics-Focused Workflow**: Processing stages aligned with sequencing pipeline instead of traditional culture workflow
+9. **Fixed hardcoded data issues and cache problems**
+   - **Browse Isolates**: Updated from 499 mock isolates to real API data with `cache: 'no-store'`
+   - **API Integration**: All components now use real database instead of hardcoded values
+   - **Cache Management**: Clear Next.js cache and browser cache resolution strategies
+   - **Database Verification**: Tools to verify actual vs displayed data consistency
+10. Auth-agnostic architecture with audit trail ready  
+11. Professional UI with no emojis, flexbox layouts, scientific standards
 
 ### 📋 Next Steps
 1. **Analytics dashboard** - genomic insights, resistance patterns, QC metrics visualizations

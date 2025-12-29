@@ -13,11 +13,11 @@ interface CsvRow {
 interface ParsedIsolate {
   id: string; // temp ID for tracking
   label: string;
-  sampleType: 'Clinical' | 'Environmental';
+  sampleType: 'clinical' | 'environmental';
   collectionSource: string;
   collectionSite: string;
   collectionDate: string;
-  priority: 'Normal' | 'Priority';
+  priority: 'normal' | 'priority';
   notes: string;
   orgId: string;
   patientId: string;

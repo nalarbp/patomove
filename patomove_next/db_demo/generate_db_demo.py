@@ -34,8 +34,8 @@ class DemoDataGenerator:
             "blood", "urine", "wound", "sputum", "CSF", "stool", 
             "throat", "nasal", "skin", "catheter", "abscess", "bile"
         ]
-        self.priorities = ["routine", "urgent", "stat"]
-        self.statuses = ["received", "processing", "complete"]
+        self.priorities = ["normal", "priority"]
+        self.statuses = ["to be sequenced", "genome sequenced", "genomics processing", "genomics completed"]
         self.species_list = [
             "Escherichia coli", "Klebsiella pneumoniae", "Staphylococcus aureus",
             "Enterococcus faecium", "Acinetobacter baumannii", "Pseudomonas aeruginosa",
@@ -285,12 +285,12 @@ class DemoDataGenerator:
             
             # 75% human, 25% environmental
             if i % 4 == 0:  # Environmental
-                sample_type = "Environmental"
+                sample_type = "environmental"
                 collection_source = "environmental"
                 patient_id = None
                 environment_id = random.choice(environment_ids)
             else:  # Human
-                sample_type = "Clinical"
+                sample_type = "clinical"
                 collection_source = "clinical" 
                 patient_id = random.choice(patient_ids)
                 environment_id = None

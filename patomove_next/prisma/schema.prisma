@@ -11,7 +11,7 @@ datasource db {
 model Isolate {
   id               String                    @id @default(uuid())
   label            String
-  sampleType       String                    // 'Clinical' | 'Environmental'
+  sampleType       String                    // 'clinical' | 'environmental'
   phenotypeId      String?
   collectionSource String
   patientId        String?
