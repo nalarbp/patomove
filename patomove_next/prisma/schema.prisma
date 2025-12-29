@@ -1,0 +1,193 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Isolate {
+  id               String                    @id @default(uuid())
+  label            String
+  sampleType       String                    // 'Clinical' | 'Environmental'
+  phenotypeId      String?
+  collectionSource String
+  patientId        String?
+  environmentId    String?
+  orgId            String
+  collectionSite   String
+  collectionDate   DateTime
+  priority         String?
+  processingStatus String?
+  notes            String?
+  createdBy        String?                   // User ID who created
+  updatedBy        String?                   // User ID who last updated
+  createdAt        DateTime                  @default(now())
+  updatedAt        DateTime                  @updatedAt
+  genomicData      GenomicData[]
+  environment      Environment?              @relation(fields: [environmentId], references: [id])
+  organization     Organization              @relation(fields: [orgId], references: [id])
+  patient          Patient?                  @relation(fields: [patientId], references: [id])
+  phenotypeProfile PhenotypeProfile?         @relation(fields: [phenotypeId], references: [id])
+  treatments       IsolateTreatmentOutcome[]
+
+  @@index([phenotypeId])
+  @@index([collectionDate])
+  @@index([orgId])
+  @@index([patientId])
+  @@index([environmentId])
+  @@index([sampleType])
+}
+
+model PhenotypeProfile {
+  id         String    @id @default(uuid())
+  species    String?
+  method     String?
+  testDate   DateTime?
+  confidence Float?
+  notes      String?
+  micData    String?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  isolates   Isolate[]
+}
+
+model GenomicData {
+  id                              String   @id @default(uuid())
+  isolateId                       String
+  checksumMd5                     String
+  sequencingDate                  DateTime
+  platform                        String
+  coverage                        Float?
+  species                         String?
+  speciesCanonical                String?
+  speciesIdentificationMethod     String?
+  speciesClassificationConfidence Float?
+  mlst                            String?
+  pipeline                        String?
+  pipelineVersion                 String?
+  cleanReadsQc                    String?
+  cleanAssemblyQc                 String?
+  detectedProteins                String?
+  notes                           String?
+  createdAt                       DateTime @default(now())
+  updatedAt                       DateTime @updatedAt
+  isolate                         Isolate  @relation(fields: [isolateId], references: [id])
+
+  @@index([isolateId])
+  @@index([pipeline])
+}
+
+model IsolateTreatmentOutcome {
+  id            String    @id @default(uuid())
+  isolateId     String
+  antibiotic    String
+  startDate     DateTime
+  endDate       DateTime?
+  outcome       String
+  clinicalNotes String?
+  createdAt     DateTime  @default(now())
+  isolate       Isolate   @relation(fields: [isolateId], references: [id])
+
+  @@index([isolateId])
+  @@index([outcome])
+}
+
+model ProteinRef {
+  uniprotId    String   @id
+  name         String
+  function     String?
+  sequenceHash String   @unique
+  category     String?
+  updatedAt    DateTime @updatedAt
+}
+
+model Organization {
+  id           String        @id @default(uuid())
+  name         String
+  type         String
+  code         String        @unique
+  isInternal   Boolean       @default(false)
+  contactEmail String?
+  contactPhone String?
+  address      String?
+  accessLevel  String        @default("viewer")
+  isActive     Boolean       @default(true)
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  environments Environment[]
+  isolates     Isolate[]
+  patients     Patient[]
+  patientAdts  PatientAdt[]
+  users        User[]
+
+  @@index([code])
+}
+
+model Patient {
+  id            String       @id @default(uuid())
+  dateOfBirth   DateTime?
+  sex           String?
+  clinicalNotes String?
+  orgId         String
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  isolates      Isolate[]
+  organization  Organization @relation(fields: [orgId], references: [id])
+  adtRecords    PatientAdt[]
+
+  @@index([orgId])
+}
+
+model PatientAdt {
+  id            String       @id @default(uuid())
+  patientId     String
+  orgId         String
+  admitDate     DateTime
+  dischargeDate DateTime?
+  transferType  String?
+  ward          String?
+  bed           String?
+  notes         String?
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  organization  Organization @relation(fields: [orgId], references: [id])
+  patient       Patient      @relation(fields: [patientId], references: [id])
+
+  @@index([patientId])
+  @@index([orgId])
+}
+
+model Environment {
+  id           String       @id @default(uuid())
+  siteName     String
+  facilityType String?
+  orgId        String
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+  organization Organization @relation(fields: [orgId], references: [id])
+  isolates     Isolate[]
+
+  @@index([orgId])
+}
+
+model User {
+  id             String       @id @default(uuid())
+  email          String       @unique
+  firstName      String
+  lastName       String
+  orgId          String
+  role           String       @default("viewer")
+  permissions    String?
+  isActive       Boolean      @default(true)
+  authProvider   String?
+  authProviderId String?
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  organization   Organization @relation(fields: [orgId], references: [id])
+
+  @@index([orgId])
+  @@index([authProviderId])
+}

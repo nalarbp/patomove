@@ -1,0 +1,222 @@
+{
+  "version": "1.0.0",
+  "darkMode": true,
+  "gridEnabling": false,
+  "detailLevel": "All",
+  "tablePositions": [
+    {
+      "name": "Isolate",
+      "schemaName": "public",
+      "x": 1720,
+      "y": 752
+    },
+    {
+      "name": "PhenotypeProfile",
+      "schemaName": "public",
+      "x": 1968,
+      "y": 1264
+    },
+    {
+      "name": "GenomicData",
+      "schemaName": "public",
+      "x": 2064,
+      "y": 48
+    },
+    {
+      "name": "IsolateTreatmentOutcome",
+      "schemaName": "public",
+      "x": 1170.0091912295766,
+      "y": 984.5053092451017
+    },
+    {
+      "name": "ProteinRef",
+      "schemaName": "public",
+      "x": 2416.746227907235,
+      "y": 48
+    },
+    {
+      "name": "Organization",
+      "schemaName": "public",
+      "x": 616,
+      "y": 472
+    },
+    {
+      "name": "Patient",
+      "schemaName": "public",
+      "x": 48,
+      "y": 1152
+    },
+    {
+      "name": "PatientAdt",
+      "schemaName": "public",
+      "x": 176,
+      "y": 712
+    },
+    {
+      "name": "Environment",
+      "schemaName": "public",
+      "x": 1000,
+      "y": 328
+    },
+    {
+      "name": "User",
+      "schemaName": "public",
+      "x": 256,
+      "y": 48
+    }
+  ],
+  "tableGroupCollapseStates": [],
+  "stickyNoteLayouts": [],
+  "referencePaths": [
+    {
+      "firstFieldNames": [
+        "isolateId"
+      ],
+      "firstTableName": "IsolateTreatmentOutcome",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "id"
+      ],
+      "secondTableName": "Isolate",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "isolateId"
+      ],
+      "firstTableName": "GenomicData",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "id"
+      ],
+      "secondTableName": "Isolate",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "phenotypeId"
+      ],
+      "firstTableName": "Isolate",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "id"
+      ],
+      "secondTableName": "PhenotypeProfile",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "patientId"
+      ],
+      "firstTableName": "Isolate",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "id"
+      ],
+      "secondTableName": "Patient",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "environmentId"
+      ],
+      "firstTableName": "Isolate",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "id"
+      ],
+      "secondTableName": "Environment",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "orgId"
+      ],
+      "firstTableName": "Isolate",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "id"
+      ],
+      "secondTableName": "Organization",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "patientId"
+      ],
+      "firstTableName": "PatientAdt",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "id"
+      ],
+      "secondTableName": "Patient",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "orgId"
+      ],
+      "firstTableName": "PatientAdt",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "id"
+      ],
+      "secondTableName": "Organization",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "orgId"
+      ],
+      "firstTableName": "Environment",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "id"
+      ],
+      "secondTableName": "Organization",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "orgId"
+      ],
+      "firstTableName": "User",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "id"
+      ],
+      "secondTableName": "Organization",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    }
+  ]
+}

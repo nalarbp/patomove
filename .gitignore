@@ -1,0 +1,88 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+*/.env
+*/.env.local
+*/.env.production
+*/.env.development
+
+# Build outputs
+.next/
+dist/
+build/
+*/.next/
+*/dist/
+*/build/
+
+# Database
+*.db
+*.sqlite
+prisma/migrations/
+*/prisma/migrations/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*/logs/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# AGX settings
+.agx_settings.md
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*/tmp/
+*/temp/
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# AWS deployment files
+.aws-sam/
+samconfig.toml
+
+# Bioinformatics data files
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.fasta
+*.fa
+*.sam
+*.bam
+*.vcf
+*.gbk
+*.gff
+*.bed

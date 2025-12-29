@@ -1,0 +1,2639 @@
+1. Nat Commun. 2025 Dec 12;16(1):11251. doi: 10.1038/s41467-025-66118-8.
+
+Vancomycin heteroresistance (hVISA) in MRSA links to treatment failure and 
+supports a revised PAP-AUC threshold.
+
+Fatsis-Kavalopoulos N(#)(1), Kim YK(#)(2), Chong YP(3), Bae S(3), Lim SY(3), Kim 
+YS(4), Andersson DI(5).
+
+Author information:
+(1)Department of Medical Biochemistry and Microbiology, Uppsala University, 
+Uppsala, Sweden.
+(2)Division of Infectious Diseases, Department of Internal Medicine, Hallym 
+University Sacred Heart Hospital, Hallym University College of Medicine, Seoul, 
+South Korea.
+(3)Division of Infectious Diseases, Department of Medicine, Asan Medical Center, 
+University of Ulsan College of Medicine, Seoul, South Korea.
+(4)Division of Infectious Diseases, Department of Medicine, Asan Medical Center, 
+University of Ulsan College of Medicine, Seoul, South Korea. yskim@amc.seoul.kr.
+(5)Department of Medical Biochemistry and Microbiology, Uppsala University, 
+Uppsala, Sweden. Dan.Andersson@imbim.uu.se.
+(#)Contributed equally
+
+Heteroresistance to vancomycin among methicillin-resistant Staphylococcus aureus 
+(MRSA) remains a diagnostic and therapeutic problem in clinical microbiology. In 
+this prospective cohort study of 842 adult patients with MRSA bacteremia in 
+S. Korea, we investigate the prevalence, risk factors, and clinical implications 
+of the heteroresistant vancomycin-intermediate S. aureus (hVISA) phenotype. The 
+hVISA phenotype is detected in 22% of cases. Multivariable regression analysis 
+reveals strong positive associations between hVISA and hospital-acquired 
+infection, prior anti-MRSA therapy, vancomycin exposure, and particularly 
+vancomycin MIC (odds ratio 15.2 per 1 mg/L increase, p < 0.001). Strikingly, 
+patients infected with hVISA strains have a lower 90-day mortality compared to 
+those with fully susceptible strains (hazard ratio 0.66, p = 0.019), suggesting 
+a possible trade-off between resistance and virulence. However, in hVISA strains 
+treated with vancomycin, outcomes reverse: mortality more than doubled (HR 2.5, 
+p < 0.001), bacteremia persisted longer, and relapse rates increased fivefold. 
+Using maximally selected rank statistics, we identify a PAP-AUC threshold of 
+0.65 as the first clinically derived breakpoint predictive of mortality risk, 
+providing an actionable definition of vancomycin heteroresistance. These 
+findings underscore the clinical relevance of hVISA, and support routine testing 
+for heteroresistance to inform treatment decisions.
+
+© 2025. The Author(s).
+
+DOI: 10.1038/s41467-025-66118-8
+PMCID: PMC12717272
+PMID: 41387691 [Indexed for MEDLINE]
+
+Conflict of interest statement: Competing interests: The authors declare no 
+competing interests.
+
+
+2. Sci Rep. 2025 Aug 4;15(1):28335. doi: 10.1038/s41598-025-13227-5.
+
+Factors associated with unfavourable treatment outcomes among patients with 
+Multidrug-resistant Tuberculosis receiving outpatients care.
+
+Vadakunnel MJ(1), Nehru VJ(1), Brammacharry U(1), Ramachandra V(1), Palavesam 
+S(1), Muthukumar A(2), Mani BR(3), Pradhabane G(4), Sriramkumar SR(5), 
+Venkatchalam K(6), Muthaiah M(7).
+
+Author information:
+(1)Institute of Basic Medical Sciences, University of Madras, Chennai, Tamil 
+Nadu, India.
+(2)Department of Environmental Science, Central University, Kasaragod, Kerala, 
+India.
+(3)Department of Biochemistry, Queen Mary's College, Madras, Tamil Nadu, India.
+(4)Department of Biotechnology, Indira Gandhi College of Arts and Science, 
+Indira Nagar, Puducherry, India.
+(5)Centre for Global Health Research, Saveetha Institute of Medical and 
+Technical Sciences, Saveetha Nagar, Thandalam, Chennai, 602105, India.
+(6)Department of Microbiology, State TB Training and Demonstration Centre, 
+Intermediate Reference Laboratory, Government Hospital for Chest Diseases, 
+Puducherry, India.
+(7)Department of Microbiology, State TB Training and Demonstration Centre, 
+Intermediate Reference Laboratory, Government Hospital for Chest Diseases, 
+Puducherry, India. drmuthurajm@gmail.com.
+
+Enhancing treatment outcomes for drug-resistant tuberculosis is a major global 
+priority for tuberculosis control programs. India has the highest number of 
+Multidrug-resistant Tuberculosis cases worldwide, yet no longitudinal studies 
+have assessed the factors affecting treatment outcomes in public sector 
+conditions. This study aimed to evaluate factors associated with ineffective 
+treatment outcomes in patients with Multidrug-resistant Tuberculosis receiving 
+outpatient care under the National Tuberculosis Elimination Programme in 
+Puducherry, India, from January 2020 to December 2023. We employed multivariate 
+regression methods to calculate odds ratios with 95% confidence intervals to 
+identify factors linked to unsuccessful treatment outcomes. Clinical data from 
+patients with Multidrug-resistant Tuberculosis revealed an overall treatment 
+success rate of 60.42%. The findings showed that patients undergoing retreatment 
+were more likely to experience unsuccessful outcomes. Additionally, co-infection 
+with HIV, as well as the use of alcohol or tobacco, increased the odds of 
+treatment failure. Patients with heteroresistant patterns had 2.72 times higher 
+odds of unsuccessful treatment outcomes compared to those with inferred and 
+true-resistant patterns. Furthermore, patients living in rural areas typically 
+experienced worse treatment outcomes than those in urban areas, with higher 
+rates of loss to follow-up. Patients on longer treatment regimens were also more 
+likely to be lost to follow-up compared to those on shorter regimens. Notably, 
+true resistance due to rpoB gene mutations accounted for 65.9% (29 out of 44) of 
+total deaths, with mutations at codon S450L contributing to 47.7% of these 
+fatalities, a finding that has not been reported elsewhere. The study 
+highlighted a strong association between heteroresistance in the rpoB gene and 
+poor treatment outcomes. These results emphasize the need for detailed 
+molecular-level studies to improve treatment outcomes by ensuring appropriate 
+drug selection for MDR/RR Tuberculosis. Additionally, further research is 
+necessary to determine the impact of heteroresistance on treatment outcomes in 
+individual patients.
+
+© 2025. The Author(s).
+
+DOI: 10.1038/s41598-025-13227-5
+PMCID: PMC12322265
+PMID: 40760140 [Indexed for MEDLINE]
+
+Conflict of interest statement: Declarations. Competing interests: The authors 
+declare no competing interests. Ethics approval and consent to participate: 
+Before starting the study, we received ethical clearance from the General 
+Hospital Institution Ethics Committee at the Indira Gandhi Government General 
+Hospital and Postgraduate Institute (Ref. No/GHIEC/2020/243; June 2020). Before 
+collecting data, we informed the hospital director and laboratory personnel 
+about the study objectives. Since we used secondary data, we did not need the 
+patients’ informed consent. We did not include personal identifiers on the data 
+collection sheet to protect the confidentiality of the participant’s records. 
+Additionally, access to secured data from participant records was restricted to 
+the investigators only.
+
+
+3. Crit Rev Microbiol. 2025 Nov;51(6):1330-1345. doi: 
+10.1080/1040841X.2025.2510245. Epub 2025 May 29.
+
+Antibiotic heteroresistance: an important factor in the failure of Helicobacter 
+Pylori eradication.
+
+Yu Y(1), Xue J(1), Zhang W(1), Ru S(2), Liu Y(1), Du K(1), Jiang F(1).
+
+Author information:
+(1)Department of Gastroenterology, Dongzhimen Hospital (Dongcheng Campus), 
+Beijing University of Chinese Medicine, Beijing, China.
+(2)Department of Gastroenterology, Dongzhimen Hospital (Tongzhou Campus), 
+Beijing University of Chinese Medicine, Beijing, China.
+
+Heteroresistance of bacteria refers to the presence of bacterial subgroups with 
+different antibiotic sensitivity in the same strain, affecting the bacterial 
+eradication effect. In recent years, heteroresistance has posed significant 
+challenges to H. pylori eradication failure, while little is known about 
+heteroresistance to H. pylori. Facing the current growing heteroresistance and 
+declining eradication rates of H. pylori, it is necessary to comprehensively 
+understand the epidemiology of heteroresistance as well as detection methods, 
+and elucidate the relevant resistance mechanisms to find a more ideal precision 
+treatment. In this study, we systematically review the current studies of H. 
+pylori heteroresistance and summarize the detection methods and possible 
+heteroresistance mechanisms. In brief, it is highly significant to further 
+strengthen the general understanding for H. pylori heteroresistance. 
+Accordingly, it is necessary to conduct extensive clinical studies on the 
+incidence of H. pylori heteroresistance and to refine the clinical definition of 
+H. pylori heteroresistance. The development of accurate and standardized 
+detection technology is the key to heteroresistance diagnosis. In addition, we 
+strongly advocate to further study the heteroresistance mechanism of H. pylori 
+in vivo and in vitro, which will advance the development of more effective 
+treatment strategies and facilitate the refinement of clinical guidelines.
+
+DOI: 10.1080/1040841X.2025.2510245
+PMID: 40438930 [Indexed for MEDLINE]
+
+
+4. Trends Microbiol. 2024 Nov;32(11):1042-1044. doi: 10.1016/j.tim.2024.09.008. 
+Epub 2024 Oct 1.
+
+Heteroresistance: a hidden cause behind antifungal prophylaxis failure.
+
+Hérivaux A(1), Papon N(1), Morio F(2).
+
+Author information:
+(1)Univ Angers, Univ Brest, IRF, SFR ICAT, F-49000 Angers, France.
+(2)Nantes Université, CHU Nantes, Cibles et Médicaments des Infections et de 
+l'Immunité, IICiMed, UR 1155, F-44000 Nantes, France. Electronic address: 
+Florent.MORIO@chu-nantes.fr.
+
+Invasive fungal infections in allogeneic hematopoietic stem cell transplant 
+(allo-HSCT) recipients on antimicrobial prophylaxis is a major cause of 
+infectious mortality, although its underlying pathophysiological mechanisms 
+remain unclear. In a new report, Zhai and colleagues provide evidence that 
+heteroresistance drives breakthrough Candida parapsilosis bloodstream infections 
+in allo-HSCT recipients receiving micafungin prophylaxis.
+
+Copyright © 2024 Elsevier Ltd. All rights reserved.
+
+DOI: 10.1016/j.tim.2024.09.008
+PMID: 39353801 [Indexed for MEDLINE]
+
+Conflict of interest statement: Declaration of interests No interests are 
+declared.
+
+
+5. J Antimicrob Chemother. 2024 May 2;79(5):1051-1059. doi: 10.1093/jac/dkae072.
+
+Impact of the phenotypic expression of temocillin resistance in Escherichia coli 
+on temocillin efficacy in a murine peritonitis model.
+
+Mallart E(1), Guerin F(2)(3), Amoura A(1), Le Scouarnec M(3), Hamon A(1), El 
+Meouche I(1), Chau F(1), Lefort A(1)(4), Fantin B(1)(4), Cattoir V(2)(3), de 
+Lastours V(1)(4).
+
+Author information:
+(1)IAME Research Group, UMR1137 INSERM and Uiversité Paris Cité, F-75018 Paris, 
+France.
+(2)UMR1230, INSERM and Université Rennes 1, F-35043 Rennes, France.
+(3)Service de Bactériologie-Hygiène Hospitalière & CNR de la Résistance aux 
+Antibiotiques (laboratoire associé 'Entérocoques'), CHU Pontchaillou, F-35033 
+Rennes, France.
+(4)Service de Médecine Interne, Hôpital Beaujon, AP-HP, Université Paris Cité, 
+F-92210 Clichy, France.
+
+BACKGROUND: Temocillin is a narrow spectrum β-lactam active against MDR 
+Enterobacterales. Mechanisms of acquired resistance to temocillin are poorly 
+understood. We analysed resistance mechanisms in clinical isolates of 
+Escherichia coli and evaluated their impact on temocillin efficacy in vitro and 
+in a murine peritonitis model.
+METHODS: Two sets of isogenic clinical E. coli strains were studied: a 
+susceptible isolate (MLTEM16S) and its resistant derivative, MLTEM16R (mutation 
+in nmpC porin gene); and temocillin-resistant derivatives of E. coli CFT073: 
+CFT-ΔnmpC (nmpC deletion), CFTbaeS-TP and CFTbaeS-AP (two different mutations in 
+the baeS efflux-pump gene).Fitness cost, time-kill curves and phenotypic 
+expression of resistance were determined. Temocillin efficacy was assessed in a 
+murine peritonitis model.
+RESULTS: MICs of temocillin were 16 and 64 mg/L for MLTEM16S and MLTEM16R, 
+respectively, and 8, 128, 256 and 256 mg/L for E. coli-CFT073, CFT-ΔnmpC, 
+CFTbaeS-TP and CFTbaeS-AP, respectively. No fitness cost of resistance was 
+evidenced. All resistant strains showed heteroresistant profiles, except for 
+CFTbaeS-AP, which displayed a homogeneous pattern. In vitro, temocillin was 
+bactericidal against MLTEM16R, CFT-ΔnmpC, CFTbaeS-TP and CFTbaeS-AP at 128, 256, 
+512 and 512 mg/L, respectively. In vivo, temocillin was as effective as 
+cefotaxime against MLTEM16R, CFT-ΔnmpC and CFTbaeS-TP, but inefficient against 
+CFTbaeS-AP (100% mortality).
+CONCLUSIONS: Heteroresistant NmpC porin alteration and active efflux 
+modification do not influence temocillin efficacy despite high MIC values, 
+unfavourable pharmacokinetic/pharmacodynamic conditions and the absence of 
+fitness cost, whereas homogeneously expressed BaeS efflux pump alteration 
+yielding similar MICs leads to temocillin inefficacy. MIC as sole predictor of 
+temocillin efficacy should be used with caution.
+
+© The Author(s) 2024. Published by Oxford University Press on behalf of British 
+Society for Antimicrobial Chemotherapy. All rights reserved. For commercial 
+re-use, please contact reprints@oup.com for reprints and translation rights for 
+reprints. All other permissions can be obtained through our RightsLink service 
+via the Permissions link on the article page on our site—for further information 
+please contact journals.permissions@oup.com.
+
+DOI: 10.1093/jac/dkae072
+PMID: 38501355 [Indexed for MEDLINE]
+
+
+6. Clin Ther. 2024 Jun;46(6):444-450. doi: 10.1016/j.clinthera.2024.01.012. Epub 
+2024 Mar 15.
+
+Clinical Impact of Vancomycin MIC on Outcomes in Patients With 
+Coagulase-negative Staphylococcal Bacteremia.
+
+Wheat W(1), Simiyu B(1), Andonie G(2), Bellfi L(1).
+
+Author information:
+(1)University Medical Center New Orleans, New Orleans, Louisiana, USA.
+(2)University Medical Center New Orleans, New Orleans, Louisiana, USA; 
+University of Louisiana Monroe College of Pharmacy, Monroe, Louisiana, USA. 
+Electronic address: Gabriela.Andonie@lcmchealth.org.
+
+PURPOSE: Coagulase-negative staphylococci (CoNS) are Gram-positive organisms 
+that are a known component of normal skin flora and the most common cause of 
+nosocomial bacteremia. For CoNS species, the vancomycin MIC breakpoint for 
+susceptibility set by the Clinical and Laboratory Standards Institute is ≤4 
+µg/mL. There has been published reports of vancomycin heteroresistance in CoNS 
+with vancomycin MICs of 2 to 4 µg/mL. The aim of this retrospective cohort 
+analysis was to assess the clinical impact of vancomycin MICs <2 µg/mL versus ≥2 
+µg/mL in adult patients with CoNS bloodstream infections.
+METHODS: Adult patients admitted to University Medical Center New Orleans with a 
+blood culture positive for CoNS were assessed. The primary outcome was 
+difference in 30-day mortality. Secondary outcomes were in-hospital, all-cause 
+mortality; duration of bacteremia; hospital length of stay; and percentage of 
+oxacillin-resistant CoNS.
+FINDINGS: There was no difference in mortality in the vancomycin MIC <2 µg/mL 
+group versus the vancomycin MIC ≥2 µg/mL group at 30 days (15.4% vs 17.4%; P = 
+1). In-hospital, all-cause mortality was also not different between groups 
+(11.5% vs 13%; P = 1). Hospital length of stay between groups was 28.2 days 
+versus 21 days (P = 0.692). Median duration of bacteremia was 1 day in both 
+groups (P = 0.975), and median scheduled duration of antibiotic therapy was 14.9 
+days and 19.5 days (P = 0.385). The source and mode of acquisition of CoNS were 
+similar between groups. Of all CoNS isolates, 58.7% (44 of 75) were oxacillin 
+resistant. Staphylococcus epidermidis was the most common CoNS species at 66.7% 
+(50 of 75). Of all isolates, 30.7% (23 of 75) had a vancomycin MIC ≥2 µg/mL, and 
+87% (20 of 23) of these were S. epidermidis. There was a higher percentage of S. 
+epidermidis in the vancomycin MIC ≥2 µg/mL group than in the MIC <2 µg/mL group 
+(87% vs 57.7%; P = 0.012). CoNS with a vancomycin MIC ≥2 µg/mL were also more 
+likely to be oxacillin resistant (78.3% vs 50%; P = 0.005).
+IMPLICATIONS: There was no difference in clinical outcomes in adult patients 
+with a CoNS bloodstream infection with a vancomycin MIC <2 µg/mL versus ≥2 
+µg/mL. At present, vancomycin remains appropriate empiric therapy for CoNS 
+bloodstream infection. Further research is needed to determine if there is a 
+true clinical impact of a vancomycin MIC ≥2 µg/mL in CoNS infections.
+
+Copyright © 2024 Elsevier Inc. All rights reserved.
+
+DOI: 10.1016/j.clinthera.2024.01.012
+PMID: 38493003 [Indexed for MEDLINE]
+
+Conflict of interest statement: Declaration of competing interest None declared.
+
+
+7. Indian J Gastroenterol. 2023 Dec;42(6):766-779. doi: 10.1007/s12664-023-01448-3. 
+Epub 2023 Sep 22.
+
+Current paradigms in the management of refractory Helicobacter pylori infection.
+
+Jearth V(1), Panigrahi MK(2).
+
+Author information:
+(1)Department of Gastroenterology, Postgraduate Institute of Medical Education 
+and Research, Chandigarh, 160 012, India.
+(2)Department of Gastroenterology, All India Institute of Medical Sciences, 
+Sijua, Patrapada, Bhubaneswar, 751 019, India. manaskumarpanigrahi@gmail.com.
+
+Helicobacter pylori is the most prevalent chronic bacterial infection, with 
+approximately half of the world's population estimated to be colonized. The 
+World Health Organization (WHO) has classified Helicobacter pylori as a class-I 
+carcinogen. All main society guidelines recommend its eradication in infected 
+individuals. The global trend indicates that eradication rates are decreasing 
+annually and the likelihood of eradication decreases with each unsuccessful 
+therapeutic attempt. Resistance to antibiotics in H. pylori strains is the 
+leading cause for eradication failure. Still, drug resistance and treatment 
+failure may be complex, multi-dimensional and associated with several other 
+factors. Knowledge of these factors can aid in optimizing eradication rates. 
+This review will focus on the factors associated with refractory H. pylori, with 
+a particular emphasis on antibiotic resistance mechanisms and their clinical 
+implications. Also, the most recent literature and recommendations available for 
+determining an appropriate regimen after the failure of the first attempt at 
+eradication will be discussed.
+
+© 2023. Indian Society of Gastroenterology.
+
+DOI: 10.1007/s12664-023-01448-3
+PMID: 37737326 [Indexed for MEDLINE]
+
+
+8. Int J Mycobacteriol. 2023 Jul-Sep;12(3):294-298. doi: 10.4103/ijmy.ijmy_116_23.
+
+Fluoroquinolone resistance mutations among Mycobacterium tuberculosis and their 
+interconnection with treatment outcome.
+
+Dixit R(1), Mohan E(1), Gupta A(1), Gupta PS(2), Patni T(3), Goyal M(1), Meena 
+RK(1).
+
+Author information:
+(1)Department of Respiratory Medicine, J. L. N. Medical College, Ajmer, 
+Rajasthan, India.
+(2)Department of Microbiology, J. L. N. Medical College, Ajmer, Rajasthan, 
+India.
+(3)State TB Demonstration Center, JLN Medical College, Ajmer, Rajasthan, India.
+
+BACKGROUND: Fluoroquinolone (FQ) antibiotics are among the most potent 
+second-line antitubercular drugs these days. The aim of the study was to analyze 
+the frequency and pattern of genetic mutation in preextensive (pre-XDR) and 
+extensively drug-resistant Mycobacterium tuberculosis using second-line line 
+probe assay (LPA) and to compare drug-resistant mutations with different 
+treatment outcomes.
+METHODS: Sputum, lymph node aspirate, and cold accesses from patients with 
+rifampicin-resistant Tuberculosis (TB) were subjected to first-line and 
+second-line LPA (Genotype MTBDRsl by Hain Life Science, Germany) to assess 
+additional drug resistance to fluoroquinolones (levofloxacin and moxifloxacin). 
+Final treatment outcomes as per the National TB Elimination Program were 
+assessed and compared with the mutation profile.
+RESULTS: One hundred and fifty subjects were observed to have mutations 
+associated with resistance to FQs and constituted the final study population. 
+The most frequent mutation observed among GyrA drug resistance mutation was D94G 
+(Gyr A MUT3C, 44/150, 66%) corresponding to high-level resistance to 
+levofloxacin and moxifloxacin. The same mutation was associated with poor 
+treatment outcome as died or treatment failure (odds ratio 2.50, relative risk 
+1.67, P = 0.043). The most common hetero-resistance mutation pattern observed in 
+GyrA gene was wild type plus Asp94Gly mutation in 24.6% of isolates.
+CONCLUSIONS: GyrA MUT3C hybridization corresponding to single-point mutation of 
+aspartic acid to glycine at codon 94 constitutes the most common mutation in 
+GyrA gene locus in M. tuberculosis with significant association with treatment 
+outcome as died compared to those with treatment outcome as cured.
+
+DOI: 10.4103/ijmy.ijmy_116_23
+PMID: 37721235 [Indexed for MEDLINE]
+
+Conflict of interest statement: None
+
+
+9. Dig Dis Sci. 2023 May;68(5):1691-1697. doi: 10.1007/s10620-023-07886-5. Epub 
+2023 Mar 1.
+
+Why the Vonoprazan Helicobacter pylori Therapies in the US-European Trial 
+Produced Unacceptable Cure Rates.
+
+Graham DY(1).
+
+Author information:
+(1)Department of Medicine, Michael E. DeBakey Veterans Affairs Medical Center 
+and Baylor College of Medicine Houston, 2002 Holcombe Blvd (111D), Houston, TX, 
+77030, USA. dgraham@bcm.edu.
+
+INTRODUCTION: Helicobacter pylori infects a large percentage of the world's 
+population and is etiologically related to gastric cancer. The U.S. Food and 
+Drug Administration recently approved two 14-day vonoprazan-containing regimens 
+(vonoprazan-amoxicillin with or without clarithromycin) for H. pylori infections 
+in the United States/Europe.
+METHODS: We critically reviewed the trial methods to discover why the results 
+were unacceptable low [i.e., no regimen achieved clinically acceptable (≥ 90%) 
+or even conditionally acceptable cure rates (≥ 85%)]. Cure rates with antibiotic 
+susceptible strains were 84.7 for vonoprazan triple therapy, 78.5 for 
+vonoprazan-amoxicillin, and 78.7 for lansoprazole triple therapy, respectively. 
+As was previously shown in Japan, the benefit from adding clarithromycin to 
+vonoprazan-amoxicillin was minimal and the majority of the clarithromycin 
+administered was unnecessary.
+RESULTS: The possible reasons for failure to achieve high cure rates discussed 
+include (a) reduced intragastric antibiotic concentrations, (b) an increase in 
+heteroresistance, and (c) failure to achieve an intragastric pH conducive for 
+amoxicillin to eradicate the infection. In addition, there was no pilot study or 
+other attempt to optimize any regimen.
+CONCLUSION: The most likely reason for failure was failure to achieve high 
+intragastric concentrations of antibiotics or to achieve an intragastric pH 
+conducive for amoxicillin to be active. Importantly, vonoprazan triple therapy 
+resulted in > 10 tons of unneeded clarithromycin/million courses of vonoprazan 
+triple therapy. Antibiotic misuse combined with low cure rates suggest that 
+vonoprazan-clarithromycin triple therapies should not be prescribed for H. 
+pylori infection. Dual vonoprazan-amoxicillin therapy has proven effective 
+elsewhere and after optimization may eventually prove useful in the U.S./Europe.
+
+© 2023. This is a U.S. Government work and not under copyright protection in the 
+US; foreign copyright protection may apply.
+
+DOI: 10.1007/s10620-023-07886-5
+PMCID: PMC11808558
+PMID: 36856926 [Indexed for MEDLINE]
+
+Conflict of interest statement: Dr. Graham is a consultant for RedHill Biopharma 
+and Phathom Pharmaceuticals regarding novel H. pylori therapies and has received 
+research support for culture of Helicobacter pylori. He is also a consultant 
+with Janssen Research & Development regarding potential gastrointestinal effects 
+of drugs under development and has collaborated on research projects with 
+American Molecular regarding molecular diagnostics for H. pylori.
+
+
+10. J Antibiot (Tokyo). 2022 Nov;75(11):593-609. doi: 10.1038/s41429-022-00561-3. 
+Epub 2022 Sep 20.
+
+Causes of polymyxin treatment failure and new derivatives to fill the gap.
+
+Chiu S(#)(1), Hancock AM(#)(1), Schofner BW(#)(2), Sniezek KJ(#)(1), 
+Soto-Echevarria N(#)(2), Leon G(1), Sivaloganathan DM(3), Wan X(1), Brynildsen 
+MP(4)(5).
+
+Author information:
+(1)Department of Chemical and Biological Engineering, Princeton University, 
+Princeton, NJ, USA.
+(2)Department of Molecular Biology, Princeton University, Princeton, NJ, USA.
+(3)Program in Quantitative and Computational Biology, Princeton University, 
+Princeton, NJ, USA.
+(4)Department of Chemical and Biological Engineering, Princeton University, 
+Princeton, NJ, USA. mbrynild@princeton.edu.
+(5)Department of Molecular Biology, Princeton University, Princeton, NJ, USA. 
+mbrynild@princeton.edu.
+(#)Contributed equally
+
+Polymyxins are a class of antibiotics that were discovered in 1947 from programs 
+searching for compounds effective in the treatment of Gram-negative infections. 
+Produced by the Gram-positive bacterium Paenibacillus polymyxa and composed of a 
+cyclic peptide chain with a peptide-fatty acyl tail, polymyxins exert 
+bactericidal effects through membrane disruption. Currently, polymyxin B and 
+colistin (polymyxin E) have been developed for clinical use, where they are 
+reserved as "last-line" therapies for multidrug-resistant (MDR) infections. 
+Unfortunately, the incidences of strains resistant to polymyxins have been 
+increasing globally, and polymyxin heteroresistance has been gaining 
+appreciation as an important clinical challenge. These phenomena, along with 
+bacterial tolerance to this antibiotic class, constitute important contributors 
+to polymyxin treatment failure. Here, we review polymyxins and their mechanism 
+of action, summarize the current understanding of how polymyxin treatment fails, 
+and discuss how the next generation of polymyxins holds promise to invigorate 
+this antibiotic class.
+
+© 2022. The Author(s), under exclusive licence to the Japan Antibiotics Research 
+Association.
+
+DOI: 10.1038/s41429-022-00561-3
+PMID: 36123537 [Indexed for MEDLINE]
+
+
+11. Anaerobe. 2021 Dec;72:102463. doi: 10.1016/j.anaerobe.2021.102463. Epub 2021 Sep 
+28.
+
+Correlation between antibiotic resistance and clinical outcome of anaerobic 
+infections; mini-review.
+
+Dubreuil L(1), Veloo AC(2), Sóki J(3); ESCMID Study Group for Anaerobic 
+Infections (ESGAI).
+
+Author information:
+(1)University of Lille, France.
+(2)Department of Medical Microbiology, University Medical Center Groningen, 
+University of Groningen, the Netherlands.
+(3)Institute of Medical Microbiology, University of Szeged, Hungary. Electronic 
+address: soki.jozsef@med.u-szeged.hu.
+
+In anaerobic infections, the relationship between clinical failure and 
+antibiotic resistance is difficult to demonstrate, especially in mixed 
+anaerobic-aerobic infections. Single isolates of anaerobes in cases of 
+bacteraemia revealed that treatment failures were due to inappropriate therapy. 
+We review here cases, where the empiric treatment was unsuccessful due to 
+resistance of anaerobic bacteria to the administered agents and where the change 
+of the antibiotic allowed the patients to be cured. Many therapeutic failures 
+could be linked to the lack of timely detection of resistance, including 
+heteroresistance of the anaerobes. Disk diffusion or Etest methodology may be 
+suitable, at least for rapidly growing anaerobes, to detect both resistance and 
+heteroresistance to antibiotics widely used for empirical therapy.
+
+Copyright © 2021 Elsevier Ltd. All rights reserved.
+
+DOI: 10.1016/j.anaerobe.2021.102463
+PMID: 34597797 [Indexed for MEDLINE]
+
+Conflict of interest statement: Declaration of competing interest We declare no 
+conflict of interests.
+
+
+12. Microb Pathog. 2021 Nov;160:105162. doi: 10.1016/j.micpath.2021.105162. Epub 
+2021 Aug 28.
+
+Carbapenem-resistant K. pneumoniae exhibiting clinically undetected amikacin and 
+meropenem heteroresistance leads to treatment failure in a murine model of 
+infection.
+
+Zhang F(1), Ding M(1), Yan X(1), Bai J(1), Li Q(1), Zhang B(1), Liang Q(1), 
+Liang S(1), Wang G(1), Zhou Y(2).
+
+Author information:
+(1)Department of Pathogen Biology, School of Basic Medicine, Public Center of 
+Experimental Technology of Pathogen Biology Technology Platform, Southwest 
+Medical University, Luzhou, Sichuan, 646000, China.
+(2)Department of Pathogen Biology, School of Basic Medicine, Public Center of 
+Experimental Technology of Pathogen Biology Technology Platform, Southwest 
+Medical University, Luzhou, Sichuan, 646000, China. Electronic address: 
+yingshunzhou@swmu.edu.cn.
+
+Heteroresistance is a poorly understood mechanism of resistance which refers to 
+a phenomenon where there are different subpopulations of seemingly isogenic 
+bacteria which exhibit a range of susceptibilities to a particular antibiotic. 
+In the current study, we identified a multidrug-resistant, 
+carbapenemase-positive K. pneumoniae strain SWMUF35 which was classified as 
+susceptible to amikacin and resistant to meropenem by clinical diagnostics yet 
+harbored different subpopulations of phenotypically resistant cells, and has the 
+ability to form biofilm. Population analysis profile (PAP) indicated that 
+SWMUF35 showed heteroresistance towards amikacin and meropenem which was 
+considered as co-heteroresistant K. pneumoniae strain. In vitro experiments such 
+as dual PAP, dual Times-killing assays and checkerboard assay showed that 
+antibiotic combination therapy (amikacin combined with meropenem) can 
+effectively combat SWMUF35. Importantly, using an in vivo mouse model of 
+peritonitis, we found that amikacin or meropenem monotherapy was unable to 
+rescue mice infected with SWMUF35. Antibiotic combination therapy could be a 
+rational strategy to use clinically approved antibiotics when monotherapy would 
+fail. Furthermore, our data warn that antibiotic susceptibility testing results 
+may be unreliable due to undetected heteroresistance which can lead to treatment 
+failure and the detection of this phenotype is a prerequisite for a proper 
+choice of antibiotic to support a successful treatment outcome.
+
+Copyright © 2021 Elsevier Ltd. All rights reserved.
+
+DOI: 10.1016/j.micpath.2021.105162
+PMID: 34461245 [Indexed for MEDLINE]
+
+
+13. Tuberculosis (Edinb). 2021 Sep;130:102120. doi: 10.1016/j.tube.2021.102120. Epub 
+2021 Aug 14.
+
+Deep whole-genome sequencing reveals no evidence for heteroresistance 
+influencing treatment outcomes among drug-susceptible tuberculosis patients.
+
+Chen Y(1), Jiang Q(1), Zou J(2), Yang T(1), Liu Q(3), Luo G(1), Gan M(4), Jiang 
+Y(5), Takiff HE(6), Lu L(7), Gao Q(8).
+
+Author information:
+(1)Key Laboratory of Medical Molecular Virology (MOE/NHC/CAMS), School of Basic 
+Medical Sciences, Shanghai Medical College, Shanghai Institute of Infectious 
+Disease and Biosecurity, Shanghai Public Health Clinical Center, Fudan 
+University, Shanghai, China.
+(2)Songjiang District Center for Disease Control and Prevention, Shanghai, 
+201620, China.
+(3)Key Laboratory of Medical Molecular Virology (MOE/NHC/CAMS), School of Basic 
+Medical Sciences, Shanghai Medical College, Shanghai Institute of Infectious 
+Disease and Biosecurity, Shanghai Public Health Clinical Center, Fudan 
+University, Shanghai, China; Department of Immunology and Infectious Diseases, 
+Harvard T. H. Chan School of Public Health, Boston, MA, USA.
+(4)Molecular Medical Center, Children's Hospital of Fudan University, Shanghai, 
+China.
+(5)Shanghai Municipal Center for Disease Control and Prevention, Shanghai, 
+200336, China.
+(6)Department of Tuberculosis Control and Prevention, Shenzhen Nanshan Centre 
+for Chronic Disease Control, Shenzhen, China; Instituto Venezolano de 
+Investigaciones Cientificas (IVIC), Caracas, Venezuela.
+(7)Songjiang District Center for Disease Control and Prevention, Shanghai, 
+201620, China. Electronic address: luluyer-1194@163.com.
+(8)Key Laboratory of Medical Molecular Virology (MOE/NHC/CAMS), School of Basic 
+Medical Sciences, Shanghai Medical College, Shanghai Institute of Infectious 
+Disease and Biosecurity, Shanghai Public Health Clinical Center, Fudan 
+University, Shanghai, China. Electronic address: qiangao@fudan.edu.cn.
+
+The purpose of this study was to investigate the minimum level of 
+heteroresistance that predicts poor tuberculosis treatment outcomes. This 
+retrospective study enrolled 45 new tuberculosis patients with varied treatment 
+outcomes and 16 drug-susceptible retreatment cases. Pretreatment isolates from 
+these 61 patients were whole genome sequenced to detect heteroresistance. 
+Heteroresistance was not found in isolates from any of the new patients, but was 
+detected in isolates from retreatment patients who were nevertheless cured. The 
+results of our small series of patients suggest that heteroresistance <1%, the 
+threshold used to define resistance with the phenotypic proportion method, is 
+not associated with poor treatment outcomes.
+
+Copyright © 2021 Elsevier Ltd. All rights reserved.
+
+DOI: 10.1016/j.tube.2021.102120
+PMID: 34411889 [Indexed for MEDLINE]
+
+
+14. mSphere. 2020 Dec 23;5(6):e00884-20. doi: 10.1128/mSphere.00884-20.
+
+Analysis of Serial Multidrug-Resistant Tuberculosis Strains Causing Treatment 
+Failure and Within-Host Evolution by Whole-Genome Sequencing.
+
+Chen X(#)(1), He G(#)(2), Lin S(1), Wang S(1), Sun F(1), Chen J(#)(3), Zhang 
+W(#)(3)(4)(5)(6).
+
+Author information:
+(1)Department of Infectious Diseases, Huashan Hospital, Fudan University, 
+Shanghai, China.
+(2)Department of Infectious Diseases, Wenzhou Central Hospital, Affiliated 
+Dingli Clinical Institute of Wenzhou Medical University, Wenzhou, China.
+(3)Department of Infectious Diseases, Huashan Hospital, Fudan University, 
+Shanghai, China jiazhen_chen@163.com zhangwenhong@fudan.edu.cn.
+(4)State Key Laboratory of Genetic Engineering, School of Life Science, Fudan 
+University, Shanghai, China.
+(5)National Clinical Research Center for Aging and Medicine, Huashan Hospital, 
+Fudan University, Shanghai, China.
+(6)Key Laboratory of Medical Molecular Virology (MOE/MOH) and Institutes of 
+Biomedical Sciences, Shanghai Medical College, Fudan University, Shanghai, 
+China.
+(#)Contributed equally
+
+The cure rate of multidrug-resistant tuberculosis (MDR-TB) is relatively low in 
+China. The reasons for the treatment failure and within-host evolution during 
+treatment have not been sufficiently studied. All MDR-TB patients receiving 
+standard treatment from January 2014 to September 2016 at a designated TB 
+Hospital in Zhejiang Province were retrospectively included and grouped 
+according to their known treatment outcome. Clinical information was collected. 
+Baseline strains of all patients and serial strains of treatment-failure 
+patients were revived. Drug susceptibility tests (DSTs) of 14 drugs and single 
+nucleotide polymorphism (SNP) analysis based on whole-genome sequencing (WGS) 
+were performed. The genetic distance and within-host evolution were investigated 
+based on SNPs. In total, 20 treatment failure patients and 74 patients who 
+succeeded in treatment were included. The number of effective drugs for patients 
+who failed treatment was no more than three. Eighteen (90.0%) treatment-failure 
+patients were characterized by a continuous infection of the primary strain, of 
+which 14 patients (77.8%) developed phenotypic or genotypic acquired drug 
+resistance under ineffective treatment. Acquired resistance to amikacin and 
+moxifloxacin (2.0 mg/ml) was detected most frequently, in 5 and 4 patients, 
+respectively. The insufficient number of effective drugs in the combined 
+treatment regimen was the main reason for MDR-TB treatment failure. The study 
+emphasizes the importance of DST for second-line drugs when implementing the 
+second-line drug regimen in MDR-TB patients. For patients with risk factors for 
+MDR-TB, DST of second-line antituberculosis drugs should be performed at 
+initiation of treatment. Second-line drugs should be selected based on the 
+results of DST to avoid acquired resistance. WGS detects low-frequency 
+resistance mutations and heterogeneous resistance with high sensitivity, which 
+is of great significance for guiding clinical treatment and preventing acquired 
+resistance.IMPORTANCE Few studies have focused on the reasons for the low cure 
+rate of multidrug-resistant tuberculosis in China and within-host evolution 
+during treatment, which is of great significance for improving clinical 
+treatment regimens. Acquired resistance events were common during the 
+ineffective treatment, among which resistance to amikacin and high-level 
+moxifloxacin were the most common. The main reason for the treatment failure of 
+MDR-TB patients was insufficient effective drugs, which may lead to higher 
+levels of drug resistance in MDR-TB strains. Therefore, the study emphasizes the 
+importance of DST in the development of second-line treatment regimen when there 
+is a risk of MDR. By performing whole-genome sequencing of serial strains from 
+patients with treatment failure, we found that WGS can detect low-frequency 
+resistance mutations and heterogeneous resistance with high sensitivity. It is 
+thus recommended to conduct drug susceptibility tests at the beginning of 
+treatment and repeat the DST when the sputum bacteria remain positive.
+
+Copyright © 2020 Chen et al.
+
+DOI: 10.1128/mSphere.00884-20
+PMCID: PMC7763549
+PMID: 33361124 [Indexed for MEDLINE]
+
+
+15. Mycoses. 2021 Jan;64(1):78-85. doi: 10.1111/myc.13191. Epub 2020 Oct 15.
+
+Impact of tolerance to fluconazole on treatment response in Candida albicans 
+bloodstream infection.
+
+Levinson T(1)(2), Dahan A(3), Novikov A(1), Paran Y(1)(2), Berman J(3), Ben-Ami 
+R(1)(2).
+
+Author information:
+(1)Infectious Diseases Unit, Tel Aviv Sourasky Medical Center, Tel Aviv, Israel.
+(2)Sackler Faculty of Medicine, Tel Aviv University, Tel Aviv, Israel.
+(3)The George S. Wise Faculty of Life Sciences, Tel Aviv University, Tel Aviv, 
+Israel.
+
+BACKGROUND: Treatment of Candida albicans bloodstream infection with fluconazole 
+is associated with significant mortality despite in vitro susceptibility to the 
+drug.
+OBJECTIVES: We sought to determine whether tolerance to fluconazole is 
+predictive of treatment failure.
+METHODS: We reviewed patients with monomicrobial C albicans bloodstream 
+infection who received primary monotherapy with fluconazole. Tolerance to 
+fluconazole, defined as the fraction of growth above the MIC, was quantified 
+using the disc diffusion assay and digital image analyses. Survival analyses 
+were performed with host and treatment factors as predictive variables.
+RESULTS: Among 44 patients included in the study, all-cause mortality was 29.5% 
+at 30 days and 43.1% at 12 weeks. Forty-one isolates (93%) were susceptible to 
+fluconazole (MIC50, 0.5 mg/L). Fluconazole tolerance was strongly associated 
+with death for patients treated with fluconazole within 24 h of candidemia onset 
+(33.3% vs 0%; p = .007), but not among patients whose treatment was started 
+later. MIC did not correlate with survival, regardless of treatment delay. A Cox 
+regression model including time to treatment, tolerance to fluconazole, 
+fluconazole exposure and Pitt bacteraemia score provided good prediction of 
+treatment outcome (area under the receiver-operator curve, 0.82).
+CONCLUSIONS: In patients with C albicans bloodstream infection, tolerance 
+testing was predictive of fluconazole efficacy if the drug was started early. 
+Further study is required to validate the utility of this metric to guide 
+treatment choices.
+
+© 2020 Wiley-VCH GmbH.
+
+DOI: 10.1111/myc.13191
+PMCID: PMC7614594
+PMID: 33000505 [Indexed for MEDLINE]
+
+Conflict of interest statement: Conflict Of Interest The authors have no 
+conflict of interest to declare.
+
+
+16. Int J Infect Dis. 2020 Jun;95:22-27. doi: 10.1016/j.ijid.2020.03.056. Epub 2020 
+Apr 3.
+
+Prediction of the hidden genotype of mixed infection strains in Iranian 
+tuberculosis patients.
+
+Kargarpour Kamakoli M(1), Farmanfarmaei G(1), Masoumi M(1), Khanipour S(1), 
+Gharibzadeh S(2), Sola C(3), Fateh A(1), Siadat SD(1), Refregier G(3), Vaziri 
+F(4).
+
+Author information:
+(1)Department of Mycobacteriology and Pulmonary Research, Pasteur Institute of 
+Iran, Tehran, Iran; Microbiology Research Center (MRC), Pasteur Institute of 
+Iran, Tehran, Iran.
+(2)Department of Epidemiology and Biostatistics, Research Center for Emerging 
+and Reemerging Infectious Diseases, Pasteur Institute of Iran, Tehran, Iran.
+(3)Institut for Integrative Biology of the Cell (I2BC), CEA, CNRS, Univ. Paris 
+Sud, Université Paris-Saclay, Gif-sur-Yvette, France.
+(4)Department of Mycobacteriology and Pulmonary Research, Pasteur Institute of 
+Iran, Tehran, Iran; Microbiology Research Center (MRC), Pasteur Institute of 
+Iran, Tehran, Iran. Electronic address: farzam_vaziri@yahoo.com.
+
+BACKGROUND: Patients with mixed-strain Mycobacterium tuberculosis infections may 
+be at a high risk of poor treatment outcomes. However, the mechanisms through 
+which mixed infections affect the clinical manifestations are not well 
+recognized. Evidence suggests that failure to detect the pathogen diversity 
+within the host can influence the clinical results. We aimed to investigate the 
+effects of different genotypes in mixed infections and determine their 
+relationship with heteroresistance in the treatment of Iranian tuberculosis 
+patients.
+METHODS: One of the genotypes was identified in the culture and another genotype 
+pattern in the mixed infection was predicted by comparing the pattern of 
+MIRU-VNTR between the clinical specimens and their respective cultures in each 
+patient. For all patients, the drug susceptibility testing was carried out on 
+three single colonies from each clinical sample. The follow-up of patients was 
+carried out during six months of treatment.
+RESULTS: Based on MIRU-VNTR profiles of clinical samples, we showed that 55.6% 
+(25/45) of the Iranian patients included in the study had mixed infections. 
+Patients with mixed infections had a higher rate of treatment failure, compared 
+to others (P=0.03). By comparing clinical sample profiles to profiles obtained 
+after culture, we were able to distinguish between major and hidden genotypes. 
+Among hidden genotypes, Haarlem (L4.1.2) and Beijing (L2) were associated to 
+treatment failure (6/8 patients).
+CONCLUSIONS: To conclude, we propose a procedure using the MIRU-VNTR method to 
+identify the different genotypes in mixed infections. The present findings 
+suggest that genotypes with potentially higher pathogenicity may not be detected 
+when performing experimental culture in patients with mixed infections.
+
+Copyright © 2020 The Author(s). Published by Elsevier Ltd.. All rights reserved.
+
+DOI: 10.1016/j.ijid.2020.03.056
+PMID: 32251801 [Indexed for MEDLINE]
+
+
+17. Emerg Infect Dis. 2019 Nov;25(11):2120-2121. doi: 10.3201/eid2511.180638. Epub 
+2019 Nov 17.
+
+Drug-Susceptible and Multidrug-Resistant Mycobacterium tuberculosis in a Single 
+Patient.
+
+Baffoe-Bonnie A, Houpt ER, Turner L, Dodge D, Heysell SK.
+
+A patient who had initial infection with mixed strains of drug-susceptible and 
+multidrug-resistant tuberculosis was presumed to have acquired drug resistance 
+before confirmation that sequential strains were genotypically distinct. 
+Transmitted infection with mixed strains is likely underappreciated; identifying 
+these infections requires spoligotyping and whole-genome sequencing.
+
+DOI: 10.3201/eid2511.180638
+PMCID: PMC6810186
+PMID: 31454310 [Indexed for MEDLINE]
+
+
+18. Nat Rev Microbiol. 2019 Aug;17(8):479-496. doi: 10.1038/s41579-019-0218-1. Epub 
+2019 Jun 24.
+
+Mechanisms and clinical relevance of bacterial heteroresistance.
+
+Andersson DI(1), Nicoloff H(2), Hjort K(2).
+
+Author information:
+(1)Department of Medical Biochemistry and Microbiology, Uppsala University, 
+Uppsala, Sweden. dan.andersson@imbim.uu.se.
+(2)Department of Medical Biochemistry and Microbiology, Uppsala University, 
+Uppsala, Sweden.
+
+Antibiotic heteroresistance is a phenotype in which a bacterial isolate contains 
+subpopulations of cells that show a substantial reduction in antibiotic 
+susceptibility compared with the main population. Recent work indicates that 
+heteroresistance is very common for several different bacterial species and 
+antibiotic classes. The resistance phenotype is often unstable, and in the 
+absence of antibiotic pressure it rapidly reverts to susceptibility. A common 
+mechanistic explanation for the instability is the occurrence of genetically 
+unstable tandem amplifications of genes that cause resistance. Due to their 
+instability, low frequency and transient character, it is challenging to detect 
+and study these subpopulations, which often leads to difficulties in 
+unambiguously classifying bacteria as susceptible or resistant. Finally, in 
+vitro experiments, mathematical modelling, animal infection models and clinical 
+studies show that the resistant subpopulations can be enriched during antibiotic 
+exposure, and increasing evidence suggests that heteroresistance can lead to 
+treatment failure.
+
+DOI: 10.1038/s41579-019-0218-1
+PMID: 31235888 [Indexed for MEDLINE]
+
+
+19. PLoS Pathog. 2019 Jun 6;15(6):e1007726. doi: 10.1371/journal.ppat.1007726. 
+eCollection 2019 Jun.
+
+Heteroresistance: A cause of unexplained antibiotic treatment failure?
+
+Band VI(1)(2), Weiss DS(1)(2)(3).
+
+Author information:
+(1)Emory Antibiotic Resistance Center, Emory University, Atlanta, Georgia, 
+United States of America.
+(2)Emory Vaccine Center, Emory University, Atlanta, Georgia, United States of 
+America.
+(3)Division of Infectious Diseases, Department of Medicine, Emory University 
+School of Medicine, Emory University, Atlanta, Georgia, United States of 
+America.
+
+DOI: 10.1371/journal.ppat.1007726
+PMCID: PMC6553791
+PMID: 31170271 [Indexed for MEDLINE]
+
+Conflict of interest statement: I have read the journal's policy and have the 
+following conflicts: patent applications related to heteroresistance.
+
+
+20. New Microbiol. 2018 Oct;41(4):306-309. Epub 2018 Sep 25.
+
+Helicobacter pylori infection: antibiotic resistance and eradication rate in 
+patients with gastritis showing previous treatment failures.
+
+Mascellino MT(1), Oliva A(1), De Angelis M(1), Pontone S(2), Porowska B(3).
+
+Author information:
+(1)Department of Public Health and Infectious Diseases, Policlinico Umberto I° 
+Viale del Policlinico 155, 00161 ROME (Italy).
+(2)Department of Surgical Sciences, Policlinico Umberto I° Viale del Policlinico 
+155, 00161 ROME (Italy).
+(3)Department of Cardio-Thoracic ,Vascular, General Surgery and Organ 
+Transplants, Policlinico Umberto I° Viale del Policlinico 155, 00161 ROME 
+(Italy).
+
+Forty patients infected by Helicobacter pylori were studied. The treatment was 
+based on the positivity or negativity of cultures (tailored therapy or empiric 
+therapy). The eradication rate was 68% and 82% respectively. Genotypic 
+susceptibility testing proved very useful in case of heteroresistance or mixed 
+infections that represent a real problem possibly leading to a resistance 
+underestimation. Real-time PCR detected the resistant population at a very low 
+concentration not detectable by phenotypic tests. Bismuth quadruple therapy 
+(PPI, bismuth, metronidazole, tetracycline, PBMT) was effective in the Hp 
+eradication rate consistent with a high level of clarithromycin resistance.
+
+PMID: 30252924 [Indexed for MEDLINE]
+
+
+21. Biosci Trends. 2017;11(4):370-382. doi: 10.5582/bst.2017.01188.
+
+Intravenous polymyxins: Revival with puzzle.
+
+Yu Y(1), Fei A(1), Wu Z(1), Gao C(1), Pan S(1).
+
+Author information:
+(1)Department of Emergency, Xinhua Hospital Affiliated to Shanghai Jiaotong 
+University School of Medicine.
+
+With the increasing incidence of multi-drug resistant strains, especially 
+carbapenem resistant strains, polymyxsins (mainly colistin and polymyxin B) 
+based regimens seem to be a revival as an effective treatment of last resort in 
+these infections. Evidence from 47 clinical trials or case series we reviewed 
+showed that polymyxins based regimens are effective and have less toxicity 
+compared with previous trials. When used alone, the mortality of intravenous 
+polymyxsins ranged from 0% to 74.3%, clinical response (cure and improvement) 
+rate was 7-82.1%, and microbiological eradication was 27.3-73.9%. The main 
+reasons for the combination therapy are to get potential synergistic effects and 
+to prevent the selection of heteroresistant strains. Several studies showed 
+combination therapy seemed to be more effective than monotherapy, though a few 
+doubts remain. Clinically, polymyxsins can be used in combination with several 
+antibiotics, such as carberpenem, sulbactam, tigecycline, fosfomycin, 
+glycopeptide, rifampicin and so on, but the optimal combination regimen is yet 
+to be confirmed. The optimal dose of polymyxins is also controversial. With the 
+limited clinical evidence, it's suggested loading dose regimens may be more 
+effective, but more attention should be paid to adverse effects. Although 
+recommended in some studies, high dose polymxins regimens with inconsistent 
+clinical evidence need more trials to confirm. It is important to note that 
+concerning dosing regimens, colistin and polymyxin B are not quite the same. In 
+renal impaired patients polymyxin B should be prescribed without dosing 
+adjustment. Risk of renal failure may increase in the following situations, such 
+as the combination of intravenous colistin plus intravenous vancomycin, higher 
+doses-colistin, and intravenous colistin combined with inhalational colistin. In 
+conclusion, there're still controversies in combination regimens, dosing 
+strategies and so on. Prospective trials of lager sample size are needed.
+
+DOI: 10.5582/bst.2017.01188
+PMID: 28904326 [Indexed for MEDLINE]
+
+
+22. Eur J Clin Microbiol Infect Dis. 2017 Nov;36(11):2187-2191. doi: 
+10.1007/s10096-017-3044-2. Epub 2017 Jun 21.
+
+agr functionality affects clinical outcomes in patients with persistent 
+methicillin-resistant Staphylococcus aureus bacteraemia.
+
+Kang CK(1)(2), Kim YK(3), Jung SI(4), Park WB(2)(5), Song KH(1)(2), Park KH(4), 
+Choe PG(2)(5), Jang HC(6), Lee S(7), Kim YS(8), Kwak YG(9), Kwon KT(10), Kiem 
+S(11), Kim CJ(12), Kim ES(13)(14), Kim HB(1)(2); Korea INfectious Diseases 
+(KIND) study group.
+
+Author information:
+(1)Seoul National University Bundang Hospital, Gumi-ro 173 Beon-gil, Bundang-gu, 
+Seongnam, South Korea.
+(2)Seoul National University College of Medicine, Seoul, South Korea.
+(3)Department of Internal Medicine, Yonsei University Wonju College of Medicine, 
+Wonju, South Korea.
+(4)Chonnam National University Hospital, Gwangju, South Korea.
+(5)Seoul National University Hospital, Seoul, South Korea.
+(6)Chonnam National University Hwasun Hospital, Hwasun, South Korea.
+(7)Department of Internal Medicine, Pusan National University School of Medicine 
+and Medical Research Institute, Pusan National University Hospital, Busan, South 
+Korea.
+(8)Department of Internal Medicine, Chungnam National University School of 
+Medicine, Daejon, South Korea.
+(9)Inje University Ilsan Paik Hospital, Goyang, South Korea.
+(10)Daegu Fatima Hospital, Daegu, South Korea.
+(11)Inje University Haeundae Paik Hospital, Busan, South Korea.
+(12)Ehwa Women's University Hospital, Seoul, Republic of Korea.
+(13)Seoul National University Bundang Hospital, Gumi-ro 173 Beon-gil, 
+Bundang-gu, Seongnam, South Korea. eskim@snubh.org.
+(14)Seoul National University College of Medicine, Seoul, South Korea. 
+eskim@snubh.org.
+
+Methicillin-resistant Staphylococcus aureus bacteremia (MRSAB) often persists 
+despite appropriate antibiotic therapy. It is unclear what microbiological 
+factors contribute to poor clinical outcomes in persistent MRSAB (pMRSAB). We 
+aimed to identify clinical and microbiological risk factors for in-hospital 
+mortality in pMRSAB. We analysed MRSAB cases prospectively collected between 
+2009 and 2016 at 11 hospitals in Korea, defining cases of pMRSAB as MRSAB 
+lasting ≥5 days despite administration of effective antibiotics. The first blood 
+isolates from the pMRSAB cases were tested for staphylococcal cassette 
+chromosome mec type, staphylococcal protein A type, accessary gene regulator 
+(agr) type, genes for Panton-Valentine leukocidin and phenol-soluble 
+modulin-mec, vancomycin minimum inhibitory concentration, vancomycin 
+heteroresistance, and agr functionality. We also collected clinical information 
+for each case. Of 960 MRSAB cases, 152 pMRSAB were finally eligible. Univariable 
+analysis revealed that in-hospital mortality was significantly associated with 
+Charlson's comorbidity-weighted index (CCWI) score, Pitt bacteremia score, 
+sequential organ failure assessment score, presentation with septic shock, 
+pneumonia, agr dysfunction, and vancomycin heteroresistance. Bone and joint 
+infections were negatively associated with in-hospital mortality. Multivariable 
+analysis revealed the following independent risk factors for in-hospital 
+mortality: CCWI score [adjusted odds ratio (aOR), per one point, 1.25; 95% 
+confidence interval (CI), 1.08-1.44; P = 0.003), Pitt bacteremia score (aOR, per 
+one point, 1.33; 95% CI, 1.09-1.62; P = 0.005), non-eradicated foci of infection 
+(aOR, 3.12; 95% CI, 1.18-8.27; P = 0.022), and agr dysfunction (aOR, 2.48; 95% 
+CI, 1.12-5.47; P = 0.025). agr dysfunction is an independent risk factor for 
+in-hospital mortality in pMRSAB.
+
+DOI: 10.1007/s10096-017-3044-2
+PMID: 28639163 [Indexed for MEDLINE]
+
+
+23. Eur J Clin Microbiol Infect Dis. 2017 Aug;36(8):1473-1481. doi: 
+10.1007/s10096-017-2956-1. Epub 2017 Mar 23.
+
+Phenotypic changes of methicillin-resistant Staphylococcus aureus during 
+vancomycin therapy for persistent bacteraemia and related clinical outcome.
+
+Kim T(1), Kim ES(2), Park SY(3), Sung H(4), Kim MN(4), Kim SH(2), Lee SO(2), 
+Choi SH(2), Jeong JY(5), Woo JH(2), Chong YP(6), Kim YS(7).
+
+Author information:
+(1)Division of Infectious Diseases, Department of Internal Medicine, Gyeongsang 
+National University Hospital, 79, Gangnam-ro, Jinju, Gyeongsangnam-do, 52727, 
+Republic of Korea.
+(2)Department of Infectious Diseases, Asan Medical Center, University of Ulsan 
+College of Medicine, 88, Olympic-ro43-gil, Songpa-gu, Seoul, 138-736, Republic 
+of Korea.
+(3)Division of Infectious Diseases, Department of Internal Medicine, 
+Soonchunhyang University Seoul Hospital, Soonchunhyang University College of 
+Medicine, Seoul, Republic of Korea.
+(4)Department of Laboratory Medicine, Asan Medical Center, University of Ulsan 
+College of Medicine, Seoul, Republic of Korea.
+(5)Asan Institute for Life Sciences, Asan Medical Center, University of Ulsan 
+College of Medicine, Seoul, Republic of Korea.
+(6)Department of Infectious Diseases, Asan Medical Center, University of Ulsan 
+College of Medicine, 88, Olympic-ro43-gil, Songpa-gu, Seoul, 138-736, Republic 
+of Korea. drchong@amc.seoul.kr.
+(7)Department of Infectious Diseases, Asan Medical Center, University of Ulsan 
+College of Medicine, 88, Olympic-ro43-gil, Songpa-gu, Seoul, 138-736, Republic 
+of Korea. yskim@amc.seoul.kr.
+
+Persistent bacteraemia (PB) due to methicillin-resistant Staphylococcus aureus 
+(MRSA) that fails to respond to glycopeptide therapy is a well-documented 
+clinical problem. There are limited data on changes in agr functionality, 
+vancomycin susceptibility and heteroresistance during MRSA PB. Thus, the 
+frequency of these changes and their clinical significance remain unclear. Only 
+patients with MRSA PB (≥7 days) from a prospective cohort of S. aureus 
+bacteraemia were included. We collected isogenic paired strains and compared 
+vancomycin MIC, vancomycin heteroresistance, and agr functionality between 
+initial and final blood isolates. We also assessed the clinical outcome. A total 
+of 49 patients had MRSA PB over 22 months. Bacteraemia persisted for a median of 
+13 days and most patients (98%) received glycopeptide as initial therapy. Among 
+49 isogenic pairs, only one pair showed a vancomycin MIC increase ≥2-fold by 
+broth microdilution method, and only seven (14%) by E-test. Significant portions 
+of initial isolates had vancomycin heteroresistance (49%) and agr dysfunction 
+(76%). Development of vancomycin heteroresistance during PB occurred in four 
+(16%) among 25 initial vancomycin-susceptible isolates, and acquisition of agr 
+dysfunction occurred in two (16%) among 12 initial agr-functional isolates. 
+Changes in the opposite direction occasionally occurred. These phenotypic 
+changes during PB were not associated with mortality, whereas agr dysfunction of 
+the initial isolates was significantly associated with mortality. During MRSA 
+PB, phenotypic changes of MRSA isolates occurred occasionally under prolonged 
+vancomycin exposure but were not significantly associated with clinical outcome. 
+In contrast, initial agr dysfunction could be a predictor for mortality in MRSA 
+PB.
+
+DOI: 10.1007/s10096-017-2956-1
+PMID: 28337607 [Indexed for MEDLINE]
+
+
+24. J Infect Dis. 2016 Oct 15;214(8):1286-7. doi: 10.1093/infdis/jiw350. Epub 2016 
+Aug 4.
+
+Heteroresistance of Mycobacterium tuberculosis Strains May Be Associated More 
+Strongly With Poor Treatment Outcomes Than Within-Host Heterogeneity of M. 
+tuberculosis Infection.
+
+Chen L(1), Zhang J(1), Zhang H(2).
+
+Author information:
+(1)Department of Respiratory Medicine, Affiliated Hospital of Zunyi Medical 
+College, China.
+(2)Department of Respiratory Medicine, Affiliated Hospital of Zunyi Medical 
+College, China Z-BioMed, Rockville, Maryland.
+
+Comment in
+    J Infect Dis. 2016 Oct 15;214(8):1287-8. doi: 10.1093/infdis/jiw351.
+
+Comment on
+    J Infect Dis. 2016 Jun 1;213(11):1796-9. doi: 10.1093/infdis/jiw014.
+
+DOI: 10.1093/infdis/jiw350
+PMID: 27493236 [Indexed for MEDLINE]
+
+
+25. Eur J Clin Microbiol Infect Dis. 2016 Apr;35(4):625-31. doi: 
+10.1007/s10096-016-2581-4. Epub 2016 Jan 27.
+
+In vivo development of daptomycin resistance in vancomycin-susceptible 
+methicillin-resistant Staphylococcus aureus severe infections previously treated 
+with glycopeptides.
+
+Capone A(1), Cafiso V(2), Campanile F(3), Parisi G(4), Mariani B(4), Petrosillo 
+N(1), Stefani S(3).
+
+Author information:
+(1)National Institute for Infectious Diseases "L. Spallanzani", Rome, Italy.
+(2)Department of Biomedical and Biotechnological Sciences, MMAR Laboratory, 
+University of Catania, Catania, Italy. v.cafiso@unict.it.
+(3)Department of Biomedical and Biotechnological Sciences, MMAR Laboratory, 
+University of Catania, Catania, Italy.
+(4)Department of Microbiology, San Camillo-Forlanini Hospital, Rome, Italy.
+
+Our aim was to describe the clinical and microbiological features of four cases 
+of severe vancomycin-susceptible methicillin-resistant Staphylococcus aureus 
+(MRSA) infections in which the vancomycin non-susceptibility development and 
+daptomycin resistance occurred under therapy with teicoplanin (three cases) and 
+daptomycin switched to vancomycin (one case). Clinical data were retrospectively 
+reviewed. On nine clinical epidemiologically unrelated daptomycin-susceptible 
+(DAP-S) and daptomycin-resistant (DAP-R) MRSA, we performed: (i) 
+DAP-VAN-TEC-CFX-RIF minimum inhibitory concentrations (MICs); (ii) glycopeptide 
+resistance detection (GRD) by δ-hemolysis; (iii) glycopeptide population 
+analysis; (iv) molecular characterization by PFGE-MLST-SCCmec-agr-typing; (v) 
+rpoB and mprF single nucleotide polymorphisms (SNPs); (vi) dltA-mprF-atl-sceD 
+expression by real-time quantitative polymerase chain reaction (qPCR). Three out 
+of the four patients did not survive despite salvage treatment; two died with 
+active MRSA infection and one died because of Stenotrophomonas maltophilia 
+sepsis. The fourth patient, in which a reversion to a DAP-S phenotype occurred, 
+survived with daptomycin plus trimethoprim/sulfamethoxazole and oxacillin 
+treatment, and endovascular device removal. Daptomycin resistance development 
+was preceded by a stable heterogeneous vancomycin-intermediate S. aureus (hVISA) 
+or VISA phenotype acquisition, while in one case, daptomycin resistance was 
+preceded by an unstable daptomycin heteroresistance (hDAP) behavior reverting to 
+DAP-S during vancomycin plus rifampin therapy followed by high doses of 
+daptomycin. All DAP-R strains showed hVISA or DAP-R traits, including mutations 
+and/or up-regulation of genes involved in cell wall turnover and cell membrane 
+perturbation. In our study, daptomycin resistance arose during glycopeptide 
+therapy. The emergence of DAP-R isolates was preceded by a stable VISA or hVISA 
+phenotype or by instability reverting to a DAP-S heteroresistant phenotype. 
+Daptomycin, as first-line therapy for the treatment of severe MRSA infections, 
+should be used at optimal dosage combined with other agents such as 
+beta-lactams, to prevent daptomycin resistance occurrence.
+
+DOI: 10.1007/s10096-016-2581-4
+PMID: 26815434 [Indexed for MEDLINE]
+
+
+26. Antimicrob Agents Chemother. 2016 Jan 4;60(3):1708-16. doi: 
+10.1128/AAC.02388-15.
+
+Pneumonia Caused by Methicillin-Resistant Staphylococcus aureus: Does Vancomycin 
+Heteroresistance Matter?
+
+Claeys KC(1), Lagnf AM(1), Hallesy JA(1), Compton MT(1), Gravelin AL(1), Davis 
+SL(2), Rybak MJ(3).
+
+Author information:
+(1)Anti-Infective Research Laboratory, Department of Pharmacy Practice, Eugene 
+Applebaum College of Pharmacy and Health Sciences, Wayne State University, 
+Detroit, Michigan, USA.
+(2)Anti-Infective Research Laboratory, Department of Pharmacy Practice, Eugene 
+Applebaum College of Pharmacy and Health Sciences, Wayne State University, 
+Detroit, Michigan, USA Department of Pharmacy Services, Henry Ford 
+Health-System, Detroit, Michigan, USA.
+(3)Anti-Infective Research Laboratory, Department of Pharmacy Practice, Eugene 
+Applebaum College of Pharmacy and Health Sciences, Wayne State University, 
+Detroit, Michigan, USA School of Medicine, Wayne State University, Detroit, 
+Michigan, USA aa1592@wayne.ed.
+
+Vancomycin remains the mainstay treatment for methicillin-resistant 
+Staphylococcus aureus (MRSA) infections, including pneumonia. There is concern 
+regarding the emergence of vancomycin tolerance, caused by heterogeneous 
+vancomycin-intermediate S. aureus (hVISA), and subsequent vancomycin treatment 
+failure. Pneumonia is associated with high morbidity and mortality, especially 
+with delays in appropriate therapy. This study evaluated the clinical outcomes 
+of patients with hVISA pneumonia compared to those with vancomycin-susceptible 
+S. aureus (VSSA) pneumonia. A retrospective cohort of patients with MRSA 
+pneumonia from 2005 to 2014 was matched at a ratio of 2:1 VSSA to hVISA 
+infections to compare patient characteristics, treatments, and outcomes. hVISA 
+was determined by the 48-h population analysis profile area under the curve. 
+Characteristics between VSSA and hVISA infections were compared by univariate 
+analysis and multivariable logistic regression analysis to determine independent 
+risk factors of inpatient mortality. Eighty-seven patients were included, 
+representing 29 hVISA and 58 VSSA cases of pneumonia. There were no significant 
+differences in demographics or baseline characteristics. Sequential organ 
+failure assessment (SOFA) scores were a median of 7 (interquartile ratio [IQR], 
+5 to 8) in hVISA patients and 5 (IQR, 3 to 8) in VSSA (P = 0.092) patients. 
+Inpatient mortality was significantly higher in hVISA patients (44.8% versus 
+24.1%; P = 0.049). Predictors of inpatient mortality upon multivariable 
+regression were SOFA score (adjusted odds ratio [aOR], 1.36; 95% confidence 
+interval [CI], 1.08 to 1.70), Panton-Valentine leukocidin (PVL) positivity (aOR, 
+6.63; 95% CI, 1.79 to 24.64), and hVISA phenotype (aOR, 3.95; 95% CI, 1.18 to 
+13.21). Patients with hVISA pneumonia experienced significantly higher inpatient 
+mortality than those with VSSA pneumonia. There is a need to consider the 
+presence of vancomycin heteroresistance in pneumonia caused by MRSA in order to 
+potentially improve clinical outcomes.
+
+Copyright © 2016, American Society for Microbiology. All Rights Reserved.
+
+DOI: 10.1128/AAC.02388-15
+PMCID: PMC4775950
+PMID: 26729497 [Indexed for MEDLINE]
+
+
+27. PLoS One. 2015 Apr 24;10(4):e0123655. doi: 10.1371/journal.pone.0123655. 
+eCollection 2015.
+
+High frequency of resistance, lack of clinical benefit, and poor outcomes in 
+capreomycin treated South African patients with extensively drug-resistant 
+tuberculosis.
+
+Pietersen E(1), Peter J(1), Streicher E(2), Sirgel F(2), Rockwood N(3), Mastrapa 
+B(4), Te Riele J(5), Davids M(1), van Helden P(2), Warren R(2), Dheda K(1).
+
+Author information:
+(1)Lung Infection and Immunity Unit, Division of Pulmonology and University of 
+Cape Town Lung Institute, Department of Medicine, University of Cape Town, Cape 
+Town, South Africa.
+(2)Department of Science and Technology/National Research Foundation Centre for 
+Excellence for Biomedical Tuberculosis Research/South African Medical Research 
+Council Centre for TB Research, Division of Molecular Biology and Human 
+Genetics, Faculty of Medicine and Health Science, Stellenbosch University, 
+Tygerberg, South Africa.
+(3)Department of Medicine, Imperial College London, London, United Kingdom.
+(4)Gordonia Provincial Hospital, Upington, South Africa.
+(5)Brooklyn Chest Hospital, Cape Town, South Africa.
+
+BACKGROUND: There are limited data about the epidemiology and treatment-related 
+outcomes associated with capreomycin resistance in patients with XDR-TB. 
+Capreomycin achieves high serum concentrations relative to MIC but whether 
+capreomycin has therapeutic benefit despite microbiological resistance remains 
+unclear.
+METHODS: We reviewed the susceptibility profiles and outcomes associated with 
+capreomycin usage in patients diagnosed with XDR-TB between August 2002 and 
+October 2012 in two provinces of South Africa. Patients whose isolates were 
+genotypically tested for capreomycin resistance were included in the analysis.
+RESULTS: Of 178 XDR-TB patients 41% were HIV-infected. 87% (154/178) isolates 
+contained a capreomycin resistance-conferring mutation [80% (143/178) rrs A1401G 
+and 6% (11/178) were heteroresistant (containing both the rrs A1401G mutation 
+and wild-type sequences)]. Previous MDR-TB treatment, prior usage of kanamycin, 
+or strain type was not associated with capreomycin resistance. 92% (163/178) of 
+XDR-TB patients were empirically treated with capreomycin. Capreomycin 
+resistance decreased the odds of sputum culture conversion. In capreomycin 
+sensitive and resistant persons combined weight at diagnosis was the only 
+independent predictor for survival (p=<0.001). By contrast, HIV status and use 
+of co-amoxicillin/clavulanic acid were independent predictors of mortality 
+(p=<0.05). Capreomycin usage was not associated with survival or culture 
+conversion when the analysis was restricted to those whose isolates were 
+resistant to capreomycin.
+CONCLUSION: In South Africa the frequency of capreomycin conferring mutations 
+was extremely high in XDR-TB isolates. In those with capreomycin resistance 
+there appeared to be no therapeutic benefit of using capreomycin. These data 
+inform susceptibility testing and the design of treatment regimens for XDR-TB in 
+TB endemic settings.
+
+DOI: 10.1371/journal.pone.0123655
+PMCID: PMC4409172
+PMID: 25909847 [Indexed for MEDLINE]
+
+Conflict of interest statement: Competing Interests: The authors have declared 
+that no competing interests exist.
+
+
+28. J Antimicrob Chemother. 2015 Apr;70(4):1185-92. doi: 10.1093/jac/dku475. Epub 
+2014 Nov 27.
+
+Community-associated MRSA strain ST72-SCCmecIV causing bloodstream infections: 
+clinical outcomes and bacterial virulence factors.
+
+Park KH(1), Chong YP(2), Kim SH(3), Lee SO(3), Choi SH(3), Lee MS(1), Jeong 
+JY(4), Woo JH(3), Kim YS(5).
+
+Author information:
+(1)Division of Infectious Diseases, Department of Internal Medicine, Kyung Hee 
+University Hospital, Kyung Hee University School of Medicine, Seoul, Republic of 
+Korea.
+(2)Department of Infectious Diseases, Asan Medical Center, University of Ulsan 
+College of Medicine, Seoul, Republic of Korea Center for Antimicrobial 
+Resistance and Microbial Genetics, University of Ulsan, Seoul, Republic of 
+Korea.
+(3)Department of Infectious Diseases, Asan Medical Center, University of Ulsan 
+College of Medicine, Seoul, Republic of Korea.
+(4)Center for Antimicrobial Resistance and Microbial Genetics, University of 
+Ulsan, Seoul, Republic of Korea Asan Institute for Life Sciences, Asan Medical 
+Center, University of Ulsan College of Medicine, Seoul, Republic of Korea.
+(5)Department of Infectious Diseases, Asan Medical Center, University of Ulsan 
+College of Medicine, Seoul, Republic of Korea Center for Antimicrobial 
+Resistance and Microbial Genetics, University of Ulsan, Seoul, Republic of Korea 
+yskim@amc.seoul.kr.
+
+OBJECTIVES: Community-associated MRSA (CA-MRSA) has emerged in the community and 
+has recently been spreading in healthcare settings. The objectives of this study 
+were to evaluate the clinical outcomes and bacterial virulence factors of the 
+Korean CA-MRSA (ST72-SCCmecIV) strain, which causes bloodstream infections.
+METHODS: All adult patients with MRSA bacteraemia were prospectively enrolled. 
+Clinical outcomes, microbiological characteristics and 40 bacterial virulence 
+factors were evaluated.
+RESULTS: Of the 352 typed MRSA isolates, 342 isolates (97.2%) belonged to three 
+Panton-Valentine leucocidin-negative strains: ST5-SCCmecII (70.2%), 
+ST72-SCCmecIV (22.4%) and ST239-SCCmecIII (4.6%). The remaining 10 (2.8%) 
+isolates from minor strains were excluded from the final analysis. After 
+controlling for several confounding factors, ST72-SCCmecIV was associated with 
+the lowest mortality (compared with ST5-SCCmecII, adjusted OR=0.26; 95% 
+CI=0.13-0.54). However, MRSA isolates with vancomycin MICs of ≥ 1.5 mg/L were 
+more common in ST72-SCCmecIV compared with ST5-SCCmecII (84.8% versus 66.7%; 
+P=0.002). Reduced vancomycin susceptibility and vancomycin heteroresistance were 
+not associated with mortality. Compared with ST5-SCCmecII isolates, 
+ST72-SCCmecIV isolates were less likely to harbour multiple virulence genes. Of 
+these genes, three staphylococcal superantigen genes were associated with 
+mortality: sec (OR=2.31; P=0.002), sel (OR=2.55; P=0.003) and tst (OR=2.76; 
+P<0.001).
+CONCLUSIONS: After controlling for confounding factors, ST72-SCCmecIV was 
+independently associated with lower mortality compared with ST5-SCCmecII, 
+suggesting this CA-MRSA strain to be of lower virulence. The lack of virulence 
+genes, including staphylococcal superantigen genes, may play a role in the lower 
+virulence of this strain.
+
+© The Author 2014. Published by Oxford University Press on behalf of the British 
+Society for Antimicrobial Chemotherapy. All rights reserved. For Permissions, 
+please e-mail: journals.permissions@oup.com.
+
+DOI: 10.1093/jac/dku475
+PMID: 25433004 [Indexed for MEDLINE]
+
+
+29. Int J Antimicrob Agents. 2014 Dec;44(6):557-63. doi: 
+10.1016/j.ijantimicag.2014.07.024. Epub 2014 Sep 16.
+
+Use of ceftaroline after glycopeptide failure to eradicate meticillin-resistant 
+Staphylococcus aureus bacteraemia with elevated vancomycin minimum inhibitory 
+concentrations.
+
+Paladino JA(1), Jacobs DM(2), Shields RK(3), Taylor J(4), Bader J(5), Adelman 
+MH(6), Wilton GJ(6), Crane JK(7), Schentag JJ(2).
+
+Author information:
+(1)University at Buffalo School of Pharmacy and Pharmaceutical Sciences, 213 
+Kapoor Hall, Buffalo, NY 14214, USA; CPL Associates, LLC, 73 High St., Buffalo, 
+NY 14203, USA; Erie County Medical Center, 462 Grider St., Buffalo, NY 14215, 
+USA. Electronic address: paladino@buffalo.edu.
+(2)University at Buffalo School of Pharmacy and Pharmaceutical Sciences, 213 
+Kapoor Hall, Buffalo, NY 14214, USA; CPL Associates, LLC, 73 High St., Buffalo, 
+NY 14203, USA.
+(3)University of Pittsburgh, Department of Medicine, 3601 Fifth Ave., Falk 
+Medical Building, Suite 3A, Pittsburgh, PA 15213, USA.
+(4)Oregon Health and Science University, 3181 S.W. Sam Jackson Park Road, 
+Portland, OR 97239, USA.
+(5)University at Buffalo School of Pharmacy and Pharmaceutical Sciences, 213 
+Kapoor Hall, Buffalo, NY 14214, USA.
+(6)CPL Associates, LLC, 73 High St., Buffalo, NY 14203, USA.
+(7)Erie County Medical Center, 462 Grider St., Buffalo, NY 14215, USA; 
+University at Buffalo School of Medicine, 326 Biomedical Research Building, 3435 
+Main St., Buffalo, NY 14214, USA.
+
+Elevated minimum inhibitory concentrations (MICs) of vancomycin against 
+meticillin-resistant Staphylococcus aureus (MRSA) and the emergence of 
+heteroresistant S. aureus strains have led to increased use of anti-MRSA 
+antibiotics other than vancomycin. Ceftaroline fosamil is a novel cephalosporin 
+with activity against MRSA, but there are limited clinical data on its use for 
+MRSA bacteraemia (MRSAB) and against strains exhibiting high vancomycin MICs 
+(2-4 μg/mL). This multicentre, retrospective, case-control study compared the 
+microbiological and clinical effectiveness of ceftaroline used after vancomycin 
+failure with that of vancomycin-treated controls for the treatment of MRSA with 
+vancomycin MICs ≥ 2 μg/mL. In total, 32 patients were matched 1:1 with respect 
+to vancomycin MIC, age and origin of bacteraemia. In the ceftaroline group, 
+patients received prior MRSA therapy for a median of 5 days [interquartile range 
+(IQR), 3-15.8 days] prior to switching to ceftaroline. Median time to 
+eradication of MRSA was significantly less after treatment with ceftaroline 
+compared with vancomycin [4 days (IQR, 3-7.5 days) vs. 8 days (IQR, 5.8-19.5 
+days); P=0.02]. Both clinical success at the end of treatment and recurrence of 
+MRSA at Day 7 were trending towards being inferior in the vancomycin group, 
+although the results did not attain statistical significance [81% vs. 44% 
+(P=0.06) and 6% vs. 38% (P=0.08), respectively]. Ceftaroline added at the point 
+of vancomycin failure resolves MRSAB more rapidly and with a higher rate of 
+clinical success, therefore ceftaroline should be considered as an alternative 
+for these difficult-to-treat infections.
+
+Copyright © 2014 Elsevier B.V. and the International Society of Chemotherapy. 
+All rights reserved.
+
+DOI: 10.1016/j.ijantimicag.2014.07.024
+PMID: 25282169 [Indexed for MEDLINE]
+
+
+30. J Antimicrob Chemother. 2014 Sep;69(9):2547-55. doi: 10.1093/jac/dku135. Epub 
+2014 May 19.
+
+Quantifying the matrix of relationships between reduced vancomycin 
+susceptibility phenotypes and outcomes among patients with MRSA bloodstream 
+infections treated with vancomycin .
+
+Lodise TP(1), Drusano GL(2), Lazariu V(3), El-Fawal N(4), Evans A(5), Graffunder 
+E(6), Stellrecht K(5), Mendes RE(7), Jones RN(7), Cosler L(2), McNutt LA(3).
+
+Author information:
+(1)Albany College of Pharmacy and Health Sciences, 106 New Scotland Avenue, 
+Albany, NY, USA thomas.lodise@acphs.edu.
+(2)Institute for Therapeutic Innovation, College of Medicine, University of 
+Florida, 6550 Sanger Road, Lake Nona, FL, USA.
+(3)University at Albany, State University of New York, Albany, 5 University 
+Place, A217, Rensselaer, NY, USA.
+(4)Albany College of Pharmacy and Health Sciences, 106 New Scotland Avenue, 
+Albany, NY, USA.
+(5)Albany Medical Center Hospital, Department of Pathology and Laboratory 
+Medicine, 43 New Scotland Avenue, Albany, NY, USA.
+(6)Albany Medical Center Hospital, Department of Epidemiology, 43 New Scotland 
+Avenue, Albany, NY, USA.
+(7)JMI Laboratories, 345 Beaver Kreek Ctr, Ste A, North Liberty, IA, USA.
+
+OBJECTIVES: Several phenotypic characteristics of Staphylococcus aureus have 
+been identified as aetiological factors responsible for adverse outcomes among 
+patients receiving vancomycin. However, characterization of the outcomes 
+associated with these reduced vancomycin susceptibility phenotypes (rVSPs) 
+remains largely incomplete and it is unknown if these features contribute to 
+deleterious treatment outcomes alone or in concert. This study described the 
+interrelationship between rVSPs and assessed their individual and combined 
+effects on outcomes among patients who received vancomycin for a 
+methicillin-resistant S. aureus (MRSA) bloodstream infection.
+METHODS: An observational study of adult, hospitalized patients with MRSA 
+bloodstream infections who were treated with vancomycin between January 2005 and 
+June 2009 was performed. The rVSPs evaluated included the following: (i) Etest 
+MIC; (ii) broth microdilution MIC; (iii) MBC : MIC ratio; and (iv) 
+heteroresistance to vancomycin by the Etest macromethod. Failure was defined as 
+any of the following: (i) 30 day mortality; (ii) bacteraemia ≥ 7 days on 
+therapy; or (iii) recurrence of MRSA bacteraemia within 60 days of therapy 
+discontinuation.
+RESULTS: During the study period, 184 cases met the study criteria and 41.3% met 
+the failure criteria. There was a clear linear exposure-response relationship 
+between the number of these phenotypic markers and outcomes. As the number of 
+phenotypes escalated, the incidence of overall failure increased incrementally 
+by 10%-18%.
+CONCLUSIONS: The data suggest that rVSPs contribute to deleterious treatment 
+outcomes in concert.
+
+© The Author 2014. Published by Oxford University Press on behalf of the British 
+Society for Antimicrobial Chemotherapy. All rights reserved. For Permissions, 
+please e-mail: journals.permissions@oup.com.
+
+DOI: 10.1093/jac/dku135
+PMID: 24840624 [Indexed for MEDLINE]
+
+
+31. Int J Antimicrob Agents. 2014 Jul;44(1):8-15. doi: 
+10.1016/j.ijantimicag.2014.02.016. Epub 2014 Apr 12.
+
+Colistin resistance in Klebsiella pneumoniae.
+
+Ah YM(1), Kim AJ(2), Lee JY(3).
+
+Author information:
+(1)College of Pharmacy, Institute of Pharmaceutical Science and Technology, 
+Hanyang University, 55 Hanyangdaehak-no, Sangnok-gu, Ansan, Gyeonggi-do 462-791, 
+South Korea.
+(2)Department of Pharmacy, Seoul National University Hospital, 101 Daehak-ro, 
+Jongno-gu, Seoul 110-744, South Korea.
+(3)College of Pharmacy, Institute of Pharmaceutical Science and Technology, 
+Hanyang University, 55 Hanyangdaehak-no, Sangnok-gu, Ansan, Gyeonggi-do 462-791, 
+South Korea. Electronic address: jypharm@hanyang.ac.kr.
+
+Increasing use of colistin for multidrug-resistant Gram-negative bacterial 
+infections has led to the emergence of colistin resistance in Klebsiella 
+pneumoniae in several countries worldwide, including Europe (especially Greece), 
+and colistin resistance rates are continually increasing. Heteroresistance 
+rates, which were significantly higher than resistance rates, were found to be 
+important. Although the mechanism underlying resistance is unclear, it has been 
+suggested that it is related to lipopolysaccharide modification via diverse 
+routes. Several factors have been reported as being associated with colistin 
+resistance, with improper use and patient-to-patient transmission being most 
+often cited. Total infections and infection-related mortality from 
+colistin-resistant K. pneumoniae are high, but currently there are no 
+established treatment regimens. However, several combination regimens that are 
+mainly colistin-based have been found to be successful for treating such 
+infections.
+
+Copyright © 2014 Elsevier B.V. and the International Society of Chemotherapy. 
+All rights reserved.
+
+DOI: 10.1016/j.ijantimicag.2014.02.016
+PMID: 24794735 [Indexed for MEDLINE]
+
+
+32. J Infect Dis. 2014 Jun 1;209(11):1754-63. doi: 10.1093/infdis/jiu040. Epub 2014 
+Jan 16.
+
+Clinical outcomes among persons with pulmonary tuberculosis caused by 
+Mycobacterium tuberculosis isolates with phenotypic heterogeneity in results of 
+drug-susceptibility tests.
+
+Zetola NM(1), Modongo C, Moonan PK, Ncube R, Matlhagela K, Sepako E, Collman RG, 
+Bisson GP.
+
+Author information:
+(1)Division of Infectious Diseases.
+
+Comment in
+    J Infect Dis. 2014 Jun 1;209(11):1682-4. doi: 10.1093/infdis/jiu078.
+
+BACKGROUND: Patients with multidrug-resistant (MDR) tuberculosis may have 
+phenotypic heterogeneity in results of drug-susceptibility tests (DSTs). 
+However, the impact of this on clinical outcomes among patients treated for MDR 
+tuberculosis is unknown.
+METHODS: Phenotypic DST heterogeneity was defined as presence of at least 1 
+Mycobacterium tuberculosis isolate susceptible to rifampicin and isoniazid 
+recovered <3 months after MDR tuberculosis treatment initiation from a patient 
+with previous documented tuberculosis due to M. tuberculosis resistant to at 
+least rifampicin and isoniazid. The primary outcome was defined as good (ie, 
+cure or treatment completion) or poor (ie, treatment failure, treatment default, 
+or death). A secondary outcome was time to culture conversion. Cox proportional 
+hazard models were used to determine the association between phenotypic DST 
+heterogeneity and outcomes.
+RESULTS: Phenotypic DST heterogeneity was identified in 33 of 475 patients (7%) 
+with MDR tuberculosis. Poor outcome occurred in 126 patients (28%). Overall, 
+patients with MDR tuberculosis who had phenotypic DST heterogeneity were at 
+greater risk of poor outcome than those with MDR tuberculosis but no phenotypic 
+DST heterogeneity (adjusted hazard ratio [aHR], 2.1; 95% confidence interval 
+[CI], 1.2-3.6). Among HIV-infected patients with MDR tuberculosis, the adjusted 
+hazard for a poor outcome for those with phenotypic DST heterogeneity was 2.4 
+(95% CI, 1.3-4.2) times that for those without phenotypic DST heterogeneity, 
+whereas among HIV-negative patients with MDR tuberculosis, the adjusted hazard 
+for those with phenotypic DST heterogeneity was 1.5 (95% CI, .5-4.3) times that 
+for those without phenotypic DST heterogeneity. HIV-infected patients with MDR 
+tuberculosis with phenotypic DST heterogeneity also had a longer time to culture 
+conversion than with HIV-infected patients with MDR tuberculosis without 
+phenotypic DST heterogeneity (aHR, 2.9; 95% CI, 1.4-6.0).
+CONCLUSIONS: Phenotypic DST heterogeneity among persons with HIV infection who 
+are being treated for MDR tuberculosis is associated with poor outcomes and 
+longer times to culture conversion.
+
+DOI: 10.1093/infdis/jiu040
+PMCID: PMC4017367
+PMID: 24443546 [Indexed for MEDLINE]
+
+
+33. Int J Antimicrob Agents. 2013 Nov;42(5):390-4. doi: 
+10.1016/j.ijantimicag.2013.07.010. Epub 2013 Aug 23.
+
+High vancomycin minimum inhibitory concentrations with heteroresistant 
+vancomycin-intermediate Staphylococcus aureus in meticillin-resistant S. aureus 
+bacteraemia patients.
+
+Wang JL(1), Lai CH, Lin HH, Chen WF, Shih YC, Hung CH.
+
+Author information:
+(1)School of Chinese Medicine for Post-Baccalaureate, I-Shou University, 
+Kaohsiung County, Taiwan, ROC; Department of Internal Medicine, E-Da Hospital, 
+Kaohsiung County, Taiwan, ROC.
+
+Patients with high vancomycin minimum inhibitory concentrations (MICs) and 
+heteroresistant vancomycin-intermediate Staphylococcus aureus (hVISA) infection 
+are associated with treatment failure and poor outcomes. The main purpose of 
+this study was to investigate the effect of hVISA on patient outcome, 
+considering both the high vancomycin MIC and the existence of heteroresistant 
+phenotypes. From January 2005 to December 2009, consecutive meticillin-resistant 
+S. aureus (MRSA) isolates from 284 cases of MRSA bacteraemia receiving 
+glycopeptide therapy were collected for further MIC and hVISA testing. The 
+demographic distribution, clinical features and outcomes in bacteraemia patients 
+with different vancomycin MICs and hVISA status in MRSA isolates were 
+subsequently compared. Subjects were divided into three groups: low vancomycin 
+MIC (<1.5mg/L) with vancomycin-sensitive S. aureus (VSSA) (n=50); high 
+vancomycin MIC (≥1.5mg/L) with VSSA (n=218); and high vancomycin MIC with hVISA 
+(n=16). Cox regression analysis demonstrated that the high MIC with VSSA group 
+exhibited significantly higher 30-day mortality than the low MIC with VSSA group 
+[odds ratio (OR)=2.349, 95% confidence interval (CI) 1.078-5.118]. The high MIC 
+with hVISA phenotype was not associated with higher mortality but was 
+independently associated with persistent MRSA bacteraemia (OR=5.996, 95% CI 
+1.438-25.005). To summarise, although hVISA is correlated with persistent 
+bacteraemia, higher mortality in high vancomycin MIC infections could not be 
+explained by the existing hVISA phenotype. Facing persistent bacteraemia under 
+glycopeptide therapy for 7 days, clinicians should consider shifting to an 
+alternative class of antibiotics to treat hVISA infection.
+
+Copyright © 2013 Elsevier B.V. and the International Society of Chemotherapy. 
+All rights reserved.
+
+DOI: 10.1016/j.ijantimicag.2013.07.010
+PMID: 24041465 [Indexed for MEDLINE]
+
+
+34. Transpl Infect Dis. 2013 Oct;15(5):E177-81. doi: 10.1111/tid.12123. Epub 2013 
+Aug 1.
+
+Heart transplantation in a patient with heteroresistant vancomycin-intermediate 
+Staphylococcus aureus ventricular assist device mediastinitis and bacteremia.
+
+Swartz TH(1), Huprikar S, Labombardi V, Pinney S, Anyanwu A, Lee M, Patel G.
+
+Author information:
+(1)Division of Infectious Diseases, Department of Medicine, Icahn School of 
+Medicine at Mount Sinai, New York, New York, USA.
+
+Vancomycin-intermediate Staphylococcus aureus (VISA) infections are an emerging 
+problem and antibiotic options are limited. We report the first case, to our 
+knowledge, of heteroresistant VISA mediastinitis and bacteremia in a patient 
+with a ventricular assist device who underwent orthotopic heart transplantation 
+with clinical cure.
+
+© 2013 John Wiley & Sons A/S.
+
+DOI: 10.1111/tid.12123
+PMID: 23902131 [Indexed for MEDLINE]
+
+
+35. Medicine (Baltimore). 2013 Mar;92(2):98-108. doi: 10.1097/MD.0b013e318289ff1e.
+
+Persistent Staphylococcus aureus bacteremia: a prospective analysis of risk 
+factors, outcomes, and microbiologic and genotypic characteristics of isolates.
+
+Chong YP(1), Park SJ, Kim HS, Kim ES, Kim MN, Park KH, Kim SH, Lee SO, Choi SH, 
+Jeong JY, Woo JH, Kim YS.
+
+Author information:
+(1)From the Department of Infectious Diseases (YPC, KHP, SHK, SOL, SHC, JHW, 
+YSK) and Department of Laboratory Medicine (MNK), Asan Medical Center, 
+University of Ulsan College of Medicine, Center for Antimicrobial Resistance and 
+Microbial Genetics (SJP, HSK, ESK, JYJ, YSK), Seoul, Republic of Korea.
+
+Persistent Staphylococcus aureus bacteremia (SAB) that fails to respond to 
+appropriate antibiotic therapy is associated with poor outcomes. Comprehensive 
+prospective studies on risk factors and outcomes of persistent bacteremia are 
+limited. We investigated outcomes and risk factors encompassing clinical, 
+pharmacokinetic, microbiologic, and genotypic characteristics associated with 
+persistent bacteremia using a case-control study nested in a prospective cohort 
+of patients with SAB at a tertiary-care hospital from August 2008 through 
+September 2010. We compared the clinical characteristics, management, and 
+outcomes of patients with persistent bacteremia (≥7 d) with controls with 
+resolving bacteremia (<3 d). To detect associations between microbiologic and 
+genotypic characteristics of methicillin-resistant S. aureus (MRSA) isolates and 
+persistent bacteremia, we determined the heteroresistance phenotype, SCCmec 
+type, agr genotype and functionality, multilocus sequence typing, and presence 
+of 41 virulence genes. Our cohort consisted of 483 patients; 76 (15.7%) had 
+persistent bacteremia, 212 (43.5%) had resolving bacteremia. In the multivariate 
+analysis, independent risk factors associated with persistent bacteremia were 
+community-onset bacteremia (odds ratio [OR], 2.91; 95% confidence interval [CI], 
+1.24-6.87), bone and joint infection (OR, 5.26; 95% CI, 1.45-19.03), central 
+venous catheter-related infection (OR, 3.36; 95% CI, 1.47-7.65), metastatic 
+infection (OR, 36.22; 95% CI, 12.71-103.23), and methicillin resistance (OR, 
+16.99; 95% CI, 5.53-52.15). For patients with eradicable foci, delay (>3 d) in 
+the removal of the infection focus was significantly associated with persistent 
+bacteremia (OR, 2.18; 95% CI, 1.05-4.55). There were no significant associations 
+of persistent bacteremia with high vancomycin minimal inhibitory concentration, 
+vancomycin heteroresistance, and microbiologic/genotypic characteristics of MRSA 
+isolates. However, initial vancomycin trough level <15 mg/L was an independent 
+risk factor for persistent MRSA bacteremia (OR, 4.25; 95% CI, 1.51-11.96) in the 
+multivariate analysis. Clinical outcomes were significantly worse for patients 
+with persistent bacteremia. Relapse of bacteremia and attributable mortality 
+within 12 weeks after SAB were significantly higher in patients with persistent 
+bacteremia than in those with resolving bacteremia (9.2% [7/76] vs. 2.4% 
+[5/212], p = 0.02 and 21.1% [16/76] vs. 9.4% [20/212], p = 0.009, respectively). 
+In conclusion, patients with SAB should be given early aggressive treatment 
+strategies, including early source control and maintenance of a vancomycin 
+trough level ≥15 mg/L, to reduce the risk of persistent bacteremia.
+
+DOI: 10.1097/MD.0b013e318289ff1e
+PMCID: PMC4553980
+PMID: 23429353 [Indexed for MEDLINE]
+
+
+36. Indian J Med Microbiol. 2012 Oct-Dec;30(4):448-52. doi: 
+10.4103/0255-0857.103767.
+
+Colistin against colistin-only-susceptible Acinetobacter baumannii-related 
+infections: Monotherapy or combination therapy?
+
+Simsek F(1), Gedik H, Yildirmak MT, Iris NE, Türkmen A, Ersoy A, Ersöz M, 
+Gücüyener A.
+
+Author information:
+(1)Department of Infectious diseases and Clinical Microbiology, Ministry of 
+Health Okmeydani Training and Research Hospital, Istanbul, S.B. Okmeydani Egitim 
+ve Arastirma Hastanesi Sisli-Istanbul, Turkey.
+
+PURPOSE: To evaluate the outcomes of the patients who were infected with 
+colistin-only-susceptible (COS) Acinetobacter baumannii and treated with either 
+colistin monotherapy or colistin combined therapy.
+MATERIALS AND METHODS: This retrospective case-control study was conducted in 
+the training and research hospital with an 800 beds between August 2008 and 
+December 2011. The patients, who were infected with COS A. baumannii and 
+received either colistin monotherapy or colistin combined therapy, were included 
+into the study.
+RESULTS: In total, 51 patients fulfilling study criteria were evaluated. 
+Colistin monotherapy was found effective as much as colistin combined therapy in 
+terms of clinical and microbiological responses in patients with ventilator 
+associated pneumonia (VAP) and also in patients with blood stream infections.
+CONCLUSION: Although there is no randomised controlled study yet, colistin 
+monotherapy and colistin combined therapy are likely to achieve similar 
+treatment responses rates. Heteroresistant strains can emerge in patients who 
+receive colistin monotherapy.
+
+DOI: 10.4103/0255-0857.103767
+PMID: 23183471 [Indexed for MEDLINE]
+
+
+37. Med Mycol. 2013 Apr;51(3):261-9. doi: 10.3109/13693786.2012.715763. Epub 2012 
+Sep 19.
+
+Fluconazole resistance in cryptococcal disease: emerging or intrinsic?
+
+Cheong JW(1), McCormack J.
+
+Author information:
+(1)Department of Infectious Diseases, Mater Health Services, Raymond Terrace, 
+South Brisbane, Australia.
+
+With the widespread use of long-term fluconazole prophylaxis and suppressive 
+treatment, the potential development of fluconazole resistance poses a threat to 
+the management of cryptococcal disease. Interpretive breakpoints for the in 
+vitro antifungal susceptibility testing of C. neoformans have not been 
+established and it is unclear whether the fluconazole minimum inhibitory 
+concentration (MIC) is clinically relevant. To gain insight into the management 
+of patients with cryptococcosis who fail fluconazole therapy, we conducted a 
+PubMed literature search for cases of fluconazole-resistant cryptococcosis 
+reported from 1991 to 2011. A total of 20 such cases were identified in which 
+most patients had AIDS and 30% had never had prior exposure to fluconazole. 
+Fluconazole failure in patients with cryptococcal disease cannot be fully 
+attributed to emerging resistance of the etiologic agent and heteroresistance is 
+a potential alternative mechanism. There is a need to refine the definition of 
+fluconazole-resistant cryptococcosis and additional studies of such patients 
+will improve treatment strategies and outcomes.
+
+DOI: 10.3109/13693786.2012.715763
+PMID: 22989195 [Indexed for MEDLINE]
+
+
+38. J Clin Microbiol. 2012 Aug;50(8):2548-52. doi: 10.1128/JCM.00775-12. Epub 2012 
+May 16.
+
+Relationship between vancomycin-resistant Staphylococcus aureus, 
+vancomycin-intermediate S. aureus, high vancomycin MIC, and outcome in serious 
+S. aureus infections.
+
+Holmes NE(1), Johnson PD, Howden BP.
+
+Author information:
+(1)Austin Centre for Infection Research, Department of Infectious Diseases, 
+Austin Health, Heidelberg, Victoria, USA.
+
+Vancomycin has been used successfully for over 50 years for the treatment of 
+Staphylococcus aureus infections, particularly those involving 
+methicillin-resistant S. aureus. It has proven remarkably reliable, but its 
+efficacy is now being questioned with the emergence of strains of S. aureus that 
+display heteroresistance, intermediate resistance, and, occasionally, complete 
+vancomycin resistance. More recently, an association has been established 
+between poor outcome and infections with strains of S. aureus with an elevated 
+vancomycin MIC within the susceptible range. This minireview summarizes the 
+definitions, mechanisms, clinical impact, and laboratory identification of 
+reduced vancomycin susceptibility in S. aureus and discusses practical issues 
+for the diagnostic laboratory in testing and interpreting vancomycin 
+susceptibility for S. aureus infections.
+
+DOI: 10.1128/JCM.00775-12
+PMCID: PMC3421495
+PMID: 22593595 [Indexed for MEDLINE]
+
+
+39. J Antimicrob Chemother. 2012 Aug;67(8):1843-9. doi: 10.1093/jac/dks131. Epub 
+2012 Apr 25.
+
+Comparison of the clinical features, bacterial genotypes and outcomes of 
+patients with bacteraemia due to heteroresistant vancomycin-intermediate 
+Staphylococcus aureus and vancomycin-susceptible S. aureus.
+
+Park KH(1), Kim ES, Kim HS, Park SJ, Bang KM, Park HJ, Park SY, Moon SM, Chong 
+YP, Kim SH, Lee SO, Choi SH, Jeong JY, Kim MN, Woo JH, Kim YS.
+
+Author information:
+(1)Department of Infectious Diseases, Asan Medical Center, University of Ulsan 
+College of Medicine, Seoul, Republic of Korea.
+
+OBJECTIVES: We compared the clinical characteristics and outcomes of, and the 
+bacterial genotypes in, patients with bacteraemia due to heteroresistant 
+vancomycin-intermediate Staphylococcus aureus (hVISA) and vancomycin-susceptible 
+S. aureus (VSSA).
+METHODS: A total of 268 consecutive patients with methicillin-resistant S. 
+aureus (MRSA) bacteraemia were prospectively enrolled. All isolates were 
+selected on the first day of bacteraemia and subjected to population analysis 
+profiling for identification of hVISA phenotype and PCR analysis for 41 
+virulence factors.
+RESULTS: Of 268 MRSA isolates, 101 (37.7%) were identified as hVISA. Overall 
+mortality was similar in hVISA- and VSSA-infected patients (45/101 versus 
+65/167; P = 0.36). The following factors were independently associated with the 
+presence of hVISA: a vancomycin MIC ≥2 mg/L by Etest [adjusted OR (aOR), 9.98; 
+95% CI, 4.22-23.59], rifampicin resistance (aOR, 5.74; 95% CI, 1.35-24.37), 
+prior vancomycin therapy (aOR, 3.04; 95% CI, 1.49-6.17) and use of 
+immunosuppressive therapy (aOR, 2.41; 95% CI, 1.12-5.17). Among patients with 
+hVISA, bacteraemia was more likely to persist for ≥7 days in patients with an 
+initial vancomycin trough <15 mg/L than in those with an initial trough ≥15 mg/L 
+(13/34 versus 5/35; P = 0.02). The hVISA and VSSA isolates were genotypically 
+similar.
+CONCLUSIONS: The hVISA phenotype was present in more than one-third of MRSA 
+isolates and was independently associated with several baseline factors. 
+Although this phenotype did not affect patient outcomes, our results indicate 
+that targeting an initial vancomycin trough of 15-20 mg/L may be beneficial in 
+patients with hVISA bacteraemia.
+
+DOI: 10.1093/jac/dks131
+PMID: 22535621 [Indexed for MEDLINE]
+
+
+40. J Clin Microbiol. 2012 May;50(5):1640-4. doi: 10.1128/JCM.06701-11. Epub 2012 
+Feb 15.
+
+Analysis of pathogen and host factors related to clinical outcomes in patients 
+with hospital-acquired pneumonia due to methicillin-resistant Staphylococcus 
+aureus.
+
+Haque NZ(1), Arshad S, Peyrani P, Ford KD, Perri MB, Jacobsen G, Reyes K, 
+Scerpella EG, Ramirez JA, Zervos MJ.
+
+Author information:
+(1)Division of Infectious Diseases, Henry Ford Health System, Detroit, Michigan, 
+USA.
+
+Methicillin-resistant Staphylococcus aureus (MRSA) is a major cause of 
+nosocomial pneumonia. To characterize pathogen-derived and host-related factors 
+in intensive care unit (ICU) patients with MRSA pneumonia, we evaluated the 
+Improving Medicine through Pathway Assessment of Critical Therapy in 
+Hospital-Acquired Pneumonia (IMPACT-HAP) database. We performed multivariate 
+regression analyses of 28-day mortality and clinical response using univariate 
+analysis variables at a P level of <0.25. In isolates from 251 patients, the 
+most common molecular characteristics were USA100 (55.0%) and USA300 (23.9%), 
+SCCmec types II (64.1%) and IV (33.1%), and agr I (36.7%) and II (61.8%). 
+Panton-Valentine leukocidin (PVL) was present in 21.9%, and vancomycin 
+heteroresistance was present in 15.9%. Mortality occurred in 37.1% of patients; 
+factors in the univariate analysis were age, APACHE II score, AIDS, cardiac 
+disease, vascular disease, diabetes, SCCmec type II, PVL negativity, and higher 
+vancomycin MIC (all P values were <0.05). In multivariate analysis, independent 
+predictors were APACHE II score (odds ratio [OR], 1.090; 95% confidence interval 
+[CI], 1.041 to 1.141; P < 0.001) and age (OR, 1.024; 95% CI, 1.003 to 1.046; P = 
+0.02). Clinical failure occurred in 36.8% of 201 evaluable patients; the only 
+independent predictor was APACHE II score (OR, 1.082; 95% CI, 1.031 to 1.136; P 
+= 0.002). In summary, APACHE II score (mortality, clinical failure) and age 
+(mortality) were the only independent predictors, which is consistent with 
+severity of illness in ICU patients with MRSA pneumonia. Interestingly, our 
+univariate findings suggest that both pathogen and host factors influence 
+outcomes. As the epidemiology of MRSA pneumonia continues to evolve, both 
+pathogen- and host-related factors should be considered when describing 
+epidemiological trends and outcomes of therapeutic interventions.
+
+DOI: 10.1128/JCM.06701-11
+PMCID: PMC3347104
+PMID: 22337980 [Indexed for MEDLINE]
+
+
+41. BMC Infect Dis. 2012 Jan 20;12:9. doi: 10.1186/1471-2334-12-9.
+
+Drug resistance mutations and heteroresistance detected using the GenoType 
+MTBDRplus assay and their implication for treatment outcomes in patients from 
+Mumbai, India.
+
+Tolani MP(1), D'souza DT, Mistry NF.
+
+Author information:
+(1)The Foundation for Medical Research, Worli, Mumbai, India.
+
+BACKGROUND: Only 5% of the estimated global multidrug resistant TB (MDRTB) load 
+is currently detected. Endemic Mumbai with increasing MDR would benefit from the 
+introduction of molecular methods to detect resistance.
+METHODS: The GenoType MTBDRplus assay was used to determine mutations associated 
+with isoniazid and rifampicin resistance and their correlation with treatment 
+outcomes. It was performed on a convenience sample comprising 88 onset and 67 
+fifth month isolates for which phenotypic drug susceptibility testing (DST) was 
+determined by the Buddemeyer technique for an earlier study. Simultaneous 
+presence of wild type and mutant bands was referred to as "mixed patterns" 
+(heteroresistance).
+RESULTS: Phenotypically 41 isolates were sensitive; 11 isoniazid, 2 rifampicin, 
+2 pyrazinamide and 5 ethambutol monoresistant; 16 polyresistant and 78 MDR. The 
+agreement between both methods was excellent (kappa = 0.72-0.92). Of 22 
+rifampicin resistant onset isolates, the predominant rpoB mutations were the 
+singular lack of WT8 (n = 8) and mixed D516V patterns (n = 9). Of the 64 
+rifampicin resistant fifth month isolates, the most frequent mutations were in 
+WT8 (n = 31) with a further 9 showing the S531L mutation. Mixed patterns were 
+seen in 22 (34%) isolates, most frequently for the D516V mutation (n = 21). Of 
+the 22 onset and 35 fifth month katG mutants, 13 and 12 respectively showed the 
+S315T1 mutation with loss of the WT. Mixed patterns involving both S315T1 and 
+S315T2 were seen in 9 and 23 isolates respectively. Seventeen of 23 and 23/35 
+inhA mutant onset and fifth month isolates showed mixed A16G profiles. 
+Additionally, 10 fifth month isolates lacked WT2. Five onset and 6 fifth month 
+isolates had both katG and inhA mutations. An association was noted between only 
+katG but not only inhA resistance and poor outcome (p = 0.037); and additional 
+resistance to ethambutol (p = 0.0033). More fifth month than onset isolates had 
+mixed profiles for at least 1 gene (p = 0.000001).
+CONCLUSIONS: The use of the assay to rapidly diagnose MDR could guide 
+simultaneous first- and second-line DST, and reduce the delay in administering 
+appropriate regimens. Furthermore, detection of heteroresistance could prevent 
+inaccurate "cured" treatment outcomes documented through smear microscopy and 
+permit more sensitive detection of neonascent resistance.
+
+DOI: 10.1186/1471-2334-12-9
+PMCID: PMC3283446
+PMID: 22260344 [Indexed for MEDLINE]
+
+
+42. PLoS One. 2011;6(6):e21217. doi: 10.1371/journal.pone.0021217. Epub 2011 Jun 21.
+
+Vancomycin heteroresistance is associated with reduced mortality in ST239 
+methicillin-resistant Staphylococcus aureus blood stream infections.
+
+van Hal SJ(1), Jones M, Gosbell IB, Paterson DL.
+
+Author information:
+(1)Department of Microbiology and Infectious Diseases, Sydney South West 
+Pathology Service-Liverpool Hospital, Sydney, New South Wales, Australia. 
+Sebastian.vanHal@sswahs.nsw.gov.au
+
+BACKGROUND: Despite hVISA infections being associated with vancomycin treatment 
+failure, no previous study has been able to detect a mortality difference 
+between heteroresistant vancomycin intermediate Staphylococcus aureus (hVISA) 
+and vancomycin susceptible Staphylococcus aureus (VSSA) bloodstream infections 
+(BSI).
+METHODOLOGY: Consecutive methicillin-resistant S. aureus (MRSA) BSI episodes 
+between 1996 and 2008 were reviewed. Patient demographics, clinical 
+presentation, treatment and overall mortality at 30 days were extracted from the 
+medical records. All isolates underwent vancomycin minimum inhibitory 
+concentration (VMIC) testing by broth microdilution and Etest. hVISA was 
+confirmed by population analysis profiling using the area under the curve method 
+(PAP-AUC).
+PRINCIPAL FINDINGS: 401 evaluable MRSA BSI episodes were identified over the 12 
+years. Of these, 46 (11.5%) and 2 (0.5%) were confirmed as hVISA and VISA by 
+PAP-AUC respectively. hVISA predominantly occurred in ST239-like MRSA isolates 
+with high VMIC (2 mg/L). Compared to VSSA, hVISA was associated with chronic 
+renal failure (p<0.001), device related infections (haemodialysis access) 
+(p<0.001) and previous vancomycin usage (p = 0.004). On multivariate analysis, 
+independent predictors of mortality included age, presence of multiple 
+co-morbidities, principal diagnosis, transit to ICU and severity of illness 
+while infection related surgery and hVISA phenotype were associated with 
+increased survival.
+CONCLUSIONS/SIGNIFICANCE: The presence of hVISA is dependent on the appropriate 
+interplay between host and pathogen factors. hVISA in ST239 MRSA is an 
+independent predictor of survival. Whether these findings would be replicated 
+across all MRSA clones is unknown and warrants further study.
+
+DOI: 10.1371/journal.pone.0021217
+PMCID: PMC3119693
+PMID: 21713004 [Indexed for MEDLINE]
+
+Conflict of interest statement: Competing Interests: The authors have declared 
+that no competing interests exist.
+
+
+43. J Antimicrob Chemother. 2011 Jul;66(7):1594-9. doi: 10.1093/jac/dkr169. Epub 
+2011 Apr 26.
+
+Relevance of vancomycin-intermediate susceptibility and heteroresistance in 
+methicillin-resistant Staphylococcus aureus bacteraemia.
+
+Khatib R(1), Jose J, Musta A, Sharma M, Fakih MG, Johnson LB, Riederer K, Shemes 
+S.
+
+Author information:
+(1)Department of Medicine, St John Hospital and Medical Center, Grosse Pointe 
+Woods, MI, USA. riad.khatib@stjohn.org
+
+OBJECTIVES: To assess the relevance of vancomycin-intermediate susceptibility 
+(VISA) and heteroresistance (hVISA) in methicillin-resistant Staphylococcus 
+aureus (MRSA) bacteraemia.
+METHODS: We determined vancomycin MICs for 371 saved MRSA blood isolates 
+(2002-03; 2005-06) by Etest and broth microdilution (BMD), screened for hVISA 
+(Etest methods), determined the population analysis profile (PAP)/AUC for 
+isolates with suspected reduced susceptibility (MICs >2 mg/L and/or 
+hVISA-screen-positive versus Mu3 (hVISA control), and stratified patient 
+characteristics and outcome according to susceptibility phenotype: VISA (PAP/AUC 
+>1.3), hVISA (PAP/AUC 0.9-1.3), and susceptible (S-MRSA; PAP/AUC <0.9).
+RESULTS: PAP/AUC revealed 6 (1.6%) VISA and 30 (8.1%) hVISA phenotypes. The 
+Etest MIC was above the susceptibility cut-off (2 mg/L) for all VISA isolates, 
+whereas the BMD MIC was within the susceptibility range in two (33.3%) 
+instances. Eight hVISA isolates (26.7%) with MICs of 2 mg/L were hVISA-screen 
+negative. SCCmec typing revealed SCCmec II in 100% of VISA, 86.7% of hVISA and 
+75.5% of S-MRSA isolates (P = 0.04). Prior vancomycin use was documented in 100% 
+of VISA, 73.3% of hVISA and 52.2% of S-MRSA cases (P = 0.002). Outcome (compared 
+in 243 vancomycin-treated patients with MICs of 2 mg/L) revealed longer time to 
+clearance in VISA cases [12.1 ± 13.1 days versus 3.3 ± 3.9 (hVISA) and 3.7 ± 5.1 
+(S-MRSA); P = 0.001], more frequent endocarditis [33.3% versus 9.1% (hVISA; 
+P = 0.1) and 4.2% (S-MRSA; P = 0.001)] and attributable mortality [33.3% versus 
+9.1% (hVISA; P = 0.1) and 8.4% (S-MRSA); P = 0.08].
+CONCLUSIONS: No adverse outcome was documented with hVISA phenotype, whereas 
+VISA contributed to vancomycin treatment failure. VISA and hVISA appear to 
+emerge in SCCmec II isolates among vancomycin-exposed patients and are better 
+detected by Etest.
+
+DOI: 10.1093/jac/dkr169
+PMID: 21525024 [Indexed for MEDLINE]
+
+
+44. J Antimicrob Chemother. 2011 May;66(5):1057-60. doi: 10.1093/jac/dkr066. Epub 
+2011 Mar 2.
+
+Daptomycin non-susceptibility in vancomycin-intermediate Staphylococcus aureus 
+(VISA) and heterogeneous-VISA (hVISA): implications for therapy after vancomycin 
+treatment failure.
+
+Kelley PG(1), Gao W, Ward PB, Howden BP.
+
+Author information:
+(1)Department of Microbiology, Austin Health, Heidelberg, Victoria, Australia.
+
+OBJECTIVES: The aim of this study was to establish the relationship between 
+reduced vancomycin and daptomycin susceptibility among Australasian 
+vancomycin-intermediate Staphylococcus aureus (VISA) and heterogeneous-VISA 
+(hVISA) isolates from patients never exposed to daptomycin.
+METHODS: Forty-seven stored clinical isolates of hVISA/VISA collected before 
+November 2008 from around Australia and New Zealand were selected. Daptomycin 
+and vancomycin MIC testing was performed using broth microdilution (BMD) and 
+Etest methods. Daptomycin population analysis was performed on a subset of 
+isolates.
+RESULTS: The percentage of daptomycin non-susceptible isolates was 0% for 
+vancomycin-susceptible S. aureus (VSSA) (Etest and BMD), for hVISA it was 26% by 
+Etest and 15% by BMD, and for VISA 62% by Etest and 38% by BMD. Population 
+analysis profile testing demonstrated daptomycin heteroresistance among the 
+hVISA and VISA strains tested.
+CONCLUSIONS: This is the highest rate of daptomycin non-susceptibility reported 
+among hVISA isolates to date. Clinicians should exhibit caution when using 
+daptomycin in situations where serious hVISA or VISA infection is a possibility.
+
+DOI: 10.1093/jac/dkr066
+PMID: 21393156 [Indexed for MEDLINE]
+
+
+45. Am J Kidney Dis. 2011 Apr;57(4):624-40. doi: 10.1053/j.ajkd.2010.12.013. Epub 
+2011 Feb 18.
+
+Management of gram-positive coccal bacteremia and hemodialysis.
+
+Fitzgibbons LN(1), Puls DL, Mackay K, Forrest GN.
+
+Author information:
+(1)Division of Infectious Diseases, Oregon Health and Science University, 
+Portland, OR, USA.
+
+Gram-positive cocci are the most common cause of bloodstream infections in 
+hemodialysis patients, with Staphylococcus aureus and coagulase-negative 
+staphylococci causing most infections. Management of these infections often is 
+complicated by limited vascular access options, as well as an increasing 
+prevalence of drug-resistant bacteria in hemodialysis centers, including the 
+emergence of strains of methicillin-resistant S aureus with vancomycin 
+heteroresistance and increasing rates of vancomycin-resistant enterococci, both 
+of which have limited antibiotic treatment options. This article describes the 
+management of these infections based on the organism and its susceptibility 
+profile, including catheter management, antibiotic lock therapies, and systemic 
+antibiotic choices. Although coagulase-negative staphylococci bacteremia often 
+may be managed with preservation of the catheter, antibiotic lock therapy, and 
+intravenous antibiotics, this is rarely the case with S aureus bacteremia 
+because of frequent relapse and the risk of complications, including 
+endocarditis. Enterococcal bacteremia requires more individualization of care, 
+but catheters are less likely to be salvaged, especially when 
+vancomycin-resistant Enterococcus is the causative organism. Finally, strong 
+infection control policies in the hemodialysis unit, conversion from catheter to 
+arteriovenous access when possible, and appropriate use of antibiotics are 
+essential factors in the prevention of these bloodstream infections.
+
+Published by Elsevier Inc.
+
+DOI: 10.1053/j.ajkd.2010.12.013
+PMID: 21333430 [Indexed for MEDLINE]
+
+
+46. J Clin Microbiol. 2011 Apr;49(4):1583-7. doi: 10.1128/JCM.01719-10. Epub 2011 
+Feb 16.
+
+Clinical and laboratory characteristics of invasive infections due to 
+methicillin-resistant Staphylococcus aureus isolates demonstrating a vancomycin 
+MIC of 2 micrograms per milliliter: lack of effect of heteroresistant 
+vancomycin-intermediate S. aureus phenotype.
+
+Satola SW(1), Lessa FC, Ray SM, Bulens SN, Lynfield R, Schaffner W, Dumyati G, 
+Nadle J, Patel JB; Active Bacterial Core surveillance (ABCs) MRSA Investigators.
+
+Author information:
+(1)Emory University School of Medicine, Atlanta, Georgia 30033, USA. 
+ssatola@emory.edu
+
+We describe clinical and laboratory characteristics of invasive 
+methicillin-resistant Staphylococcus aureus (MRSA) infections with vancomycin 
+MICs of 2 μg/ml and compare heteroresistant-intermediate S. aureus (hVISA) to 
+non-hVISA. Health care-associated community-onset infections were the most 
+common and resulted in frequent complications and relapses. hVISA-infected 
+patients were more likely to have been hospitalized in the year prior to MRSA 
+culture.
+
+DOI: 10.1128/JCM.01719-10
+PMCID: PMC3122783
+PMID: 21325555 [Indexed for MEDLINE]
+
+
+47. Int J Infect Dis. 2011 Feb;15(2):e131-5. doi: 10.1016/j.ijid.2010.09.013. Epub 
+2010 Dec 4.
+
+Methicillin-resistant Staphylococcus aureus bacteremia: epidemiology, outcome, 
+and laboratory characteristics in a tertiary referral center in the UK.
+
+Lewis T(1), Chaudhry R, Nightingale P, Lambert P, Das I.
+
+Author information:
+(1)Department of Clinical Microbiology and Infection Control, University 
+Hospital Birmingham NHS Foundation Trust, Birmingham B15 2TH, UK.
+
+OBJECTIVE: To analyze the recent epidemiology of methicillin-resistant 
+Staphylococcus aureus (MRSA) bacteremia in a UK tertiary referral center.
+METHODS: We collected epidemiological and laboratory data on all cases of MRSA 
+bacteremia from September 1, 2005 to December 31, 2007.
+RESULTS: There were 195 clinically significant episodes. Most were 
+hospital-acquired. Only one episode occurred in patients without a history of 
+hospital admission in the previous 12 months. An intravascular device was the 
+most common focus of infection (37%), with no identifiable source found in 35% 
+of episodes. Twenty-eight percent of patients died within 30 days of bacteremia. 
+Mortality was significantly higher in the absence of an identifiable focus. 
+Failure to include an antibiotic active against MRSA in the empirical treatment 
+was only significantly associated with death in patients showing signs of 
+hemodynamic instability (p < 0.001). No isolates had a minimum inhibitory 
+concentration to vancomycin above 1.5mg/l and no heteroresistance to 
+glycopeptide antibiotics (heteroresistant vancomycin-intermediate Staphylococcus 
+aureus; hVISA) was detected. All isolates were sensitive to daptomycin, 
+tigecycline, and linezolid.
+CONCLUSIONS: Despite improvement in infection control measures, medical devices 
+remain the most common source of infection. Inappropriate empirical antibiotic 
+usage is associated with a poor outcome in patients with signs of severe sepsis. 
+Susceptibility to glycopeptides and newer antibiotics remains good.
+
+Copyright © 2010 International Society for Infectious Diseases. Published by 
+Elsevier Ltd. All rights reserved.
+
+DOI: 10.1016/j.ijid.2010.09.013
+PMID: 21134776 [Indexed for MEDLINE]
+
+
+48. Chest. 2010 Dec;138(6):1356-62. doi: 10.1378/chest.09-2453. Epub 2010 Jun 17.
+
+Relationship of vancomycin minimum inhibitory concentration to mortality in 
+patients with methicillin-resistant Staphylococcus aureus hospital-acquired, 
+ventilator-associated, or health-care-associated pneumonia.
+
+Haque NZ(1), Zuniga LC, Peyrani P, Reyes K, Lamerato L, Moore CL, Patel S, Allen 
+M, Peterson E, Wiemken T, Cano E, Mangino JE, Kett DH, Ramirez JA, Zervos MJ; 
+Improving Medicine through Pathway Assessment of Critical Therapy of 
+Hospital-Acquired Pneumonia (IMPACT-HAP) Investigators.
+
+Collaborators: Arnold F, Nakamatsu R, Kiyan P, Perri MB, Donabedian S, Myers C, 
+Taylor D, Mount K, Pell L, Cubillos GF, Castelblanco AS, Ford KD, Scerpella EG.
+
+Author information:
+(1)Infectious Diseases, Wayne State University School of Medicine, Henry Ford 
+Health System, Detroit, MI 48202, USA. mzervos1@hfhs.org
+
+Comment in
+    Chest. 2011 Jan;139(1):227-8. doi: 10.1378/chest.10-1617.
+
+BACKGROUND: Methicillin-resistant Staphylococcus aureus (MRSA) is a leading 
+cause of hospital-acquired pneumonia (HAP), ventilator-associated pneumonia 
+(VAP), and health-care-associated pneumonia (HCAP). These infections are 
+associated with significant morbidity, mortality, and cost. The impact of 
+vancomycin minimum inhibitory concentration (MIC) on mortality for patients with 
+MRSA pneumonia has not been determined.
+METHODS: Adult patients in ICUs with a diagnosis of MRSA HAP, VAP, or HCAP were 
+entered in the study. Clinical and laboratory information were prospectively 
+collected. Vancomycin MIC and heteroresistance were determined for each MRSA 
+isolate. Data were collected from February 2006 through August 2007. The primary 
+outcome variable was all-cause mortality at day 28. A propensity score approach 
+was used to adjust for confounding variables.
+RESULTS: The study sample consisted of 158 patients. All-cause mortality at day 
+28 was 32.3%. The majority of MRSA isolates had a vancomycin MIC ≥ 1.5 mg/mL 
+(115/158, 72.8%). Propensity score analysis demonstrated an increase in 28-day 
+mortality as vancomycin MIC increased from 0.75 to 3 mg/mL (P ≤ .001). 
+Heteroresistance to vancomycin, demonstrated in 21.5% isolates, was not 
+associated with mortality.
+CONCLUSIONS: Mortality in patients with MRSA HAP, VAP, and HCAP increases as a 
+function of the vancomycin MIC, even for strains with MIC values within the 
+susceptible range. Evaluation of vancomycin MICs should be contemplated at the 
+institutional level and for individual cases of MRSA pneumonia. The use of 
+vancomycin therapy in patients with MRSA pneumonia caused by isolates with MICs 
+between 1 and 2 mg/mL should be undertaken with caution, and alternative 
+therapies should be considered.
+
+DOI: 10.1378/chest.09-2453
+PMID: 20558550 [Indexed for MEDLINE]
+
+
+49. Ann Pharmacother. 2010 May;44(5):918-21. doi: 10.1345/aph.1M665. Epub 2010 Mar 
+30.
+
+Successful treatment of daptomycin-nonsusceptible methicillin-resistant 
+Staphylococcus aureus bacteremia with the addition of rifampin to daptomycin.
+
+Ahmad NM(1), Rojtman AD.
+
+Author information:
+(1)Department of Medicine, Division of Infectious Diseases, Jersey Shore 
+University Medical Center, Neptune, NJ 07753, USA. nmahmad@meridianhealth.com
+
+OBJECTIVE: To report a case in which daptomycin-nonsusceptible 
+methicillin-resistant Staphylococcus aureus (MRSA) bacteremia was successfully 
+treated with the addition of rifampin to daptomycin.
+CASE SUMMARY: An 84-year-old male presented with fever and chills following 
+cystoscopy. After culturing was conducted, the patient received single doses of 
+vancomycin and gentamicin and then continued on vancomycin plus ceftazidime. 
+Blood cultures grew MRSA, with vancomycin and daptomycin minimum inhibitory 
+concentrations (MICs) of < or =1 microg/mL and 0.25 microg/mL, respectively. 
+Vancomycin was continued, with trough concentrations maintained >15 microg/mL, 
+but results of blood cultures remained positive. On day 10, therapy was switched 
+to daptomycin 6 mg/kg/day, but culture results remained positive. On day 13, 
+testing for vancomycin heteroresistance was negative, with the MIC unchanged. 
+The vancomycin MIC remained unchanged on day 19, but the daptomycin MIC had 
+increased to 2 microg/mL. Rifampin 300 mg orally twice daily was added on day 
+20; blood cultures obtained 2 days later were sterile. The patient was 
+discharged to complete a 6-week course of antibiotics and was doing well 4 
+months following therapy.
+DISCUSSION: Analysis of MRSA isolates obtained on days 1 and 19 showed an 
+increase in the daptomycin MIC from 0.25 to 2 microg/mL. Because intervening 
+isolates were not available for susceptibility testing, it is not possible to 
+associate this increase with exposure to either vancomycin or daptomycin. 
+Although in vitro synergy was not seen in this case, addition of rifampin to 
+daptomycin therapy resolved the bacteremia.
+CONCLUSIONS: In patients with persistent MRSA bacteremia, isolates should be 
+retested for susceptibility to both daptomycin and vancomycin, including 
+assessment for vancomycin heteroresistance. Addition of rifampin to daptomycin 
+may be effective for persistent MRSA bacteremia, even if daptomycin MICs are 
+elevated. Prospective studies are needed to define the role of combination 
+therapy.
+
+DOI: 10.1345/aph.1M665
+PMID: 20354160 [Indexed for MEDLINE]
+
+
+50. J Antimicrob Chemother. 2010 Apr;65(4):725-8. doi: 10.1093/jac/dkq028. Epub 2010 
+Feb 5.
+
+Activity of telavancin against heterogeneous vancomycin-intermediate 
+Staphylococcus aureus (hVISA) in vitro and in an in vivo mouse model of 
+bacteraemia.
+
+Hegde SS(1), Skinner R, Lewis SR, Krause KM, Blais J, Benton BM.
+
+Author information:
+(1)Theravance, Inc., 901 Gateway Boulevard, South San Francisco, CA 94080, USA. 
+shegde@theravance.com
+
+OBJECTIVES: Infections caused by heterogeneous vancomycin-intermediate 
+Staphylococcus aureus (hVISA) are associated with high rates of vancomycin 
+treatment failure. Telavancin is a bactericidal lipoglycopeptide active in vitro 
+against Gram-positive pathogens including hVISA and vancomycin-intermediate S. 
+aureus (VISA). This study characterizes the microbiological activity of 
+telavancin against vancomycin-susceptible S. aureus (VSSA), hVISA and VISA 
+strains.
+METHODS: Reference strains of VSSA, hVISA and VISA were assessed for potential 
+telavancin heteroresistance by population analysis. In addition, the efficacies 
+of telavancin (40 mg/kg subcutaneously every 12 h for 4 days) and vancomycin 
+(110 mg/kg subcutaneously every 12 h for 8 days) were compared in a neutropenic 
+murine model (immunocompromised female non-Swiss albino mice) of bacteraemia 
+caused by hVISA strain Mu3. Blood and spleen bacterial titres were quantified 
+from cohorts of mice euthanized pre-treatment and at 24 h intervals 
+post-treatment for 8 days.
+RESULTS: Telavancin was active against all strains of S. aureus tested, with MIC 
+values < or =0.5 mg/L. Population analyses revealed no evidence of 
+subpopulations with reduced susceptibility to telavancin. In the murine 
+bacteraemia model of hVISA infection, all animals were bacteraemic pre-treatment 
+and mortality was 100% within 16-24 h post-infection in untreated animals. 
+Treatment with telavancin was associated with lower spleen bacterial titres, 
+lower rates of bacteraemia and lower overall mortality than treatment with 
+vancomycin.
+CONCLUSIONS: These in vitro and pre-clinical in vivo studies demonstrate that 
+telavancin has the potential to be efficacious in infections caused by hVISA.
+
+DOI: 10.1093/jac/dkq028
+PMID: 20139142 [Indexed for MEDLINE]
+
+
+51. Am J Med. 2010 Feb;123(2):182.e1-7. doi: 10.1016/j.amjmed.2009.05.031.
+
+Vancomycin-associated nephrotoxicity: grave concern or death by character 
+assassination?
+
+Hazlewood KA(1), Brouse SD, Pitcher WD, Hall RG.
+
+Author information:
+(1)Texas Tech University Health Sciences Center, Dallas, TX, USA.
+
+Vancomycin-associated nephrotoxicity was reported in 0% to 5% of patients in the 
+1980s. This has been confirmed by numerous clinical trials comparing novel 
+anti-methicillin-resistant Staphylococcus aureus agents with vancomycin at the 
+Food and Drug Administration-approved dosage of 1 g every 12 hours. Treatment 
+failures of vancomycin in patients with methicillin-resistant S. aureus 
+infections have been reported despite in vitro susceptibility. These failures 
+have led to the use of vancomycin doses higher than those approved by the Food 
+and Drug Administration. Higher doses are being administered to achieve goal 
+vancomycin trough concentrations of 10 to 20 microg/mL recommended by several 
+clinical practice guidelines endorsed by the Infectious Diseases Society of 
+America. Recent studies suggest that increased rates of nephrotoxicity are 
+associated with aggressive vancomycin dosing. These increased rates are 
+confounded by concomitant nephrotoxins, renal insufficiency, or changing 
+hemodynamics. These studies also have demonstrated that vancomycin's 
+nephrotoxicity risk is minimal in patients without risk factors for 
+nephrotoxicity. Clinicians unwilling to dose vancomycin in accordance with 
+clinical practice guidelines should use an alternative agent because inadequate 
+dosing increases the likelihood of selecting heteroresistant 
+methicillin-resistant S. aureus isolates.
+
+Copyright (c) 2010 Elsevier Inc. All rights reserved.
+
+DOI: 10.1016/j.amjmed.2009.05.031
+PMCID: PMC2813201
+PMID: 20103028 [Indexed for MEDLINE]
+
+
+52. Curr Med Res Opin. 2010 Feb;26(2):407-21. doi: 10.1185/03007990903454912.
+
+Efficacy and safety of linezolid in methicillin-resistant Staphylococcus aureus 
+(MRSA) complicated skin and soft tissue infection (cSSTI): a meta-analysis.
+
+Bounthavong M(1), Hsu DI.
+
+Author information:
+(1)Veterans Affairs San Diego Healthcare System; UCSD Skaggs School of Pharmacy 
+and Pharmaceutical Sciences, 3350 La Jolla Village Drive (119-E), San Diego, CA 
+92161, USA. mark.bounthavong@va.gov
+
+OBJECTIVE: To evaluate the clinical and microbiological outcomes of linezolid 
+versus vancomycin in methicillin-resistant Staphylococcus aureus (MRSA) 
+complicated skin and soft-tissue infection (cSSTI) using a meta-analysis.
+RESEARCH DESIGN AND METHODS: Clinical trials were identified using PubMed, the 
+Cochrane Central Register of Controlled Trials, and the International 
+Pharmaceutical Abstracts from inception to March 2009. Primary outcomes 
+evaluated resolution of signs and symptoms of infection in clinically evaluable 
+(CE) patients, and microbiological eradication in both the modified 
+intent-to-treat (MITT) and MRSA evaluable (MRSA ME) patients. MITT patients had 
+a culture-confirmed Gram-positive pathogen (S. aureus) at baseline. Secondary 
+outcomes included mortality, adverse drug reactions (ADR), and discontinuation 
+due to ADRs. The Mantel-Haenszel odds ratios (OR) with 95% confidence intervals 
+(CI) were calculated using the fixed effects model based on the assumption that 
+there was little to no heterogeneity between the studies in the primary 
+analysis. Sensitivity analyses were performed for each outcome by removing the 
+most weighted study.
+RESULTS: Five studies with a total of 2652 patients (1361/linezolid; 
+1291/vancomycin) were identified. Resolution of infection in CE patients (OR = 
+1.41; 95% CI: 1.03, 1.95) and MITT patients (OR = 1.91; 95% CI: 1.33, 2.76) 
+favored the use of linezolid over vancomycin, but did not remain significant 
+after sensitivity analyses (CE: OR = 1.29; 95% CI: 0.81, 2.05; MITT: OR = 1.73; 
+95% CI: 0.87, 3.41). Microbiological eradication in MRSA ME patients 
+consistently favored the use of linezolid over vancomycin (OR = 2.90; 95% CI: 
+1.90, 4.41). No difference in mortality was observed between the two groups (OR 
+= 1.17; 95% CI: 0.85, 1.62). Higher proportions of linezolid patients were found 
+to have diarrhea (119/1361 vs. 52/1291), nausea (102/1361 vs. 46/1291) and 
+thrombocytopenia (54/1121 vs. 8/1071), whereas a higher proportion of vancomycin 
+patients were found to have renal insufficiency compared to linezolid (16/634 
+vs. 4/703). Inconsistent results were seen with the incidence of anemia and rash 
+between the base-case (anemia: OR = 1.36; 95% CI: 0.90, 2.08; rash: OR = 0.26; 
+95% CI: 0.10, 0.68) and sensitivity analyses (anemia: OR = 2.33; 95% CI: 1.24, 
+4.37; rash: OR = 0.57; 95% CI: 0.12, 2.71). Discontinuation due to ADRs was not 
+statistically different between linezolid and vancomycin (OR = 1.06; 95% CI: 
+0.75, 1.51).
+CONCLUSION: Resolution of infection in CE and MITT patients were inconsistent; 
+however, a sub-analysis revealed that linezolid was more likely to consistently 
+achieve microbiologic eradication in MRSA ME patients. Apparent risks of 
+thrombocytopenia, nausea, diarrhea, and possibly anemia may limit linezolid use 
+in treating MRSA cSSTI. This study was limited due to an inability to assess for 
+the effects of hetero-resistance and appropriate vancomycin dosing on outcomes. 
+Moreover, the small number of studies made controlling for heterogeneity 
+challenging.
+
+DOI: 10.1185/03007990903454912
+PMID: 20001574 [Indexed for MEDLINE]
+
+
+53. Diagn Microbiol Infect Dis. 2009 Oct;65(2):180-3. doi: 
+10.1016/j.diagmicrobio.2009.05.017.
+
+Clinical failure of vancomycin in a dialysis patient with 
+methicillin-susceptible vancomycin-heteroresistant S. aureus.
+
+Fusco DN(1), Alexander EL, Weisenberg SA, Mediavilla JR, Kreiswirth BN, Schuetz 
+AN, Jenkins SG, Rhee KY.
+
+Author information:
+(1)Division of Infectious Diseases, Weill Cornell Medical College, New York 
+Presbyterian Hospital, New York, New York 10065, USA.
+
+We report a case of recurrent Staphylococcus aureus bacteremia in a patient who 
+failed vancomycin due to a vancomycin-heteroresistant strain lacking methicillin 
+resistance. Although initial isolates were susceptible, isolates obtained after 
+vancomycin chemotherapy were vancomycin heteroresistant. This case thus 
+illustrates the clinical emergence of vancomycin heteroresistance.
+
+DOI: 10.1016/j.diagmicrobio.2009.05.017
+PMCID: PMC5227555
+PMID: 19748429 [Indexed for MEDLINE]
+
+
+54. Eur J Clin Microbiol Infect Dis. 2009 Aug;28(8):983-7. doi: 
+10.1007/s10096-009-0741-5. Epub 2009 Apr 22.
+
+Clinical features and treatment outcomes of vancomycin-intermediate 
+Staphylococcus aureus (VISA) and heteroresistant vancomycin-intermediate 
+Staphylococcus aureus (hVISA) in a tertiary care institution in Singapore.
+
+Fong RK(1), Low J, Koh TH, Kurup A.
+
+Author information:
+(1)Singapore General Hospital, Singapore, Singapore. fongraymond@hotmail.com
+
+This retrospective case-control study was undertaken to review the clinical 
+features associated with heteroresistant vancomycin-intermediate Staphylococcus 
+aureus (hVISA) and vancomycin-intermediate S. aureus (VISA) infections and the 
+local impact they have on clinical outcome. Compared with vancomycin-susceptible 
+S. aureus (n = 30), hVISA and VISA infections (n = 10) are found to be 
+associated with a longer period of prior glycopeptide use (P = 0.01), bone/joint 
+(P < 0.01) and prosthetic infections (P = 0.04), as well as treatment failure, 
+as evidenced by longer bacteremic (P < 0.01) and culture positivity (P < 0.01) 
+periods. This was observed to have resulted in longer hospital length of stay (P 
+< 0.01) and total antibiotic therapy duration (P = 0.01). There was, however, no 
+significant difference in the overall patient mortality or the hospitalization 
+cost (P = 0.12) in both groups. Clinicians should be cognizant of the 
+association between hVISA/VISA with high bacterial load deep-seated infections. 
+We recommend targeted and even universal screening for hVISA/VISA in 
+methicillin-resistant S. aureus (MRSA) infections.
+
+DOI: 10.1007/s10096-009-0741-5
+PMID: 19387707 [Indexed for MEDLINE]
+
+
+55. J Clin Microbiol. 2009 Jun;47(6):1640-4. doi: 10.1128/JCM.02135-08. Epub 2009 
+Apr 15.
+
+Vancomycin MIC plus heteroresistance and outcome of methicillin-resistant 
+Staphylococcus aureus bacteremia: trends over 11 years.
+
+Musta AC(1), Riederer K, Shemes S, Chase P, Jose J, Johnson LB, Khatib R.
+
+Author information:
+(1)Department of Medicine, Infectious Diseases, St. John Hospital and Medical 
+Center, Detroit, MI, USA.
+
+Vancomycin MICs (V-MIC) and the frequency of heteroresistant 
+vancomycin-intermediate Staphylococcus aureus (hVISA) isolates are increasing 
+among methicillin (meticillin)-resistant Staphylococcus aureus (MRSA) isolates, 
+but their relevance remains uncertain. We compared the V-MIC (Etest) and the 
+frequency of hVISA (Etest macromethod) for all MRSA blood isolates saved over an 
+11-year span and correlated the results with the clinical outcome. We tested 489 
+isolates: 61, 55, 187, and 186 isolates recovered in 1996-1997, 2000, 2002-2003, 
+and 2005-2006, respectively. The V-MICs were < or = 1, 1.5, 2, and 3 microg/ml 
+for 74 (15.1%), 355 (72.6%), 50 (10.2%), and 10 (2.1%) isolates, respectively. 
+We detected hVISA in 0/74, 48/355 (13.5%), 15/50 (30.0%), and 8/10 (80.0%) 
+isolates with V-MICs of < or = 1, 1.5, 2, and 3 microg/ml, respectively (P < 
+0.001). The V-MIC distribution and the hVISA frequency were stable over the 
+11-year period. Most patients (89.0%) received vancomycin. The mortality rate 
+(evaluated with 285 patients for whose isolates the trough V-MIC was > or = 10 
+microg/ml) was comparable for patients whose isolates had V-MICs of < or = 1 and 
+1.5 microg/ml (19.4% and 27.0%, respectively; P = 0.2) but higher for patients 
+whose isolates had V-MICs of > or = 2 microg/ml (47.6%; P = 0.03). However, the 
+impact of V-MIC and hVISA status on mortality or persistent (> or = 7 days) 
+bacteremia was not substantiated by multivariate analysis. Staphylococcal 
+chromosome cassette mec (SCCmec) typing of 261 isolates (including all hVISA 
+isolates) revealed that 93.0% of the hVISA isolates were SCCmec type II. These 
+findings demonstrate that the V-MIC distribution and hVISA frequencies were 
+stable over an 11-year span. A V-MIC of > or = 2 microg/ml was associated with a 
+higher rate of mortality by univariate analysis, but the relevance of the V-MIC 
+and the presence of hVISA remain uncertain. A multicenter prospective randomized 
+study by the use of standardized methods is needed to evaluate the relevance of 
+hVISA and determine the optimal treatment of patients whose isolates have V-MICs 
+of > or = 2.0 microg/ml.
+
+DOI: 10.1128/JCM.02135-08
+PMCID: PMC2691078
+PMID: 19369444 [Indexed for MEDLINE]
+
+
+56. J Clin Microbiol. 2008 Sep;46(9):2890-6. doi: 10.1128/JCM.00905-08. Epub 2008 
+Jul 2.
+
+Associations between the genotypes of Staphylococcus aureus bloodstream isolates 
+and clinical characteristics and outcomes of bacteremic patients.
+
+Lalani T(1), Federspiel JJ, Boucher HW, Rude TH, Bae IG, Rybak MJ, Tonthat GT, 
+Corey GR, Stryjewski ME, Sakoulas G, Chu VH, Alder J, Steenbergen JN, Luperchio 
+SA, Campion M, Woods CW, Fowler VG.
+
+Author information:
+(1)Division of Infectious Diseases, Duke University Medical Center, Durham, 
+North Carolina 27710, USA. lalan002@mc.duke.edu
+
+We investigated associations between the genotypic and phenotypic features of 
+Staphylococcus aureus bloodstream isolates and the clinical characteristics of 
+bacteremic patients enrolled in a phase III trial of S. aureus bacteremia and 
+endocarditis. Isolates underwent pulsed-field gel electrophoresis, PCR for 33 
+putative virulence genes, and screening for heteroresistant glycopeptide 
+intermediate S. aureus (hGISA). A total of 230 isolates (141 
+methicillin-susceptible S. aureus and 89 methicillin-resistant S. aureus [MRSA]) 
+were analyzed. North American and European S. aureus isolates differed in their 
+genotypic characteristics. Overall, 26% of the MRSA bloodstream isolates were 
+USA 300 strains. Patients with USA 300 MRSA bacteremia were more likely to be 
+injection drug users (61% versus 15%; P < 0.001), to have right-sided 
+endocarditis (39% versus 9%; P = 0.002), and to be cured of right-sided 
+endocarditis (100% versus 33%; P = 0.01) than patients with non-USA 300 MRSA 
+bacteremia. Patients with persistent bacteremia were less likely to be infected 
+with Panton-Valentine leukocidin gene (pvl)-constitutive MRSA (19% versus 56%; P 
+= 0.005). Although 7 of 89 MRSA isolates (8%) exhibited the hGISA phenotype, no 
+association with persistent bacteremia, daptomycin resistance, or bacterial 
+genotype was observed. This study suggests that the virulence gene profiles of 
+S. aureus bloodstream isolates from North America and Europe differ 
+significantly. In this study of bloodstream isolates collected as part of a 
+multinational randomized clinical trial, USA 300 and pvl-constitutive MRSA 
+strains were associated with better clinical outcomes.
+
+DOI: 10.1128/JCM.00905-08
+PMCID: PMC2546778
+PMID: 18596141 [Indexed for MEDLINE]
+
+
+57. Clin Infect Dis. 2007 Nov 15;45(10):1343-6. doi: 10.1086/522656. Epub 2007 Oct 
+5.
+
+Failure of daptomycin monotherapy for endocarditis caused by an Enterococcus 
+faecium strain with vancomycin-resistant and vancomycin-susceptible 
+subpopulations and evidence of in vivo loss of the vanA gene cluster.
+
+Arias CA(1), Torres HA, Singh KV, Panesso D, Moore J, Wanger A, Murray BE.
+
+Author information:
+(1)Center for the Study of Emerging and Reemerging Pathogens, Division of 
+Infectious Diseases, The University of Texas Medical School, Houston, TX 77030, 
+USA.
+
+A patient with native valve endocarditis caused by a vancomycin 
+"heteroresistant" strain of Enterococcus faecium experienced failure of 
+daptomycin monotherapy without evidence of daptomycin resistance. The infecting 
+organism exhibited in vivo emergence of a vancomycin-susceptible subpopulation 
+lacking vanA. Treatment with a combination of high-dose daptomycin, gentamicin, 
+and high-dose ampicillin cleared the infection.
+
+DOI: 10.1086/522656
+PMID: 17968832 [Indexed for MEDLINE]
+
+
+58. J Antimicrob Chemother. 2006 Apr;57(4):699-704. doi: 10.1093/jac/dkl030. Epub 
+2006 Feb 7.
+
+Effects of prolonged vancomycin administration on methicillin-resistant 
+Staphylococcus aureus (MRSA) in a patient with recurrent bacteraemia.
+
+Sakoulas G(1), Gold HS, Cohen RA, Venkataraman L, Moellering RC, Eliopoulos GM.
+
+Author information:
+(1)Westchester Medical Center and New York Medical College, Valhalla, USA. 
+george_sakoulas@nymc.edu
+
+OBJECTIVES: To evaluate microbiological properties of methicillin-resistant 
+Staphylococcus aureus (MRSA) during prolonged vancomycin therapy.
+METHODS: We evaluated vancomycin susceptibility and heteroresistance, accessory 
+gene regulator (agr) function, autolysis, biofilm production and in vitro 
+vancomycin killing in serial MRSA bloodstream isolates obtained over a 30 month 
+period from a patient with a chronic endovascular infection.
+RESULTS: Despite the fact that the MRSA in this patient had the same genetic 
+background as other clinical glycopeptide intermediate-resistant S. aureus 
+(GISA) isolates, vancomycin administered for 9 months, maintaining serum 
+concentrations >10 mg/L, did not select for GISA. Minimal changes in vancomycin 
+susceptibility were detected using agar dilution and population analysis 
+methods. We noted increases in delta haemolysin production, autolysis and the 
+bactericidal effects of vancomycin in vitro against the MRSA obtained after 
+prolonged vancomycin suppressive therapy was discontinued.
+CONCLUSIONS: Despite the lack of development of detectable resistance, MRSA 
+exposed to vancomycin for prolonged periods may begin to develop vancomycin 
+tolerance and decreased autolysis. In addition, suppression of agr function 
+appears to end after vancomycin is stopped. Whether these changes are 
+prerequisites for attenuated vancomycin efficacy and the development of 
+glycopeptide resistance warrants further study. The development of vancomycin 
+resistance may be more difficult under conditions where vancomycin serum 
+concentrations are maintained >10 mg/L.
+
+DOI: 10.1093/jac/dkl030
+PMID: 16464892 [Indexed for MEDLINE]
+
+
+59. Eur J Clin Microbiol Infect Dis. 2005 Nov;24(11):760-2. doi: 
+10.1007/s10096-005-0023-9.
+
+Successful treatment of right-sided prosthetic valve endocarditis due to 
+methicillin-resistant teicoplanin-heteroresistant Staphylococcus aureus with 
+linezolid.
+
+Souli M(1), Pontikis K, Chryssouli Z, Galani I, Giamarellou H.
+
+Author information:
+(1)Fourth Department of Internal Medicine, University General Hospital, ATTIKON 
+1 Rimini Str 124 62, Chaidari, Greece.
+
+DOI: 10.1007/s10096-005-0023-9
+PMID: 16283218 [Indexed for MEDLINE]
+
+
+60. Braz J Infect Dis. 2003 Jun;7(3):224-8. doi: 10.1590/s1413-86702003000300008. 
+Epub 2003 Dec 8.
+
+Clinical failure of vancomycin treatment of Staphylococcus aureus infection in a 
+tertiary care hospital in southern Brazil.
+
+Lutz L(1), Machado A, Kuplich N, Barth AL.
+
+Author information:
+(1)Biomedical research Unit, Microbiology Unit, Clinical Pathology Service - 
+Clinical Hospital of Porto Alegre, RS, Brazil.
+
+We describe a case of clinical failure of vancomycin treatment of Staphylococcus 
+aureus infection and the laboratory characteristics of the organism in a 
+tertiary referral university hospital in southern Brazil. An 11-month-old male 
+patient presented with pneumonia and S. aureus was isolated from his respiratory 
+tract. Initial treatment with oxacillin and gentamicin was ineffective. 
+Vancomycin was added to the regimen as the patient worsened, but after the 
+30(th) day of vancomycin treatment S. aureus was isolated from the blood. This 
+isolate had a minimum inhibitory concentration (MIC) for vancomycin of 4 mg/mL. 
+After pre-incubation with vancomycin the isolate displayed an increase in the 
+expression of vancomycin resistance and colonies grew in the presence of up to 
+12 mg/mL vancomycin. Based on these results, and considering that the patient 
+had not responded to vancomycin, the isolate was considered to be S. aureus 
+heteroresistant to vancomycin (SAHV). The SAHV proved to be similar, based on 
+DNA macrorestriction analysis, to methicillin resistant S. aureus (MRSA) 
+isolates from other patients in the hospital who had responded to vancomycin 
+treatment. Our findings underline the need to improve methods in the clinical 
+laboratory to detect the emergence of S. aureus clinically resistant to 
+vancomycin. The fact that the isolate emerged in the blood 30 days after 
+vancomycin treatment was initiated suggests that the organism was originally an 
+MRSA that had acquired the ability to circumvent the mechanism of action of 
+vancomycin.
+
+DOI: 10.1590/s1413-86702003000300008
+PMID: 14499046 [Indexed for MEDLINE]
+
+
+61. Med J Aust. 2001 Nov 5;175(9):480-3. doi: 10.5694/j.1326-5377.2001.tb143681.x.
+
+Treatment failure due to methicillin-resistant Staphylococcus aureus (MRSA) with 
+reduced susceptibility to vancomycin.
+
+Ward PB(1), Johnson PD, Grabsch EA, Mayall BC, Grayson ML.
+
+Author information:
+(1)Austin and Repatriation Medical Centre, Melbourne, VIC. 
+Peter.Ward@armc.org.au
+
+We report the first instance in Australia of treatment failure due to a strain 
+of methicillin-resistant Staphylococcus aureus (MRSA) with reduced 
+susceptibility to vancomycin--heteroresistant vancomycin-intermediate S. aureus 
+(hVISA). The infection occurred in a 41-year-old man with multiple risk factors. 
+No transmission of the organism to other patients or the environment was 
+detected. This case may herald the beginning of a new phase of staphylococcal 
+resistance in Australia.
+
+DOI: 10.5694/j.1326-5377.2001.tb143681.x
+PMID: 11758077 [Indexed for MEDLINE]

@@ -1,0 +1,215 @@
+// Patomove Database Schema
+// Phenotype-first genomic surveillance platform
+
+Project Patomove {
+  database_type: 'PostgreSQL'
+  note: 'Genomic intelligence platform for pathology labs'
+}
+
+// Core isolate entity - represents each bacterial sample
+Table Isolate {
+  id String [pk]
+  label String [not null, note: 'Lab-assigned identifier']
+  phenotypeId String [note: 'points to PhenotypeProfile']
+  
+  // Collection source (split relationships)
+  collectionSource String [not null, note: 'human, environmental, animal']
+  patientId String [note: 'foreign key to Patient']
+  environmentId String [note: 'foreign key to Environment']
+  orgId String [not null, note: 'processing lab organization']
+  
+  // Collection metadata
+  collectionSite String [not null, note: 'urine, blood, wound']
+  collectionDate DateTime [not null]
+  
+  // Lab workflow
+  priority String [note: 'routine, urgent, stat']
+  processingStatus String [note: 'received, processing, complete']
+  notes String [note: 'lab notes']
+  
+  createdAt DateTime [default: 'now()']
+  updatedAt DateTime
+  
+  indexes {
+    phenotypeId
+    collectionDate
+    orgId
+    patientId
+    environmentId
+  }
+}
+
+//phenotype profile with MIC data
+Table PhenotypeProfile {
+  id String [pk]
+  species String [note: 'Escherichia coli']
+  method String [note: 'MALDI-TOF, VITEK, 16S']
+  testDate DateTime
+  confidence Float [note: '0.0-1.0']
+  notes String
+  micData Json [note: 'Array of {antibiotic, mic, interpretation, notes}']
+  createdAt DateTime [default: 'now()']
+  updatedAt DateTime
+}
+
+
+Table GenomicData {
+  id String [pk]
+  isolateId String [not null]
+  
+  // Sequencing metadata
+  checksumMd5 String [not null]
+  sequencingDate DateTime [not null]
+  platform String [not null]
+  coverage Float
+  
+  // Classification data
+  species String [note: 'Escherichia coli group']
+  speciesCanonical String [note: 'Escherichia coli_F']
+  speciesIdentificationMethod String [note: 'GTDB, ANI, MLST']
+  speciesClassificationConfidence Float [note: '0.0-1.0']
+  mlst String [note: 'Sequence type']
+  
+  // Processing metadata
+  pipeline String
+  pipelineVersion String
+  
+  // QC metrics
+  cleanReadsQc Json [note: 'total_reads, avg_length, q30_bases, etc']
+  cleanAssemblyQc Json [note: 'contigs, n50, total_length, coverage, etc']
+  
+  // Detected proteins
+  detectedProteins Json [note: 'Array of {uniprotId, evidence, coverage, identity}']
+  
+  notes String
+  createdAt DateTime [default: 'now()']
+  updatedAt DateTime
+  
+  indexes {
+    isolateId
+    pipeline
+  }
+}
+
+//isolate treatment outcomes
+Table IsolateTreatmentOutcome {
+  id String [pk]
+  isolateId String [not null]
+  antibiotic String [not null, note: 'What was prescribed']
+  startDate DateTime [not null]
+  endDate DateTime
+  outcome String [not null, note: 'success, failure, switched, unknown']
+  clinicalNotes String
+  createdAt DateTime [default: 'now()']
+  
+  indexes {
+    isolateId
+    outcome
+  }
+}
+
+// Protein reference catalog from UniProt
+Table ProteinRef {
+  uniprotId String [pk, note: 'e.g., P0A8V2']
+  name String [not null]
+  function String
+  sequenceHash String [unique, not null]
+  category String
+  updatedAt DateTime
+}
+
+
+
+// Organization management
+Table Organization {
+  id String [pk]
+  name String [not null]
+  type String [not null, note: 'pathlab, hospital, clinic, research']
+  code String [unique, not null, note: 'Short identifier']
+  isInternal Boolean [default: false, note: 'true = the path lab itself']
+  contactEmail String
+  contactPhone String
+  address String
+  accessLevel String [default: 'viewer', note: 'admin, editor, viewer']
+  isActive Boolean [default: true]
+  createdAt DateTime [default: 'now()']
+  updatedAt DateTime
+}
+
+// Patient information for clinical samples
+Table Patient {
+  id String [pk]
+  dateOfBirth DateTime
+  sex String [note: 'M, F, other']
+  clinicalNotes String
+  createdAt DateTime [default: 'now()']
+  updatedAt DateTime
+}
+
+Table PatientAdt {
+  id String [pk]
+  patientId String [not null]
+  orgId String [not null]
+  admitDate DateTime [not null]
+  dischargeDate DateTime
+  transferType String [note: 'admit, discharge, transfer']
+  ward String
+  bed String
+  notes String
+  createdAt DateTime [default: 'now()']
+  updatedAt DateTime
+  
+  indexes {
+    patientId
+    orgId
+  }
+}
+
+// Environmental source information
+Table Environment {
+  id String [pk]
+  siteName String [not null, note: 'ICU sink, river delta, etc']
+  facilityType String [note: 'hospital, farm, river, etc']
+  orgId String [not null, note: 'which organization collected this']
+  createdAt DateTime [default: 'now()']
+  updatedAt DateTime
+  
+  indexes {
+    orgId
+  }
+}
+
+// User management - auth provider agnostic
+Table User {
+  id String [pk]
+  email String [unique, not null]
+  firstName String [not null]
+  lastName String [not null]
+  orgId String [not null, note: 'Organization they belong to']
+  role String [default: 'viewer', note: 'viewer, technician, scientist, director, admin']
+  permissions Json [note: 'Granular permissions if needed']
+  isActive Boolean [default: true]
+  authProvider String [note: 'auth0, okta, etc']
+  authProviderId String [note: 'ID from auth provider']
+  createdAt DateTime [default: 'now()']
+  updatedAt DateTime
+}
+
+// Define relationships
+Ref: IsolateTreatmentOutcome.isolateId > Isolate.id [delete: Cascade]
+Ref: GenomicData.isolateId > Isolate.id [delete: Cascade]
+Ref: Isolate.phenotypeId > PhenotypeProfile.id
+Ref: Isolate.patientId > Patient.id
+Ref: Isolate.environmentId > Environment.id
+Ref: Isolate.orgId > Organization.id
+Ref: PatientAdt.patientId > Patient.id [delete: Cascade]
+Ref: PatientAdt.orgId > Organization.id
+Ref: Environment.orgId > Organization.id
+Ref: User.orgId > Organization.id
+
+// Key insights from schema design:
+// 1. Phenotype-first: MIC values drive everything
+// 2. Outcome tracking: Links predictions to real-world results
+// 3. Protein-centric: AA sequences as stable identifiers
+// 4. LIMS-ready: Simple isolate model maps to any lab system
+// 5. ML-ready: Confidence scores built into phenotype predictions
