@@ -25,9 +25,9 @@ function useIsolatesData(searchParams: SearchParams) {
   const [data, setData] = useState({
     isolates: [],
     filterOptions: {
-      species: ['Escherichia coli', 'Staphylococcus aureus', 'Klebsiella pneumoniae', 'Pseudomonas aeruginosa', 'Enterococcus faecium'],
-      sources: ['Blood', 'Urine', 'Wound', 'Sputum', 'CSF', 'Environmental'],
-      sites: ['ICU', 'Emergency Department', 'Medical Ward', 'Surgical Ward', 'Outpatient']
+      species: [],
+      sources: [],
+      sites: []
     },
     pagination: {
       currentPage: 1,
@@ -45,15 +45,21 @@ function useIsolatesData(searchParams: SearchParams) {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const response = await fetch('/api/isolates', {
-        cache: 'no-store'
-      });
       
-      if (!response.ok) {
-        throw new Error('Failed to fetch isolates');
+      //fetch both isolates and filter options in parallel
+      const [isolatesResponse, filtersResponse] = await Promise.all([
+        fetch('/api/isolates', { cache: 'no-store' }),
+        fetch('/api/isolates/filters', { cache: 'no-store' })
+      ]);
+      
+      if (!isolatesResponse.ok || !filtersResponse.ok) {
+        throw new Error('Failed to fetch data');
       }
       
-      const isolates = await response.json();
+      const [isolates, filterOptions] = await Promise.all([
+        isolatesResponse.json(),
+        filtersResponse.json()
+      ]);
       
       const totalInDatabase = isolates.length;
       let filteredIsolates = isolates;
@@ -90,11 +96,7 @@ function useIsolatesData(searchParams: SearchParams) {
 
       setData({
         isolates: paginatedIsolates,
-        filterOptions: {
-          species: ['Escherichia coli', 'Staphylococcus aureus', 'Klebsiella pneumoniae', 'Pseudomonas aeruginosa', 'Enterococcus faecium'],
-          sources: ['Blood', 'Urine', 'Wound', 'Sputum', 'CSF', 'Environmental'],
-          sites: ['ICU', 'Emergency Department', 'Medical Ward', 'Surgical Ward', 'Outpatient']
-        },
+        filterOptions,
         pagination: {
           currentPage: page,
           totalPages,

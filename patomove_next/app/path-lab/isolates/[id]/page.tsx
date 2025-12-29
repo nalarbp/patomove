@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import ComponentFeedback from '@/components/ComponentFeedback';
 import PipelineStatus from '@/components/PipelineStatus';
+import ExportButton from '@/components/ExportButton';
 
 interface IsolatePageProps {
   params: Promise<{
@@ -101,41 +102,49 @@ export default async function IsolatePage({ params }: IsolatePageProps) {
         </nav>
       </div>
 
-      {/* Main Content */}
-      <div className="relative bg-white rounded-lg shadow">
-        <ComponentFeedback componentName="IsolateDetailPage" />
-        
-        {/* Header */}
-        <div className="px-6 py-4 border-b border-gray-200">
-          <div className="flex justify-between items-start">
-            <div>
-              <h1 className="text-2xl font-bold text-gray-900">{isolate.label}</h1>
-              <p className="text-gray-600 mt-1">
-                Collected {formatDate(isolate.collectionDate.toString())} from {isolate.collectionSource}
-              </p>
-            </div>
-            <div className="flex items-center space-x-3">
-              <span className={`px-3 py-1 rounded-full text-sm font-medium border ${getPriorityColor(isolate.priority || 'normal')}`}>
-                {isolate.priority} priority
-              </span>
-              <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                stage === 'Complete' ? 'bg-green-100 text-green-800' :
-                stage === 'Culture' ? 'bg-blue-100 text-blue-800' :
-                stage === 'Identification' ? 'bg-purple-100 text-purple-800' :
-                'bg-orange-100 text-orange-800'
-              }`}>
-                {stage}
-              </span>
-            </div>
-          </div>
-        </div>
-
-        {/* Content */}
-        <div className="p-6">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="flex flex-col lg:flex-row gap-8">
+        {/* Main Sample Report Section - for PDF export */}
+        <div className="flex-1">
+          <div id="sample-report" className="relative bg-white rounded-lg shadow">
+            <ComponentFeedback componentName="IsolateDetailPage" />
             
-            {/* Left Column - Sample Information */}
-            <div className="lg:col-span-2 space-y-6">
+            {/* PDF Header - only visible in PDF export */}
+            <div className="hidden print:block px-6 py-4 border-b-2 border-gray-300">
+              <div className="text-center">
+                <h1 className="text-xl font-bold text-gray-900 mb-1">Patomove Genomic Intelligence Platform</h1>
+                <p className="text-sm text-gray-600">Laboratory Sample Report</p>
+                <p className="text-xs text-gray-500 mt-2">Generated on {new Date().toLocaleDateString()} at {new Date().toLocaleTimeString()}</p>
+              </div>
+            </div>
+            
+            {/* Screen Header */}
+            <div className="px-6 py-4 border-b border-gray-200 print:border-b-0 print:pt-4">
+              <div className="flex justify-between items-start">
+                <div>
+                  <h1 className="text-2xl font-bold text-gray-900">{isolate.label}</h1>
+                  <p className="text-gray-600 mt-1">
+                    Collected {formatDate(isolate.collectionDate.toString())} from {isolate.collectionSource}
+                  </p>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <span className={`px-3 py-1 rounded-full text-sm font-medium border ${getPriorityColor(isolate.priority || 'normal')}`}>
+                    {isolate.priority} priority
+                  </span>
+                  <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+                    stage === 'Complete' ? 'bg-green-100 text-green-800' :
+                    stage === 'Culture' ? 'bg-blue-100 text-blue-800' :
+                    stage === 'Identification' ? 'bg-purple-100 text-purple-800' :
+                    'bg-orange-100 text-orange-800'
+                  }`}>
+                    {stage}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="p-6">
+              <div className="space-y-6">
               
               {/* Basic Information */}
               <div className="bg-gray-50 rounded-lg p-6">
@@ -367,27 +376,39 @@ export default async function IsolatePage({ params }: IsolatePageProps) {
                   </div>
                 </div>
               )}
-            </div>
-
-            {/* Right Column - Quick Actions */}
-            <div className="space-y-6">
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h2 className="text-lg font-medium text-gray-900 mb-4">Quick Actions</h2>
-                <div className="space-y-3">
-                  <button className="w-full px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
-                    Update Status
-                  </button>
-                  <button className="w-full px-4 py-2 border border-gray-300 text-gray-700 rounded hover:bg-gray-50 transition-colors">
-                    Add Note
-                  </button>
-                  <button className="w-full px-4 py-2 border border-gray-300 text-gray-700 rounded hover:bg-gray-50 transition-colors">
-                    Export Data
-                  </button>
-                  <button className="w-full px-4 py-2 border border-gray-300 text-gray-700 rounded hover:bg-gray-50 transition-colors">
-                    View Related
-                  </button>
-                </div>
+              
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Separate Quick Actions Panel - excluded from PDF export */}
+        <div className="lg:w-80 flex-shrink-0">
+          <div className="bg-gray-50 rounded-lg p-4 sticky top-6">
+            <h2 className="text-base font-medium text-gray-900 mb-3">Quick Actions</h2>
+            <div className="space-y-2">
+              <ExportButton
+                elementId="sample-report"
+                sampleLabel={isolate.label}
+                className="w-full px-3 py-2 text-sm bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span>Export to PDF</span>
+              </ExportButton>
+              <button className="w-full px-3 py-2 text-sm border border-gray-300 text-gray-700 rounded hover:bg-gray-50 transition-colors flex items-center justify-center space-x-2">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                </svg>
+                <span>Edit Sample</span>
+              </button>
+              <button className="w-full px-3 py-2 text-sm border border-red-300 text-red-700 rounded hover:bg-red-50 transition-colors flex items-center justify-center space-x-2">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                </svg>
+                <span>Delete Sample</span>
+              </button>
             </div>
           </div>
         </div>

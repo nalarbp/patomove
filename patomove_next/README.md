@@ -71,13 +71,14 @@ Instead of starting with genomics, we prioritize clinical phenotypes (MIC values
 
 ### ✅ December 2024 Completed
 1. Project initialization with secure dependency versions
-2. **Enhanced database schema with standardized lowercase values**
+2. **Enhanced database schema with genome linking architecture**
    - **sampleType field**: `'clinical' | 'environmental'` (lowercase standardization)
    - **priority field**: `'normal' | 'priority'` (lowercase standardization)  
    - **processingStatus field**: Genomics-focused stages - `'to be sequenced' | 'genome sequenced' | 'genomics processing' | 'genomics completed'`
    - **Audit trail fields**: createdBy/updatedBy for user tracking
    - **Foreign key constraints**: orgId required, conditional patientId/environmentId based on sampleType
    - **Schema validation**: Business logic enforces exactly one of patientId OR environmentId
+   - **Genome linking fields**: linkedAt, autoLinked, linkingMethod for tracking genome-isolate relationships
    - **Complete database reset script**: Single command `./reset_db.sh` handles everything
 3. **Database and API layer complete**
    - Prisma 6.1.0 (stable version) with SQLite for development
@@ -159,16 +160,43 @@ Instead of starting with genomics, we prioritize clinical phenotypes (MIC values
    - **Reduced Database Load**: Eliminated redundant Prisma queries from concurrent polling loops
    - **Component Synchronization**: AnalysisQueue, GenomeLibrary, and PipelineStatus use unified polling strategy
    - **Debug Logging**: Maintained console logs for monitoring polling behavior during development
-14. Auth-agnostic architecture with audit trail ready  
-15. Professional UI with no emojis, flexbox layouts, scientific standards
+14. **Modern Sidebar Navigation System**
+   - **Collapsible Sidebar**: Toggle between expanded (256px) and collapsed (64px) states with smooth animations
+   - **Persistent State**: User preference saved to localStorage and maintained across sessions
+   - **Fixed Position**: Sidebar stays in viewport while main content scrolls independently
+   - **Mobile Responsive**: Auto-collapses on tablet/mobile with appropriate breakpoints
+   - **Unified Navigation**: Combined main nav (Path Lab/IPC), feature nav, user controls in single sidebar
+   - **Bottom-Sticky Controls**: User avatar, settings, and role switching always visible at bottom
+15. **Enhanced Genome Management Architecture**
+   - **Smart Linking System**: Database-generated UUIDs as primary keys, filenames as metadata
+   - **Auto-Suggestion API**: `/api/isolates/[id]/genome-suggestions` for intelligent genome-isolate matching
+   - **Confidence Scoring**: Fuzzy filename matching with percentage confidence ratings
+   - **Dynamic Filter Population**: Browse Isolates filters now populate from actual database values
+   - **Linking Workflow**: Upload-direct, auto-match, or manual linking options
+   - **Audit Trail**: Track how genomes were linked (auto vs manual) with timestamps
+16. **Sample Detail Page Enhancements**
+   - **Separated Layout Architecture**: Main sample report section cleanly separated from Quick Actions panel
+   - **Quick Actions Panel**: Compact sidebar with Export to PDF, Edit Sample, and Delete Sample buttons  
+   - **PDF-Ready Structure**: Sample report section (`#sample-report`) designed for clean export without UI controls
+   - **Professional Styling**: Smaller, focused action buttons with proper icons and hover states
+17. **PDF Export Implementation (Image-Based)**
+   - **PDF Generation Libraries**: Installed `jspdf`, `html2canvas`, `react-to-print` for export functionality
+   - **Export Utility (`lib/pdfExport.ts`)**: Professional PDF generation with margins, multi-page support, and branding
+   - **ExportButton Component**: Reusable component with loading states and error handling
+   - **Tailwind v4 Compatibility**: Comprehensive oklch-to-hex color conversion for html2canvas compatibility
+   - **Professional PDF Output**: Clean PDFs with platform branding, timestamps, and proper filename generation
+   - **Known Limitation**: Current implementation generates raster images (not selectable text) - marked for improvement
+18. Auth-agnostic architecture with audit trail ready  
+19. Professional UI with no emojis, flexbox layouts, scientific standards
 
 ## Current Feature Set
 
 ### 🏥 Laboratory Operations
+- **Modern Sidebar Navigation**: Collapsible left sidebar with unified navigation controls
 - **Dashboard**: Real-time metrics, recent samples, processing overview
-- **Browse Isolates**: Advanced filtering, search, pagination with card-based layout
+- **Browse Isolates**: Advanced filtering with dynamic population from database values
 - **Sample Management**: Dual-panel CSV import + manual entry with validation
-- **Genome Management**: NCBI SRA-style file upload and management system
+- **Genome Management**: NCBI SRA-style file upload with smart linking system
 - **Analytics**: Genomic insights and resistance patterns (placeholder)
 
 ### 🧬 Genome Management Features
@@ -176,10 +204,12 @@ Instead of starting with genomics, we prioritize clinical phenotypes (MIC values
 - **Format Validation**: Automatic FASTA/FASTQ format verification
 - **Quality Metrics**: Real-time N50, GC content, contig count calculation
 - **Status Tracking**: Upload → Validation → Analysis → Completion workflow
-- **Smart Linking**: Validated genomes available for sample association
+- **Smart Linking System**: Database-generated IDs with filename-based auto-suggestions
+- **Genome Suggestions**: Intelligent matching between uploaded genomes and isolates
 - **Pipeline Integration**: Direct submission to analysis pipeline from genome library
 - **Search & Filter**: Find genomes by filename, status, upload date, file size
 - **Metadata Management**: File hash verification, original filename preservation
+- **Linking Audit Trail**: Track how genomes were linked (auto vs manual) with timestamps
 
 ### 🔄 Sample Workflow
 - **CSV Bulk Import**: Upload sample lists with manual curation and validation
@@ -197,16 +227,21 @@ Instead of starting with genomics, we prioritize clinical phenotypes (MIC values
 - **Schema Evolution**: Support for database migrations and updates
 
 ### 📋 Next Steps (Priority Order)
-1. **Batch Genome Processing** - Support for bulk genome upload and pipeline submission
-2. **Advanced Quality Control** - Assembly quality thresholds, contamination detection, species verification  
-3. **Analytics dashboard** - genomic insights, resistance patterns, QC metrics visualizations
-4. **IPC staff dashboard** - outbreak detection, cluster analysis, epidemiological tools
-5. **Sample workflow actions** - update processing status, assign technicians, workflow automation
-6. **Alerts system** - overdue samples, QC failures, phenotype-genotype mismatches
-7. **Batch operations** - bulk status updates, technician assignment, export functionality
-8. **Enhanced validation** - advanced CSV field validation, duplicate detection
-9. **User authentication** - implement user login with organization-based access control
-10. **AWS deployment** - EC2 t3.micro with production PostgreSQL database
+1. **PDF Export Enhancement** - Replace image-based PDF with native vector PDF generation using jsPDF with proper text rendering, selectable content, and vector graphics
+2. **Edit Sample Functionality** - Implement edit sample form and validation for the Quick Actions panel
+3. **Delete Sample Functionality** - Add confirmation dialog and safe deletion with cascade handling
+4. **Genome Linking UI Implementation** - Complete the genome suggestions UI and linking workflow
+5. **Genome Library Filtering** - Add filters for unlinked genomes and linking status
+6. **Batch Genome Processing** - Support for bulk genome upload and pipeline submission
+7. **Advanced Quality Control** - Assembly quality thresholds, contamination detection, species verification  
+8. **Analytics dashboard** - genomic insights, resistance patterns, QC metrics visualizations
+9. **IPC staff dashboard** - outbreak detection, cluster analysis, epidemiological tools
+10. **Sample workflow actions** - update processing status, assign technicians, workflow automation
+11. **Alerts system** - overdue samples, QC failures, phenotype-genotype mismatches
+12. **Batch operations** - bulk status updates, technician assignment, export functionality
+13. **Enhanced validation** - advanced CSV field validation, duplicate detection
+14. **User authentication** - implement user login with organization-based access control
+15. **AWS deployment** - EC2 t3.micro with production PostgreSQL database
 
 ## Getting Started
 

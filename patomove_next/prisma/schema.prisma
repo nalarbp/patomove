@@ -74,6 +74,11 @@ model GenomicData {
   fileHash                        String    @unique
   uploadDate                      DateTime  @default(now())
   
+  // Linking tracking - for smart UX
+  linkedAt                        DateTime? // When was this genome linked to isolate
+  autoLinked                      Boolean   @default(false) // Auto-matched vs manual link
+  linkingMethod                   String?   // 'auto_filename', 'manual_search', 'upload_direct'
+  
   // Validation and processing status
   validationStatus                String    @default("pending") // pending, valid, invalid
   processingStatus                String    @default("uploaded") // uploaded, validated, analyzing, completed, failed
@@ -120,6 +125,9 @@ model GenomicData {
   @@index([processingStatus])
   @@index([uploadedBy])
   @@index([uploadDate])
+  @@index([originalFilename])  // For filename-based matching
+  @@index([linkedAt])          // For tracking linking history
+  @@index([autoLinked])        // Filter auto vs manual links
 }
 
 model IsolateTreatmentOutcome {

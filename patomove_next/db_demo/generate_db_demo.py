@@ -28,6 +28,7 @@ class DemoDataGenerator:
         self.created_environment_ids = []
         self.created_phenotype_ids = []
         self.created_isolate_ids = []
+        self.created_genomic_ids = []
         
         # Reference data
         self.collection_sites = [
@@ -333,44 +334,116 @@ class DemoDataGenerator:
         return isolates
     
     def generate_genomic_data(self, isolate_ids: List[str]) -> List[Dict[str, Any]]:
-        """Generate whole genome sequencing data"""
+        """Generate genome files for the new GenomicData schema"""
         genomic_data = []
         
-        # 60% of isolates have genomic data
-        sequenced_isolates = random.sample(isolate_ids, int(len(isolate_ids) * 0.6))
+        # Generate some demo genome files (20% of isolates have genomes)
+        # This simulates uploaded FASTA files waiting to be linked
+        num_genomes = max(5, int(len(isolate_ids) * 0.2))
         
-        for i, isolate_id in enumerate(sequenced_isolates):
-            # Generate realistic protein detection data
-            detected_proteins = []
-            num_proteins = random.randint(50, 200)
+        for i in range(num_genomes):
+            # Generate realistic filenames that might match isolate labels
+            if i < len(isolate_ids) and random.random() > 0.3:
+                # 70% chance to create filename that matches an isolate 
+                isolate_index = i % len(isolate_ids)
+                base_filename = f"ISO-{isolate_index+1:04d}"
+            else:
+                # 30% chance for unmatched filenames
+                base_filename = random.choice([
+                    f"genome_{i+1:03d}",
+                    f"sample_{random.randint(100, 999)}",
+                    f"EC{random.randint(1, 100):03d}",
+                    f"SA{random.randint(1, 50):03d}",
+                    f"KP{random.randint(1, 75):03d}"
+                ])
             
-            for j in range(num_proteins):
-                detected_proteins.append({
-                    "uniprotId": f"P{random.randint(10000, 99999)}",
-                    "name": f"protein_{j+1}",
-                    "function": random.choice(["transport", "metabolism", "regulation", "virulence", "resistance"]),
-                    "confidence": round(random.uniform(0.7, 0.99), 3)
-                })
+            filename = f"{base_filename}.fasta"
+            file_size = random.randint(1024*1024, 10*1024*1024)  # 1-10MB
+            upload_date = self.random_date_last_6_months(i)
             
             genomic_data.append({
                 "id": self.generate_uuid(),
-                "isolateId": isolate_id,
-                "checksumMd5": f"{random.randint(100000, 999999):x}{random.randint(100000, 999999):x}",
-                "sequencingDate": self.random_date_last_6_months(i),
-                "platform": random.choice(["Illumina_MiSeq", "Illumina_NextSeq", "ONT_MinION", "PacBio_Sequel"]),
-                "coverage": round(random.uniform(30, 150), 2),
-                "species": random.choice(self.species_list),
-                "speciesCanonical": random.choice(self.species_list),
-                "speciesIdentificationMethod": random.choice(["16S_rRNA", "MALDI_TOF", "ANI", "core_genome"]),
-                "speciesClassificationConfidence": round(random.uniform(0.9, 0.99), 3),
-                "mlst": f"ST{random.randint(1, 500)}",
-                "pipeline": random.choice(["SKESA", "SPAdes", "Unicycler", "Flye"]),
-                "pipelineVersion": f"v{random.randint(1, 5)}.{random.randint(0, 9)}.{random.randint(0, 9)}",
-                "cleanReadsQc": json.dumps({"total_reads": random.randint(100000, 1000000), "q30_percentage": round(random.uniform(85, 95), 2)}),
-                "cleanAssemblyQc": json.dumps({"contigs": random.randint(10, 100), "n50": random.randint(10000, 100000)}),
-                "detectedProteins": json.dumps(detected_proteins),
-                "notes": f"WGS data for isolate {i+1} - {random.choice(['routine surveillance', 'outbreak investigation', 'research'])}"
+                "filename": f"{self.generate_uuid()}_{filename}",  # Storage filename
+                "originalFilename": filename,                      # User's filename
+                "storagePath": f"/storage/genomes/{self.generate_uuid()}_{filename}",
+                "fileSize": file_size,
+                "fileHash": f"sha256_{random.randint(100000, 999999):x}{random.randint(100000, 999999):x}",
+                "uploadDate": upload_date,
+                
+                #linking tracking fields (initially unlinked)
+                "linkedAt": None,
+                "autoLinked": False,
+                "linkingMethod": None,
+                
+                #validation and processing
+                "validationStatus": random.choice(["valid", "valid", "valid", "pending", "invalid"]),  # Mostly valid
+                "processingStatus": random.choice(["uploaded", "validated", "analyzing", "completed"]),
+                "validationErrors": None,
+                
+                #quality metrics (for valid genomes)
+                "contigCount": random.randint(1, 150) if random.random() > 0.2 else None,
+                "totalLength": random.randint(2000000, 8000000) if random.random() > 0.2 else None,
+                "n50": random.randint(10000, 500000) if random.random() > 0.2 else None,
+                "gcContent": round(random.uniform(35.0, 65.0), 2) if random.random() > 0.2 else None,
+                "qualityMetrics": json.dumps({
+                    "num_contigs": random.randint(1, 150),
+                    "largest_contig": random.randint(50000, 2000000),
+                    "total_length": random.randint(2000000, 8000000)
+                }) if random.random() > 0.3 else None,
+                
+                #analysis results (for completed genomes)
+                "sequencingPlatform": random.choice(["Illumina_MiSeq", "Illumina_NextSeq", "ONT_MinION", "PacBio_Sequel"]) if random.random() > 0.4 else None,
+                "assemblyStats": json.dumps({
+                    "assembler": random.choice(["SPAdes", "SKESA", "Unicycler"]),
+                    "version": f"v{random.randint(3, 4)}.{random.randint(0, 15)}.{random.randint(0, 3)}"
+                }) if random.random() > 0.5 else None,
+                "mlstScheme": random.choice(["ecoli", "saureus", "kpneumoniae"]) if random.random() > 0.6 else None,
+                "mlstType": f"ST{random.randint(1, 500)}" if random.random() > 0.6 else None,
+                "mlstAlleles": json.dumps({
+                    "adk": random.randint(1, 100),
+                    "fumC": random.randint(1, 100),
+                    "gyrB": random.randint(1, 100)
+                }) if random.random() > 0.7 else None,
+                "resistanceGenes": json.dumps([
+                    {"gene": random.choice(["blaTEM", "blaCTX-M", "aac(6')-Ib", "sul1", "tet(A)"]), 
+                     "identity": round(random.uniform(95, 100), 2)}
+                    for _ in range(random.randint(0, 5))
+                ]) if random.random() > 0.5 else None,
+                "virulenceGenes": json.dumps([
+                    {"gene": f"vir_{random.randint(1, 50)}", 
+                     "identity": round(random.uniform(90, 100), 2)}
+                    for _ in range(random.randint(0, 3))
+                ]) if random.random() > 0.7 else None,
+                "plasmids": json.dumps([
+                    f"plasmid_{random.randint(1, 10)}"
+                    for _ in range(random.randint(0, 3))
+                ]) if random.random() > 0.8 else None,
+                "speciesIdentification": random.choice(self.species_list) if random.random() > 0.3 else None,
+                "speciesConfidence": round(random.uniform(0.85, 0.99), 3) if random.random() > 0.3 else None,
+                
+                #pipeline tracking
+                "assemblyPath": f"/pipeline/assemblies/{base_filename}_processed.fasta" if random.random() > 0.4 else None,
+                "annotationPath": f"/pipeline/annotations/{base_filename}.gff" if random.random() > 0.6 else None,
+                "analysisCompleted": random.random() > 0.4,
+                "pipelineJobId": f"job_{random.randint(10000, 99999)}" if random.random() > 0.5 else None,
+                
+                #audit fields
+                "uploadedBy": random.choice(["user_001", "user_002", "user_003"]),
+                "createdBy": random.choice(["system", "user_001"]),
+                "updatedBy": random.choice(["system", "pipeline"]) if random.random() > 0.5 else None,
+                "notes": f"Demo genome {i+1} - {random.choice(['clinical isolate', 'surveillance sample', 'outbreak investigation', 'quality control'])}"
             })
+        
+        # Populate database if requested  
+        if self.populate_db:
+            print("📤 Creating genomic data...")
+            for genome in genomic_data:
+                genome_api_data = {k: v for k, v in genome.items() if k != 'id'}
+                created_id = self.post_to_api("genomics", genome_api_data)
+                if created_id:
+                    genome['id'] = created_id
+                    self.created_genomic_ids.append(created_id)
+            print(f"✅ Created {len(self.created_genomic_ids)} genomic data records")
         
         return genomic_data
     
@@ -540,7 +613,8 @@ def main():
         print(f"   - {len(generator.created_environment_ids)} Environments created in DB")  
         print(f"   - {len(generator.created_phenotype_ids)} Phenotype profiles created in DB")
         print(f"   - {len(generator.created_isolate_ids)} Isolates created in DB")
-        print(f"   - Database contains demo data for visualization testing")
+        print(f"   - {len(generator.created_genomic_ids)} Genomic data records created in DB")
+        print(f"   - Database contains demo data for genome linking testing")
     else:
         print(f"✅ Demo data generated successfully!")
         print(f"📊 Summary:")
