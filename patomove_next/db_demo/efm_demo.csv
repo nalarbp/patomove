@@ -1,0 +1,2 @@
+isolateId,species,collectionSource,collectionSite,collectionDate,sampleType,patientId,environmentId,priority,processingStatus,orgId,assemblyPath
+EFM001,Enterococcus faecium,clinical_sample,emergency_department,2024-12-15,clinical,P001,,normal,to be sequenced,eb968498-f4b2-4c43-8352-a7a61494c30c,/Users/uqbperma/Documents/BUDI_APP/patomove_app/patomove_next/db_demo/EFM001.fasta

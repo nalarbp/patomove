@@ -9,29 +9,37 @@ datasource db {
 }
 
 model Isolate {
-  id               String                    @id @default(uuid())
-  label            String
-  sampleType       String                    // 'clinical' | 'environmental'
-  phenotypeId      String?
-  collectionSource String
-  patientId        String?
-  environmentId    String?
-  orgId            String
-  collectionSite   String
-  collectionDate   DateTime
-  priority         String?
-  processingStatus String?
-  notes            String?
-  createdBy        String?                   // User ID who created
-  updatedBy        String?                   // User ID who last updated
-  createdAt        DateTime                  @default(now())
-  updatedAt        DateTime                  @updatedAt
-  genomicData      GenomicData[]
-  environment      Environment?              @relation(fields: [environmentId], references: [id])
-  organization     Organization              @relation(fields: [orgId], references: [id])
-  patient          Patient?                  @relation(fields: [patientId], references: [id])
-  phenotypeProfile PhenotypeProfile?         @relation(fields: [phenotypeId], references: [id])
-  treatments       IsolateTreatmentOutcome[]
+  id                      String                    @id @default(uuid())
+  label                   String
+  sampleType              String                    // 'clinical' | 'environmental'
+  phenotypeId             String?
+  collectionSource        String
+  patientId               String?
+  environmentId           String?
+  orgId                   String
+  collectionSite          String
+  collectionDate          DateTime
+  priority                String?
+  processingStatus        String?
+  notes                   String?
+  
+  // Genome management - link to managed genome files
+  genomeId                String?                   // Link to primary genome for this isolate
+  
+  // Audit fields
+  createdBy               String?                   // User ID who created
+  updatedBy               String?                   // User ID who last updated
+  createdAt               DateTime                  @default(now())
+  updatedAt               DateTime                  @updatedAt
+  
+  // Relationships
+  genome                  GenomicData?              @relation("IsolateGenome", fields: [genomeId], references: [id])
+  genomicData             GenomicData[]             @relation("IsolateAnalyses")
+  environment             Environment?              @relation(fields: [environmentId], references: [id])
+  organization            Organization              @relation(fields: [orgId], references: [id])
+  patient                 Patient?                  @relation(fields: [patientId], references: [id])
+  phenotypeProfile        PhenotypeProfile?         @relation(fields: [phenotypeId], references: [id])
+  treatments              IsolateTreatmentOutcome[]
 
   @@index([phenotypeId])
   @@index([collectionDate])
@@ -39,6 +47,7 @@ model Isolate {
   @@index([patientId])
   @@index([environmentId])
   @@index([sampleType])
+  @@index([genomeId])
 }
 
 model PhenotypeProfile {
@@ -55,29 +64,62 @@ model PhenotypeProfile {
 }
 
 model GenomicData {
-  id                              String   @id @default(uuid())
-  isolateId                       String
-  checksumMd5                     String
-  sequencingDate                  DateTime
-  platform                        String
-  coverage                        Float?
-  species                         String?
-  speciesCanonical                String?
-  speciesIdentificationMethod     String?
-  speciesClassificationConfidence Float?
-  mlst                            String?
-  pipeline                        String?
-  pipelineVersion                 String?
-  cleanReadsQc                    String?
-  cleanAssemblyQc                 String?
-  detectedProteins                String?
-  notes                           String?
-  createdAt                       DateTime @default(now())
-  updatedAt                       DateTime @updatedAt
-  isolate                         Isolate  @relation(fields: [isolateId], references: [id])
+  id                              String    @id @default(uuid())
+  
+  // File management fields
+  filename                        String
+  originalFilename                String
+  storagePath                     String    // Managed location in /data/genomes/
+  fileSize                        Int
+  fileHash                        String    @unique
+  uploadDate                      DateTime  @default(now())
+  
+  // Validation and processing status
+  validationStatus                String    @default("pending") // pending, valid, invalid
+  processingStatus                String    @default("uploaded") // uploaded, validated, analyzing, completed, failed
+  validationErrors                String?   // JSON array of validation issues
+  
+  // Assembly quality metrics (populated during upload validation)
+  contigCount                     Int?
+  totalLength                     Int?
+  n50                            Int?
+  gcContent                       Float?
+  qualityMetrics                  String?   // JSON with detailed QC metrics
+  
+  // Analysis results (populated by pipeline)
+  sequencingPlatform             String?    
+  assemblyStats                  String?    // JSON
+  mlstScheme                     String?
+  mlstType                       String?
+  mlstAlleles                    String?    // JSON
+  resistanceGenes                String?    // JSON array
+  virulenceGenes                 String?    // JSON array  
+  plasmids                       String?    // JSON array
+  speciesIdentification          String?
+  speciesConfidence              Float?
+  
+  // Pipeline integration
+  assemblyPath                   String?    // Path to processed assembly
+  annotationPath                 String?    // Path to annotation files
+  analysisCompleted              Boolean    @default(false)
+  pipelineJobId                  String?    // Link to pipeline job
+  
+  // Audit fields
+  uploadedBy                     String     // User who uploaded
+  createdBy                      String?    // User/system who created record
+  updatedBy                      String?    // User/system who updated
+  notes                          String?
+  createdAt                      DateTime   @default(now())
+  updatedAt                      DateTime   @updatedAt
+  
+  // Relationships
+  primaryIsolate                 Isolate[]  @relation("IsolateGenome")    // Primary genome for isolates
+  analysisIsolates               Isolate[]  @relation("IsolateAnalyses")  // Analysis results for isolates
 
-  @@index([isolateId])
-  @@index([pipeline])
+  @@index([validationStatus])
+  @@index([processingStatus])
+  @@index([uploadedBy])
+  @@index([uploadDate])
 }
 
 model IsolateTreatmentOutcome {

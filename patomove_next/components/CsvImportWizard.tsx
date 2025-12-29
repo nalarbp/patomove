@@ -95,11 +95,11 @@ export default function CsvImportWizard() {
       const parsedIsolates: ParsedIsolate[] = data.map((row, index) => ({
         id: `temp-${index}`,
         label: row['Sample ID'] || row['label'] || '',
-        sampleType: (row['Sample Type'] || row['sampleType'] || 'Clinical') as 'Clinical' | 'Environmental',
+        sampleType: (row['Sample Type'] || row['sampleType'] || 'Clinical').toLowerCase() as 'clinical' | 'environmental',
         collectionSource: row['Collection Source'] || row['collectionSource'] || '',
         collectionSite: row['Collection Site'] || row['collectionSite'] || '',
         collectionDate: row['Collection Date'] || row['collectionDate'] || '',
-        priority: (row['Priority'] || row['priority'] || 'Normal') as 'Normal' | 'Priority',
+        priority: (row['Priority'] || row['priority'] || 'Normal').toLowerCase() as 'normal' | 'priority',
         notes: row['Notes'] || row['notes'] || '',
         orgId: globalOrgId,
         patientId: '',
@@ -127,10 +127,10 @@ export default function CsvImportWizard() {
     if (!isolate.collectionSite.trim()) errors.push('Collection site required');
     if (!isolate.collectionDate) errors.push('Collection date required');
     
-    if (isolate.sampleType === 'Clinical' && !isolate.patientId) {
+    if (isolate.sampleType === 'clinical' && !isolate.patientId) {
       errors.push('Patient required for clinical samples');
     }
-    if (isolate.sampleType === 'Environmental' && !isolate.environmentId) {
+    if (isolate.sampleType === 'environmental' && !isolate.environmentId) {
       errors.push('Environment site required for environmental samples');
     }
     
@@ -157,8 +157,8 @@ export default function CsvImportWizard() {
         processingStatus: 'pending',
         notes: isolate.notes,
         orgId: isolate.orgId,
-        ...(isolate.sampleType === 'Clinical' && { patientId: isolate.patientId }),
-        ...(isolate.sampleType === 'Environmental' && { environmentId: isolate.environmentId }),
+        ...(isolate.sampleType === 'clinical' && { patientId: isolate.patientId }),
+        ...(isolate.sampleType === 'environmental' && { environmentId: isolate.environmentId }),
         createdBy: 'current-user-id' // TODO: get from auth
       };
 
@@ -343,9 +343,9 @@ export default function CsvImportWizard() {
                       <select
                         value={isolate.sampleType}
                         onChange={(e) => updateIsolate(isolate.id, { 
-                          sampleType: e.target.value as 'Clinical' | 'Environmental',
-                          patientId: e.target.value === 'Clinical' ? isolate.patientId : '',
-                          environmentId: e.target.value === 'Environmental' ? isolate.environmentId : ''
+                          sampleType: e.target.value.toLowerCase() as 'clinical' | 'environmental',
+                          patientId: e.target.value.toLowerCase() === 'clinical' ? isolate.patientId : '',
+                          environmentId: e.target.value.toLowerCase() === 'environmental' ? isolate.environmentId : ''
                         })}
                         className="w-full px-2 py-1 text-sm border border-gray-300 rounded"
                       >
@@ -360,7 +360,7 @@ export default function CsvImportWizard() {
                       />
                     </td>
                     <td className="px-3 py-2 w-48">
-                      {isolate.sampleType === 'Clinical' ? (
+                      {isolate.sampleType === 'clinical' ? (
                         <PatientSelect
                           value={isolate.patientId}
                           onChange={(value) => updateIsolate(isolate.id, { patientId: value })}

@@ -3,11 +3,12 @@ import { prisma } from '@/app/lib/prisma'
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  const { id } = await params;
   try {
     const organization = await prisma.organization.findUnique({
-      where: { id: params.id },
+      where: { id },
       include: {
         users: true,
         patients: true,
@@ -34,14 +35,15 @@ export async function GET(
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  const { id } = await params;
   try {
     const body = await request.json()
     const { name, type, code, isInternal, contactEmail, contactPhone, address, accessLevel, isActive } = body
 
     const organization = await prisma.organization.update({
-      where: { id: params.id },
+      where: { id },
       data: {
         name,
         type,
@@ -66,11 +68,12 @@ export async function PUT(
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  const { id } = await params;
   try {
     await prisma.organization.delete({
-      where: { id: params.id }
+      where: { id }
     })
 
     return NextResponse.json({ message: 'Organization deleted successfully' })

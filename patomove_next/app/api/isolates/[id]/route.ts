@@ -3,11 +3,12 @@ import { prisma } from '@/app/lib/prisma'
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  const { id } = await params;
   try {
     const isolate = await prisma.isolate.findUnique({
-      where: { id: params.id },
+      where: { id },
       include: {
         organization: true,
         patient: {
@@ -17,6 +18,7 @@ export async function GET(
         },
         environment: true,
         phenotypeProfile: true,
+        genome: true,
         genomicData: true,
         treatments: true
       }
@@ -40,8 +42,9 @@ export async function GET(
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  const { id } = await params;
   try {
     const body = await request.json()
     const {
@@ -58,7 +61,7 @@ export async function PUT(
     } = body
 
     const isolate = await prisma.isolate.update({
-      where: { id: params.id },
+      where: { id },
       data: {
         label,
         collectionSource,
@@ -89,18 +92,48 @@ export async function PUT(
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  const { id } = await params;
   try {
-    await prisma.isolate.delete({
-      where: { id: params.id }
-    })
+    // Delete related genomic data first (due to foreign key constraints)
+    await prisma.genomicData.deleteMany({
+      where: {
+        OR: [
+          { primaryIsolate: { some: { id } } },
+          { analysisIsolates: { some: { id } } }
+        ]
+      }
+    });
 
-    return NextResponse.json({ message: 'Isolate deleted successfully' })
+    // Delete treatment outcomes
+    await prisma.isolateTreatmentOutcome.deleteMany({
+      where: { isolateId: id }
+    });
+
+    // Delete the isolate
+    const deletedIsolate = await prisma.isolate.delete({
+      where: { id }
+    });
+
+    return NextResponse.json({ 
+      message: 'Isolate deleted successfully',
+      deletedId: deletedIsolate.id 
+    });
+
   } catch (error) {
+    console.error('Delete isolate error:', error);
+    
+    if (error instanceof Error && 'code' in error && error.code === 'P2025') {
+      return NextResponse.json(
+        { error: 'Isolate not found' },
+        { status: 404 }
+      );
+    }
+
     return NextResponse.json(
       { error: 'Failed to delete isolate' },
       { status: 500 }
-    )
+    );
   }
 }

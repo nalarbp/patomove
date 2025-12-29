@@ -1,87 +1,60 @@
 import Link from 'next/link';
 import ComponentFeedback from '@/components/ComponentFeedback';
+import PipelineStatus from '@/components/PipelineStatus';
 
 interface IsolatePageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
-// Mock function to get isolate data - replace with real API call
+// Real API call to get isolate data  
 async function getIsolateData(id: string) {
-  // Simulate API delay
-  await new Promise(resolve => setTimeout(resolve, 100));
+  try {
+    // Use direct database access for server-side rendering
+    const { prisma } = await import('@/app/lib/prisma');
+    
+    const isolate = await prisma.isolate.findUnique({
+      where: { id },
+      include: {
+        organization: true,
+        patient: true,
+        environment: true,
+        phenotypeProfile: true,
+        genome: true,
+        genomicData: true,
+        treatments: true
+      }
+    });
 
-  // Mock isolate data based on ID
-  const isolateNumber = parseInt(id.replace('isolate-', '')) || 1;
-  
-  const filterOptions = {
-    species: ['Escherichia coli', 'Staphylococcus aureus', 'Klebsiella pneumoniae', 'Pseudomonas aeruginosa', 'Enterococcus faecium'],
-    sources: ['Blood', 'Urine', 'Wound', 'Sputum', 'CSF', 'Environmental'],
-    sites: ['ICU', 'Emergency Department', 'Medical Ward', 'Surgical Ward', 'Outpatient']
-  };
-
-  const seededRandom = (seed: number) => {
-    const x = Math.sin(seed) * 10000;
-    return x - Math.floor(x);
-  };
-
-  const seed = isolateNumber;
-  const baseDate = new Date('2024-12-01').getTime();
-  const dayOffset = Math.floor(seededRandom(seed) * 30);
-
-  return {
-    id: `isolate-${seed}`,
-    label: `ISO-2024-${String(seed).padStart(3, '0')}`,
-    collectionDate: new Date(baseDate - dayOffset * 24 * 60 * 60 * 1000).toISOString(),
-    collectionSource: filterOptions.sources[Math.floor(seededRandom(seed + 1) * filterOptions.sources.length)],
-    collectionSite: filterOptions.sites[Math.floor(seededRandom(seed + 2) * filterOptions.sites.length)],
-    priority: (['urgent', 'high', 'normal', 'low'] as const)[Math.floor(seededRandom(seed + 3) * 4)],
-    processingStatus: 'in_progress',
-    organization: {
-      name: 'Queensland Health Pathology',
-      type: 'pathlab'
-    },
-    patient: seededRandom(seed + 4) > 0.3 ? {
-      id: `P${String(Math.floor(seededRandom(seed + 5) * 10000)).padStart(4, '0')}`,
-      sex: seededRandom(seed + 6) > 0.5 ? 'M' : 'F',
-      dateOfBirth: new Date(baseDate - seededRandom(seed + 7) * 365 * 24 * 60 * 60 * 1000 * 50).toISOString()
-    } : undefined,
-    environment: seededRandom(seed + 7) > 0.7 ? {
-      siteName: 'Environmental Sample Site',
-      facilityType: 'Hospital'
-    } : undefined,
-    phenotypeProfile: seededRandom(seed + 8) > 0.2 ? {
-      species: filterOptions.species[Math.floor(seededRandom(seed + 9) * filterOptions.species.length)],
-      method: 'MALDI-TOF',
-      testDate: new Date(baseDate - dayOffset * 24 * 60 * 60 * 1000 + 24 * 60 * 60 * 1000).toISOString(),
-      confidence: Math.floor(seededRandom(seed + 10) * 30) + 70,
-      micData: JSON.stringify({
-        'Ampicillin': `${Math.floor(seededRandom(seed + 11) * 32) + 1} μg/mL`,
-        'Ciprofloxacin': `${Math.floor(seededRandom(seed + 12) * 16) + 1} μg/mL`,
-        'Vancomycin': `${Math.floor(seededRandom(seed + 13) * 8) + 1} μg/mL`
-      })
-    } : undefined,
-    genomicData: seededRandom(seed + 11) > 0.5 ? [{
-      sequencingDate: new Date(baseDate - dayOffset * 24 * 60 * 60 * 1000 + 3 * 24 * 60 * 60 * 1000).toISOString(),
-      platform: (['Illumina NextSeq', 'Oxford Nanopore', 'Ion Torrent'] as const)[Math.floor(seededRandom(seed + 12) * 3)],
-      coverage: Math.floor(seededRandom(seed + 13) * 100) + 50,
-      species: filterOptions.species[Math.floor(seededRandom(seed + 9) * filterOptions.species.length)],
-      mlst: `ST${Math.floor(seededRandom(seed + 14) * 500) + 1}`,
-      pipeline: 'Unicycler v0.4.8',
-      cleanReadsQc: { quality_score: Math.floor(seededRandom(seed + 15) * 10) + 20 },
-      cleanAssemblyQc: { n50: Math.floor(seededRandom(seed + 16) * 100000) + 50000 }
-    }] : undefined,
-    treatments: seededRandom(seed + 17) > 0.6 ? [{
-      antibiotic: 'Ciprofloxacin',
-      startDate: new Date(baseDate - dayOffset * 24 * 60 * 60 * 1000 + 5 * 24 * 60 * 60 * 1000).toISOString(),
-      outcome: (['success', 'failure', 'ongoing'] as const)[Math.floor(seededRandom(seed + 18) * 3)]
-    }] : undefined
-  };
+    return isolate;
+  } catch (error) {
+    console.error('Error fetching isolate:', error);
+    return null;
+  }
 }
 
 export default async function IsolatePage({ params }: IsolatePageProps) {
-  const isolate = await getIsolateData(params.id);
+  const { id } = await params;
+  const isolate = await getIsolateData(id);
+
+  // Handle not found case
+  if (!isolate) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold text-gray-900 mb-4">Isolate Not Found</h1>
+          <p className="text-gray-600 mb-6">The requested isolate could not be found.</p>
+          <Link 
+            href="/path-lab/isolates" 
+            className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+          >
+            ← Back to Browse Isolates
+          </Link>
+        </div>
+      </div>
+    );
+  }
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
@@ -96,11 +69,20 @@ export default async function IsolatePage({ params }: IsolatePageProps) {
     return 'Complete';
   };
 
+  const getProcessingStatusDisplay = () => {
+    if (!isolate.processingStatus) return 'Unknown';
+    return isolate.processingStatus
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
+
   const getPriorityColor = (priority: string) => {
-    switch (priority) {
+    switch (priority?.toLowerCase()) {
       case 'urgent': return 'bg-red-100 text-red-800 border-red-200';
       case 'high': return 'bg-orange-100 text-orange-800 border-orange-200';
       case 'normal': return 'bg-green-100 text-green-800 border-green-200';
+      case 'priority': return 'bg-orange-100 text-orange-800 border-orange-200';
       case 'low': return 'bg-gray-100 text-gray-800 border-gray-200';
       default: return 'bg-gray-100 text-gray-800 border-gray-200';
     }
@@ -129,11 +111,11 @@ export default async function IsolatePage({ params }: IsolatePageProps) {
             <div>
               <h1 className="text-2xl font-bold text-gray-900">{isolate.label}</h1>
               <p className="text-gray-600 mt-1">
-                Collected {formatDate(isolate.collectionDate)} from {isolate.collectionSource}
+                Collected {formatDate(isolate.collectionDate.toString())} from {isolate.collectionSource}
               </p>
             </div>
             <div className="flex items-center space-x-3">
-              <span className={`px-3 py-1 rounded-full text-sm font-medium border ${getPriorityColor(isolate.priority)}`}>
+              <span className={`px-3 py-1 rounded-full text-sm font-medium border ${getPriorityColor(isolate.priority || 'normal')}`}>
                 {isolate.priority} priority
               </span>
               <span className={`px-3 py-1 rounded-full text-sm font-medium ${
@@ -173,11 +155,11 @@ export default async function IsolatePage({ params }: IsolatePageProps) {
                   </div>
                   <div>
                     <dt className="text-sm font-medium text-gray-500">Collection Date</dt>
-                    <dd className="text-sm text-gray-900">{formatDate(isolate.collectionDate)}</dd>
+                    <dd className="text-sm text-gray-900">{formatDate(isolate.collectionDate.toString())}</dd>
                   </div>
                   <div>
                     <dt className="text-sm font-medium text-gray-500">Processing Status</dt>
-                    <dd className="text-sm text-gray-900">{stage}</dd>
+                    <dd className="text-sm text-gray-900">{getProcessingStatusDisplay()}</dd>
                   </div>
                   <div>
                     <dt className="text-sm font-medium text-gray-500">Organization</dt>
@@ -189,7 +171,7 @@ export default async function IsolatePage({ params }: IsolatePageProps) {
               {/* Patient/Environment Info */}
               <div className="bg-gray-50 rounded-lg p-6">
                 <h2 className="text-lg font-medium text-gray-900 mb-4">
-                  {isolate.patient ? 'Patient Information' : 'Environmental Information'}
+  {isolate.patient ? 'Patient Information' : isolate.environment ? 'Environmental Information' : 'Sample Information'}
                 </h2>
                 {isolate.patient ? (
                   <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -203,7 +185,7 @@ export default async function IsolatePage({ params }: IsolatePageProps) {
                     </div>
                     <div>
                       <dt className="text-sm font-medium text-gray-500">Date of Birth</dt>
-                      <dd className="text-sm text-gray-900">{formatDate(isolate.patient.dateOfBirth)}</dd>
+                      <dd className="text-sm text-gray-900">{isolate.patient.dateOfBirth ? formatDate(isolate.patient.dateOfBirth.toString()) : 'Unknown'}</dd>
                     </div>
                   </dl>
                 ) : isolate.environment ? (
@@ -218,7 +200,33 @@ export default async function IsolatePage({ params }: IsolatePageProps) {
                     </div>
                   </dl>
                 ) : (
-                  <p className="text-sm text-gray-500">No patient or environmental data available</p>
+                  <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <dt className="text-sm font-medium text-gray-500">Sample Type</dt>
+                      <dd className="text-sm text-gray-900 capitalize">{isolate.sampleType}</dd>
+                    </div>
+                    {isolate.genome && (
+                      <div>
+                        <dt className="text-sm font-medium text-gray-500">Genome File</dt>
+                        <dd className="text-sm text-gray-900">
+                          <span className="font-mono text-xs">{isolate.genome.filename}</span>
+                          <span className={`ml-2 px-2 py-1 text-xs rounded-full ${
+                            isolate.genome.validationStatus === 'valid' ? 'bg-green-100 text-green-800' :
+                            isolate.genome.validationStatus === 'invalid' ? 'bg-red-100 text-red-800' :
+                            'bg-yellow-100 text-yellow-800'
+                          }`}>
+                            {isolate.genome.validationStatus}
+                          </span>
+                        </dd>
+                      </div>
+                    )}
+                    {isolate.notes && (
+                      <div className="sm:col-span-2">
+                        <dt className="text-sm font-medium text-gray-500">Notes</dt>
+                        <dd className="text-sm text-gray-900">{isolate.notes}</dd>
+                      </div>
+                    )}
+                  </dl>
                 )}
               </div>
 
@@ -237,7 +245,7 @@ export default async function IsolatePage({ params }: IsolatePageProps) {
                     </div>
                     <div>
                       <dt className="text-sm font-medium text-gray-500">Test Date</dt>
-                      <dd className="text-sm text-gray-900">{formatDate(isolate.phenotypeProfile.testDate)}</dd>
+                      <dd className="text-sm text-gray-900">{isolate.phenotypeProfile.testDate ? formatDate(isolate.phenotypeProfile.testDate.toString()) : 'Unknown'}</dd>
                     </div>
                     <div>
                       <dt className="text-sm font-medium text-gray-500">Confidence</dt>
@@ -252,7 +260,7 @@ export default async function IsolatePage({ params }: IsolatePageProps) {
                         {Object.entries(JSON.parse(isolate.phenotypeProfile.micData)).map(([drug, mic]) => (
                           <div key={drug} className="flex justify-between py-1">
                             <span>{drug}:</span>
-                            <span className="font-medium">{mic}</span>
+                            <span className="font-medium">{String(mic)}</span>
                           </div>
                         ))}
                       </dd>
@@ -270,33 +278,69 @@ export default async function IsolatePage({ params }: IsolatePageProps) {
                       <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                           <dt className="text-sm font-medium text-gray-500">Platform</dt>
-                          <dd className="text-sm text-gray-900">{genomic.platform}</dd>
+                          <dd className="text-sm text-gray-900">{genomic.sequencingPlatform || 'Unknown'}</dd>
                         </div>
                         <div>
-                          <dt className="text-sm font-medium text-gray-500">Coverage</dt>
-                          <dd className="text-sm text-gray-900">{genomic.coverage}x</dd>
+                          <dt className="text-sm font-medium text-gray-500">MLST Scheme</dt>
+                          <dd className="text-sm text-gray-900">{genomic.mlstScheme || 'Not available'}</dd>
                         </div>
                         <div>
-                          <dt className="text-sm font-medium text-gray-500">MLST</dt>
-                          <dd className="text-sm text-gray-900 font-mono">{genomic.mlst}</dd>
+                          <dt className="text-sm font-medium text-gray-500">MLST Type</dt>
+                          <dd className="text-sm text-gray-900 font-mono">{genomic.mlstType || 'Not available'}</dd>
                         </div>
                         <div>
-                          <dt className="text-sm font-medium text-gray-500">Pipeline</dt>
-                          <dd className="text-sm text-gray-900">{genomic.pipeline}</dd>
+                          <dt className="text-sm font-medium text-gray-500">Analysis Status</dt>
+                          <dd className="text-sm text-gray-900">{genomic.analysisCompleted ? 'Completed' : 'In Progress'}</dd>
                         </div>
-                        <div>
-                          <dt className="text-sm font-medium text-gray-500">Sequencing Date</dt>
-                          <dd className="text-sm text-gray-900">{formatDate(genomic.sequencingDate)}</dd>
-                        </div>
-                        <div>
-                          <dt className="text-sm font-medium text-gray-500">Species Confirmation</dt>
-                          <dd className="text-sm text-gray-900">{genomic.species}</dd>
-                        </div>
+                        {genomic.assemblyPath && (
+                          <div>
+                            <dt className="text-sm font-medium text-gray-500">Assembly File</dt>
+                            <dd className="text-sm text-gray-900 font-mono text-xs break-all">{genomic.assemblyPath}</dd>
+                          </div>
+                        )}
+                        {genomic.createdAt && (
+                          <div>
+                            <dt className="text-sm font-medium text-gray-500">Analysis Date</dt>
+                            <dd className="text-sm text-gray-900">{formatDate(genomic.createdAt.toString())}</dd>
+                          </div>
+                        )}
                       </dl>
+                      
+                      {/* Resistance Genes */}
+                      {genomic.resistanceGenes && (
+                        <div className="mt-4">
+                          <dt className="text-sm font-medium text-gray-500 mb-2">Resistance Genes</dt>
+                          <dd className="text-sm text-gray-900 bg-white p-3 rounded border">
+                            {(() => {
+                              try {
+                                const genes = JSON.parse(genomic.resistanceGenes);
+                                if (Array.isArray(genes)) {
+                                  return genes.map((gene, idx) => (
+                                    <div key={idx} className="flex justify-between py-1 border-b border-gray-100 last:border-b-0">
+                                      <span className="font-medium">{gene.gene}</span>
+                                      <span className="text-xs text-gray-500">{gene.class} ({gene.identity}% identity)</span>
+                                    </div>
+                                  ));
+                                } else {
+                                  return <span className="text-gray-500">No resistance genes detected</span>;
+                                }
+                              } catch {
+                                return <span className="text-gray-500">Data format error</span>;
+                              }
+                            })()}
+                          </dd>
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>
               )}
+
+              {/* Pipeline Status */}
+              <PipelineStatus 
+                isolateLabel={isolate.label}
+                genome={isolate.genome}
+              />
 
               {/* Treatment Outcomes */}
               {isolate.treatments && isolate.treatments.length > 0 && (
@@ -308,7 +352,7 @@ export default async function IsolatePage({ params }: IsolatePageProps) {
                         <div>
                           <div className="font-medium text-gray-900">{treatment.antibiotic}</div>
                           <div className="text-sm text-gray-500">
-                            Started {formatDate(treatment.startDate)}
+                            Started {formatDate(treatment.startDate.toString())}
                           </div>
                         </div>
                         <span className={`px-2 py-1 text-xs font-medium rounded-full ${

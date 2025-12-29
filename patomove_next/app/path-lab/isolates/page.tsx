@@ -1,4 +1,6 @@
-import { Suspense } from 'react';
+'use client';
+
+import { Suspense, useState, useEffect, use } from 'react';
 import IsolateFilters from '@/components/IsolateFilters';
 import IsolateCard from '@/components/IsolateCard';
 import Pagination from '@/components/Pagination';
@@ -15,96 +17,127 @@ interface SearchParams {
 }
 
 interface BrowseIsolatesProps {
-  searchParams: SearchParams;
+  searchParams: Promise<SearchParams>;
 }
 
-// Real API call to fetch isolates
-async function getIsolatesData(searchParams: SearchParams) {
-  try {
-    const baseUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : '';
-    const response = await fetch(`${baseUrl}/api/isolates`, {
-      cache: 'no-store' // Ensure we get fresh data
-    });
-    
-    if (!response.ok) {
-      throw new Error('Failed to fetch isolates');
-    }
-    
-    const isolates = await response.json();
-    
-    // Filter options based on actual data
-    const filterOptions = {
+// Client-side data fetching hook
+function useIsolatesData(searchParams: SearchParams) {
+  const [data, setData] = useState({
+    isolates: [],
+    filterOptions: {
       species: ['Escherichia coli', 'Staphylococcus aureus', 'Klebsiella pneumoniae', 'Pseudomonas aeruginosa', 'Enterococcus faecium'],
       sources: ['Blood', 'Urine', 'Wound', 'Sputum', 'CSF', 'Environmental'],
       sites: ['ICU', 'Emergency Department', 'Medical Ward', 'Surgical Ward', 'Outpatient']
-    };
+    },
+    pagination: {
+      currentPage: 1,
+      totalPages: 1,
+      totalItems: 0,
+      itemsPerPage: 10
+    },
+    stats: {
+      totalInDatabase: 0,
+      filtered: 0
+    }
+  });
+  const [loading, setLoading] = useState(true);
 
-    const totalInDatabase = isolates.length;
-    // Simple filtering for demo
-    let filteredIsolates = isolates;
-  
-  if (searchParams.search) {
-    const search = searchParams.search.toLowerCase();
-    filteredIsolates = filteredIsolates.filter(isolate =>
-      isolate.label.toLowerCase().includes(search) ||
-      isolate.collectionSource.toLowerCase().includes(search) ||
-      isolate.phenotypeProfile?.species.toLowerCase().includes(search)
-    );
-  }
-
-  if (searchParams.species) {
-    const species = searchParams.species.split(',');
-    filteredIsolates = filteredIsolates.filter(isolate =>
-      isolate.phenotypeProfile && species.includes(isolate.phenotypeProfile.species)
-    );
-  }
-
-  if (searchParams.sources) {
-    const sources = searchParams.sources.split(',');
-    filteredIsolates = filteredIsolates.filter(isolate =>
-      sources.includes(isolate.collectionSource)
-    );
-  }
-
-  const page = parseInt(searchParams.page || '1');
-  const itemsPerPage = 10;
-  const totalItems = filteredIsolates.length;
-  const totalPages = Math.ceil(totalItems / itemsPerPage);
-  const startIndex = (page - 1) * itemsPerPage;
-  const paginatedIsolates = filteredIsolates.slice(startIndex, startIndex + itemsPerPage);
-
-    return {
-      isolates: paginatedIsolates,
-      pagination: {
-        currentPage: page,
-        totalPages,
-        totalItems,
-        itemsPerPage
-      },
-      filterOptions
-    };
-  } catch (error) {
-    console.error('Failed to fetch isolates:', error);
-    // Return empty results on error
-    return {
-      isolates: [],
-      pagination: {
-        currentPage: 1,
-        totalPages: 0,
-        totalItems: 0,
-        itemsPerPage: 10
-      },
-      filterOptions: {
-        species: [],
-        sources: [],
-        sites: []
+  const fetchData = async () => {
+    try {
+      setLoading(true);
+      const response = await fetch('/api/isolates', {
+        cache: 'no-store'
+      });
+      
+      if (!response.ok) {
+        throw new Error('Failed to fetch isolates');
       }
-    };
-  }
+      
+      const isolates = await response.json();
+      
+      const totalInDatabase = isolates.length;
+      let filteredIsolates = isolates;
+    
+      if (searchParams.search) {
+        const search = searchParams.search.toLowerCase();
+        filteredIsolates = filteredIsolates.filter((isolate: any) =>
+          isolate.label.toLowerCase().includes(search) ||
+          isolate.collectionSource.toLowerCase().includes(search) ||
+          isolate.phenotypeProfile?.species.toLowerCase().includes(search)
+        );
+      }
+
+      if (searchParams.species) {
+        const species = searchParams.species.split(',');
+        filteredIsolates = filteredIsolates.filter((isolate: any) =>
+          isolate.phenotypeProfile && species.includes(isolate.phenotypeProfile.species)
+        );
+      }
+
+      if (searchParams.sources) {
+        const sources = searchParams.sources.split(',');
+        filteredIsolates = filteredIsolates.filter((isolate: any) =>
+          sources.includes(isolate.collectionSource)
+        );
+      }
+
+      const page = parseInt(searchParams.page || '1');
+      const itemsPerPage = 10;
+      const totalItems = filteredIsolates.length;
+      const totalPages = Math.ceil(totalItems / itemsPerPage);
+      const startIndex = (page - 1) * itemsPerPage;
+      const paginatedIsolates = filteredIsolates.slice(startIndex, startIndex + itemsPerPage);
+
+      setData({
+        isolates: paginatedIsolates,
+        filterOptions: {
+          species: ['Escherichia coli', 'Staphylococcus aureus', 'Klebsiella pneumoniae', 'Pseudomonas aeruginosa', 'Enterococcus faecium'],
+          sources: ['Blood', 'Urine', 'Wound', 'Sputum', 'CSF', 'Environmental'],
+          sites: ['ICU', 'Emergency Department', 'Medical Ward', 'Surgical Ward', 'Outpatient']
+        },
+        pagination: {
+          currentPage: page,
+          totalPages,
+          totalItems,
+          itemsPerPage
+        },
+        stats: {
+          totalInDatabase,
+          filtered: filteredIsolates.length
+        }
+      });
+    } catch (error) {
+      console.error('Failed to fetch isolates:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, [searchParams]);
+
+  return { data, loading, refetch: fetchData };
 }
 
-export default async function BrowseIsolates({ searchParams }: BrowseIsolatesProps) {
-  const data = await getIsolatesData(searchParams);
+export default function BrowseIsolates({ searchParams }: BrowseIsolatesProps) {
+  const resolvedSearchParams = use(searchParams);
+  const { data, loading, refetch } = useIsolatesData(resolvedSearchParams);
+  
+  const handleDelete = async (isolateId: string) => {
+    // Refetch data after deletion
+    await refetch();
+  };
+  
+  if (loading) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center py-12">
+          <p>Loading isolates...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -139,8 +172,12 @@ export default async function BrowseIsolates({ searchParams }: BrowseIsolatesPro
                 <>
                   {/* Results Grid */}
                   <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 mb-6">
-                    {data.isolates.map((isolate) => (
-                      <IsolateCard key={isolate.id} isolate={isolate} />
+                    {data.isolates.map((isolate: any) => (
+                      <IsolateCard 
+                        key={isolate.id} 
+                        isolate={isolate}
+                        onDelete={handleDelete}
+                      />
                     ))}
                   </div>
 

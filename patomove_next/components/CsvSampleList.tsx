@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import { CheckIcon, ClockIcon } from '@heroicons/react/24/solid';
 import ComponentFeedback from './ComponentFeedback';
 
 interface CsvRow {
@@ -16,6 +17,10 @@ interface ParsedSample {
   collectionDate: string;
   priority: 'normal' | 'priority';
   notes: string;
+  orgId: string;
+  patientId: string;
+  environmentId: string;
+  processingStatus: string;
   status: 'pending' | 'selected' | 'completed';
 }
 
@@ -58,17 +63,25 @@ export default function CsvSampleList() {
       });
 
       // Parse CSV data into sample objects
-      const parsedSamples: ParsedSample[] = data.map((row, index) => ({
-        id: `csv-${index}`,
-        label: row['Sample ID'] || row['label'] || `Sample-${index + 1}`,
-        sampleType: (row['Sample Type'] || row['sampleType'] || 'clinical').toLowerCase() as 'clinical' | 'environmental',
-        collectionSource: row['Collection Source'] || row['collectionSource'] || '',
-        collectionSite: row['Collection Site'] || row['collectionSite'] || '',
-        collectionDate: row['Collection Date'] || row['collectionDate'] || '',
-        priority: (row['Priority'] || row['priority'] || 'normal').toLowerCase() as 'normal' | 'priority',
-        notes: row['Notes'] || row['notes'] || '',
-        status: 'pending'
-      }));
+      const parsedSamples: ParsedSample[] = data.map((row, index) => {
+        console.log('Raw CSV row:', row); // Debug log
+        return {
+          id: `csv-${index}`,
+          // Map exact CSV column names from efm_demo.csv
+          label: row['isolateId'] || row['Sample ID'] || row['label'] || `Sample-${index + 1}`,
+          sampleType: (row['sampleType'] || row['Sample Type'] || 'clinical').toLowerCase() as 'clinical' | 'environmental',
+          collectionSource: row['collectionSource'] || row['Collection Source'] || '',
+          collectionSite: row['collectionSite'] || row['Collection Site'] || '',
+          collectionDate: row['collectionDate'] || row['Collection Date'] || '',
+          priority: (row['priority'] || row['Priority'] || 'normal').toLowerCase() as 'normal' | 'priority',
+          notes: row['notes'] || row['Notes'] || '',
+          orgId: row['orgId'] || row['Organization ID'] || '',
+          patientId: row['patientId'] || row['Patient ID'] || '',
+          environmentId: row['environmentId'] || row['Environment ID'] || '',
+          processingStatus: row['processingStatus'] || row['Processing Status'] || 'to be sequenced',
+          status: 'pending'
+        };
+      });
 
       setSamples(parsedSamples);
     };
@@ -84,6 +97,7 @@ export default function CsvSampleList() {
     })));
 
     // Dispatch custom event to prefill form
+    console.log('Prefilling form with sample:', sample); // Debug log
     window.dispatchEvent(new CustomEvent('prefillForm', {
       detail: {
         label: sample.label,
@@ -92,7 +106,11 @@ export default function CsvSampleList() {
         collectionSite: sample.collectionSite,
         collectionDate: sample.collectionDate,
         priority: sample.priority,
-        notes: sample.notes
+        notes: sample.notes,
+        orgId: sample.orgId,
+        patientId: sample.patientId,
+        environmentId: sample.environmentId,
+        processingStatus: sample.processingStatus
       }
     }));
   };
@@ -152,13 +170,11 @@ export default function CsvSampleList() {
   const getStatusIcon = (status: ParsedSample['status']) => {
     switch (status) {
       case 'pending':
-        return <span className="w-2 h-2 bg-gray-400 rounded-full" />;
+        return <ClockIcon className="w-5 h-5 text-gray-400" />;
       case 'selected':
-        return <span className="w-2 h-2 bg-blue-500 rounded-full" />;
+        return <ClockIcon className="w-5 h-5 text-blue-500" />;
       case 'completed':
-        return <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-        </svg>;
+        return <CheckIcon className="w-6 h-6 text-green-600" />;
     }
   };
 

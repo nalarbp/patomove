@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { TrashIcon } from '@heroicons/react/24/outline';
 import ComponentFeedback from './ComponentFeedback';
 
 interface IsolateCardProps {
@@ -33,9 +34,37 @@ interface IsolateCardProps {
       coverage: number;
     }>;
   };
+  onDelete?: (isolateId: string) => void;
 }
 
-export default function IsolateCard({ isolate }: IsolateCardProps) {
+export default function IsolateCard({ isolate, onDelete }: IsolateCardProps) {
+  const handleDelete = async (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    const confirmDelete = confirm(
+      `Are you sure you want to delete isolate "${isolate.label}"?\n\nThis action cannot be undone and will permanently remove all associated data including genomic analysis results.`
+    );
+    
+    if (!confirmDelete) return;
+    
+    try {
+      const response = await fetch(`/api/isolates/${isolate.id}`, {
+        method: 'DELETE'
+      });
+      
+      if (response.ok) {
+        if (onDelete) {
+          onDelete(isolate.id);
+        }
+      } else {
+        alert('Failed to delete isolate. Please try again.');
+      }
+    } catch (error) {
+      console.error('Delete error:', error);
+      alert('Failed to delete isolate. Please check your connection.');
+    }
+  };
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     return `${date.getDate().toString().padStart(2, '0')}/${(date.getMonth() + 1).toString().padStart(2, '0')}/${date.getFullYear()}`;
@@ -86,9 +115,19 @@ export default function IsolateCard({ isolate }: IsolateCardProps) {
                 </p>
               </div>
               <div className="flex flex-col items-end space-y-2">
-                <span className={`px-2 py-1 rounded-full text-xs font-medium border ${getPriorityColor(isolate.priority)}`}>
-                  {isolate.priority}
-                </span>
+                <div className="flex items-center space-x-2">
+                  <button
+                    onClick={handleDelete}
+                    className="text-red-500 hover:text-red-700 hover:bg-red-50 rounded p-1 transition-colors"
+                    title="Delete isolate"
+                    type="button"
+                  >
+                    <TrashIcon className="w-4 h-4" />
+                  </button>
+                  <span className={`px-2 py-1 rounded-full text-xs font-medium border ${getPriorityColor(isolate.priority)}`}>
+                    {isolate.priority}
+                  </span>
+                </div>
                 <span className={`px-2 py-1 rounded-full text-xs font-medium ${getStageColor(stage)}`}>
                   {stage}
                 </span>

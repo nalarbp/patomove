@@ -14,7 +14,7 @@ export async function GET() {
   } catch (error) {
     console.error('Error fetching organizations:', error)
     return NextResponse.json(
-      { error: 'Failed to fetch organizations', details: error.message },
+      { error: 'Failed to fetch organizations', details: error instanceof Error ? error.message : 'Unknown error' },
       { status: 500 }
     )
   }
@@ -42,7 +42,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Error creating organization:', error)
     return NextResponse.json(
-      { error: 'Failed to create organization', details: error.message },
+      { error: 'Failed to create organization', details: error instanceof Error ? error.message : 'Unknown error' },
       { status: 500 }
     )
   }

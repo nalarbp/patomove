@@ -17,6 +17,11 @@ const pathLabNavItems = [
     description: 'Add, import & manage isolates'
   },
   {
+    name: 'Genome Management',
+    href: '/path-lab/genomes',
+    description: 'Upload & manage genome files'
+  },
+  {
     name: 'Analytics',
     href: '/path-lab/analytics',
     description: 'Genomic insights & patterns'

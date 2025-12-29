@@ -39,7 +39,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Error creating environment:', error)
     return NextResponse.json(
-      { error: 'Failed to create environment', details: error.message },
+      { error: 'Failed to create environment', details: error instanceof Error ? error.message : 'Unknown error' },
       { status: 500 }
     )
   }

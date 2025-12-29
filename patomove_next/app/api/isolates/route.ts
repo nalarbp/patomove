@@ -17,6 +17,7 @@ export async function GET(request: NextRequest) {
         patient: true,
         environment: true,
         phenotypeProfile: true,
+        genome: true,
         genomicData: true,
         treatments: true
       },
@@ -50,6 +51,7 @@ export async function POST(request: NextRequest) {
       priority,
       processingStatus,
       notes,
+      genomeId,
       createdBy,
       updatedBy
     } = body
@@ -68,6 +70,7 @@ export async function POST(request: NextRequest) {
         priority,
         processingStatus,
         notes,
+        genomeId,
         createdBy,
         updatedBy
       },
@@ -78,7 +81,7 @@ export async function POST(request: NextRequest) {
       }
     })
 
-    return NextResponse.json(isolate, { status: 201 })
+    return NextResponse.json({ isolate }, { status: 201 })
   } catch (error) {
     return NextResponse.json(
       { error: 'Failed to create isolate' },

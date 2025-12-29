@@ -1,10 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { CheckCircleIcon } from '@heroicons/react/24/outline';
 import ComponentFeedback from './ComponentFeedback';
 import OrganizationSelect from './OrganizationSelect';
 import PatientSelect from './PatientSelect';
 import EnvironmentSelect from './EnvironmentSelect';
+import GenomeSelect from './GenomeSelect';
 
 interface IsolateFormData {
   label: string;
@@ -18,6 +20,7 @@ interface IsolateFormData {
   orgId: string;
   patientId: string;
   environmentId: string;
+  genomeId: string | null;
 }
 
 export default function AddIsolateForm() {
@@ -32,18 +35,22 @@ export default function AddIsolateForm() {
     notes: '',
     orgId: '',
     patientId: '',
-    environmentId: ''
+    environmentId: '',
+    genomeId: null
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [createdIsolateLabel, setCreatedIsolateLabel] = useState('');
 
   // Listen for CSV sample selection events
   useEffect(() => {
     const handlePrefillForm = (event: CustomEvent) => {
       const sampleData = event.detail;
+      console.log('Form received sample data:', sampleData); // Debug log
       setFormData(prev => ({
         ...prev,
         label: sampleData.label || '',
@@ -52,7 +59,12 @@ export default function AddIsolateForm() {
         collectionSite: sampleData.collectionSite || '',
         collectionDate: sampleData.collectionDate || '',
         priority: sampleData.priority || 'normal',
-        notes: sampleData.notes || ''
+        notes: sampleData.notes || '',
+        genomeId: null, // CSV data doesn't include genome selection
+        orgId: sampleData.orgId || prev.orgId,
+        patientId: sampleData.patientId || prev.patientId,
+        environmentId: sampleData.environmentId || prev.environmentId,
+        processingStatus: sampleData.processingStatus || 'to be sequenced'
       }));
       // Clear any validation errors when prefilling
       setErrors({});
@@ -111,6 +123,7 @@ export default function AddIsolateForm() {
         processingStatus: formData.processingStatus,
         notes: formData.notes,
         orgId: formData.orgId,
+        genomeId: formData.genomeId,
         // Include only the relevant ID based on sampleType
         ...(formData.sampleType === 'clinical' && { patientId: formData.patientId }),
         ...(formData.sampleType === 'environmental' && { environmentId: formData.environmentId }),
@@ -125,10 +138,17 @@ export default function AddIsolateForm() {
       });
 
       if (response.ok) {
+        const isolateData = await response.json();
         setSubmitStatus('success');
+        setCreatedIsolateLabel(isolateData.isolate.label);
+        
+        // Note: Pipeline submission will be handled through Genome Management
+        
+        // Show success modal
+        setShowSuccessModal(true);
+        
         // Notify CSV component of successful submission
         window.dispatchEvent(new CustomEvent('isolateCreated'));
-        resetForm();
       } else {
         const errorData = await response.json();
         setSubmitStatus('error');
@@ -142,6 +162,7 @@ export default function AddIsolateForm() {
     }
   };
 
+
   const resetForm = () => {
     setFormData({
       label: '',
@@ -154,10 +175,13 @@ export default function AddIsolateForm() {
       notes: '',
       orgId: '',
       patientId: '',
-      environmentId: ''
+      environmentId: '',
+      genomeId: null
     });
     setErrors({});
     setSubmitStatus('idle');
+    setShowSuccessModal(false);
+    setCreatedIsolateLabel('');
   };
 
   return (
@@ -337,6 +361,15 @@ export default function AddIsolateForm() {
           </select>
         </div>
 
+
+        {/* Genome Selection */}
+        <GenomeSelect
+          value={formData.genomeId}
+          onChange={(genomeId) => {
+            setFormData(prev => ({ ...prev, genomeId }));
+          }}
+        />
+
         {/* Notes */}
         <div>
           <label htmlFor="notes" className="block text-sm font-medium text-gray-700 mb-1">
@@ -353,16 +386,55 @@ export default function AddIsolateForm() {
           />
         </div>
 
-        {/* Submit Status */}
-        {submitStatus === 'success' && (
-          <div className="bg-green-50 border border-green-200 rounded-md p-4">
-            <p className="text-green-700 text-sm">Isolate created successfully!</p>
-          </div>
-        )}
-
+        {/* Error Status */}
         {submitStatus === 'error' && (
           <div className="bg-red-50 border border-red-200 rounded-md p-4">
             <p className="text-red-700 text-sm">Failed to create isolate. Please try again.</p>
+          </div>
+        )}
+
+        {/* Success Modal */}
+        {showSuccessModal && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div className="bg-white rounded-lg shadow-xl p-6 max-w-md mx-4">
+              <div className="flex items-center mb-4">
+                <div className="flex-shrink-0">
+                  <CheckCircleIcon className="h-8 w-8 text-green-500" />
+                </div>
+                <div className="ml-3">
+                  <h3 className="text-lg font-medium text-gray-900">Isolate Created Successfully!</h3>
+                </div>
+              </div>
+              
+              <div className="mb-6">
+                <p className="text-sm text-gray-600 mb-2">
+                  Isolate <span className="font-semibold text-gray-900">{createdIsolateLabel}</span> has been successfully created and saved to the database.
+                </p>
+                <p className="text-sm text-gray-600">
+                  You can upload genome files and run analysis from the Genome Management section.
+                </p>
+              </div>
+              
+              <div className="flex gap-3 justify-end">
+                <button
+                  onClick={() => {
+                    setShowSuccessModal(false);
+                    resetForm();
+                  }}
+                  className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                >
+                  Add Another Sample
+                </button>
+                <button
+                  onClick={() => {
+                    setShowSuccessModal(false);
+                  }}
+                  className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
           </div>
         )}
 
